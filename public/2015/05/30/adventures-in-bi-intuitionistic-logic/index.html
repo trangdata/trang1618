@@ -1,0 +1,240 @@
+
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adventures in Bi-Intuitionistic Logic</title>
+  <link rel="canonical" href="/2015/05/30/adventures-in-bi-intuitionistic-logic/" />
+
+  
+  <link rel="stylesheet" href="/assets/css/kube.css" />
+  <link rel="stylesheet" href="/assets/css/custom.css" />
+  <link rel="stylesheet" href="/assets/css/tufte.css" />
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Alegreya:400italic,400,700,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Alegreya+SC:400&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=IM+Fell+English:400,400i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+  <link href="/assets/fonts/fell-flowers/style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack-subset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.0/css/academicons.min.css">
+  <link href="/assets/fonts/fontawesome/css/all.css" rel="stylesheet">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="shortcut icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="shortcut icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="manifest" href="/assets/site.webmanifest">
+  <link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="theme-color" content="#ffffff">
+
+  
+  
+
+  
+  <meta name="description" content="In yesterday&rsquo;s Logic Seminar, Tomasz Kowalski introduced some lovely results about analytic cut and interpolation in sequent systems for bi-intuitionistic logic. After the seminar, Lloyd Humberstone, Dave Ripley, Tomasz and I got talking about various features of bi-intuitionistic logic, some of which should be more well known than they are &hellip; so I may as well post them here. Read on, if you&rsquo;re into non-classical logic, algebras and frames.
+" />
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="/2015/05/30/adventures-in-bi-intuitionistic-logic/">
+  <meta name="twitter:title" content="Adventures in Bi-Intuitionistic Logic">
+  <meta name="twitter:description" content="In yesterday&rsquo;s Logic Seminar, Tomasz Kowalski introduced some lovely results about analytic cut and interpolation in sequent systems for bi-intuitionistic logic. After the seminar, Lloyd Humberstone, Dave Ripley, Tomasz and I got talking about various features of bi-intuitionistic logic, some of which should be more well known than they are &hellip; so I may as well post them here. Read on, if you&rsquo;re into non-classical logic, algebras and frames.">
+  <meta name="twitter:image" content="/assets/img/nr.png">
+  <meta name="twitter:site" content="trang1618.github.io">
+  <meta name="twitter:creator" content="@trang1618">
+
+  <meta property="og:title" content="Adventures in Bi-Intuitionistic Logic" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="trang1618.github.io" />
+  <meta property="og:description" content="  In yesterday&rsquo;s Logic Seminar, Tomasz Kowalski introduced some lovely results about analytic cut and interpolation in sequent systems for bi-intuitionistic logic. After the seminar, Lloyd Humberstone, Dave Ripley, Tomasz and I got talking about various features of bi-intuitionistic logic, some of which should be more well known than they are &hellip; so I may as well post them here. Read on, if you&rsquo;re into non-classical logic, algebras and frames." />
+  <meta property="og:url" content="/2015/05/30/adventures-in-bi-intuitionistic-logic/" />
+  <script type="application/ld+json">
+    {"@type":"WebSite","url":"\/2015\/05\/30\/adventures-in-bi-intuitionistic-logic\/","headline":"Adventures in Bi-Intuitionistic Logic", "name":"trang1618.github.io","description":"\x3cp\x3eIn yesterday\x26rsquo;s \x3ca href=\x22http:\/\/philevents.org\/event\/show\/17572\x22\x3eLogic Seminar\x3c\/a\x3e, \x3ca href=\x22http:\/\/www.latrobe.edu.au\/psy\/about\/staff\/profile?uname=TKowalski\x22\x3eTomasz\x3c\/a\x3e \x3ca href=\x22http:\/\/tomasz-kowalski.ltumathstats.com\x22\x3eKowalski\x3c\/a\x3e introduced some lovely results about analytic cut and interpolation in sequent systems for bi-intuitionistic logic. After the seminar, Lloyd Humberstone, Dave Ripley, Tomasz and I got talking about various features of bi-intuitionistic logic, some of which should be more well known than they are \x26hellip; so I may as well post them here. Read on, if you\x26rsquo;re into non-classical logic, algebras and frames.\x3c\/p\x3e","@context":"http://schema.org"}
+  </script>
+
+  
+  
+</head>
+
+<body>
+
+<div id="topbar" class="is-hidden-print">
+	<div class="wrapper">
+		<header>
+			<div class="is-navbar-container">
+				<nav>
+				<div class="is-brand">
+					<a href="/">t  r  a  n  g </a>
+					<a href="#"
+						 class="is-push-right-mobile is-shown-mobile icon-kube-menu"
+						 data-kube="toggle"
+						 data-target="#navbar-main"></a>
+				</div>
+				</nav>
+				<div id="navbar-main" class="is-navbar is-hidden-mobile is-center-mobile">
+					<nav>
+						<ul>
+						  <li><a href="/vitae">vitae</a></li>
+							<li><a href="/blog">blog</a></li>
+						
+							<li><a href="#connect">say hello</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+	</div>
+</div>
+
+
+<div class="wrapper">
+  <div class="is-row is-stack-20">
+    <div class="is-col is-10">&nbsp;</div>
+    <div class="is-col is-60">
+    <h1 class="is-text-center"><a href="">Adventures in Bi-Intuitionistic Logic</a></h1>
+    <h4 class="is-bigger is-text-center">May 30, 2015</h4>
+    </div>
+    <div class="is-col is-30">&nbsp;</div>
+  </div>
+  <div class="is-row is-stack-20">
+  </div>
+  <div class="is-row is-stack-20">
+    <div class="is-col is-10 is-stack-20">
+    </div>
+    <div class="is-col is-60">
+      <div class="story">
+      <p>In yesterday&rsquo;s <a href="http://philevents.org/event/show/17572">Logic Seminar</a>, <a href="http://www.latrobe.edu.au/psy/about/staff/profile?uname=TKowalski">Tomasz</a> <a href="http://tomasz-kowalski.ltumathstats.com">Kowalski</a> introduced some lovely results about analytic cut and interpolation in sequent systems for bi-intuitionistic logic. After the seminar, Lloyd Humberstone, Dave Ripley, Tomasz and I got talking about various features of bi-intuitionistic logic, some of which should be more well known than they are &hellip; so I may as well post them here. Read on, if you&rsquo;re into non-classical logic, algebras and frames.</p>
+
+<p>The conditional in intuitionistic logic satisfies the lovely residuation principle:
+\[
+p\land q \le r
+\quad
+\Leftrightarrow
+\quad
+p\land q\supset r
+\]
+where \(\le\) is entailment&mdash;the underlying lattice ordering on propositions&ndash;and \(\land\) is conjunction.  Bi-intuitionistic logic is found by adding to the vocabulary a  two-place connective (<em>dual</em> to the conditional) of <em>subtraction</em>, satisfying the dual residuation principle:
+\[
+p\le q\lor r
+\quad
+\Leftrightarrow
+\quad
+p-q \le r
+\]
+This has lots of lovely (and strange) properties. If \(p\supset 0\) defines the strong intuitionist negation (which is a contrary but not sub-contrary forming operator) then \(1-p\) forms a weak dual negation (which is a sub-contrary but not contrary forming operator). It is a conservative addition to the <em>propositional</em> inuitionist logic. (All complete and completely distributive lattices can be equipped with a subtraction operator, defined by setting \(p-q\) to be \(\bigwedge\{r:p\le q\lor r\}\), and all Heyting lattices can be embedded into complete and completly distributive Heyting lattices.) It is <em>not</em> a conservative extension of first-order intuitionist logic. (With subtraction, you can show that \(\forall x(Fx\lor Gx)\) entails \(\forall x Fx\lor \exists xGx\), which is underivable in intuitionist logic.)</p>
+
+<p>The result I thought should be more well known is that the dual intuitionist substraction can be <em>defined</em> if you add a de Morgan negation to intiutionst logic, and this addition is also conservative in the propositional case. A de Morgan negation is an operator \(\sim\) such that \({\mathord\sim}{\mathord\sim}p=p\) and \(p\le q\) only if \({\mathord\sim}q\le {\mathord\sim}p\). It&rsquo;s called a &ldquo;de Morgan negation&rdquo; because in a <em>lattice</em>, these conditions mean that all four de Morgan laws hold connecting \({\mathord\sim}\), \(\land\) and \(\lor\).</p>
+
+<p>Lemma 9.35 in my substructural logic book (<em><a href="http://consequently.org/writing/isl">An Introduction to Substructural Logics</a></em>) is a construction that embeds a lattice into one including a de Morgan negation. (This construction&mdash;like many results in this field&mdash;uses techniques due to <a href="http://projecteuclid.org/euclid.ndjfl/1093890896">Bob Meyer</a>.) The construction is straightforward. It doesn&rsquo;t <em>quite</em> work in the Heyting lattice case, but it&rsquo;s very close to working. That construction takes the original lattice, adds a top element (if not already present) and adds an inverted copy of the structure below the original structure. This construction doesn&rsquo;t preserve the bottom element (that&rsquo;s no good, as we can express this in intuitionistic logic, with \(p\land\neg p\)), and it&rsquo;s fiddly to see how you might do that using algebraic surgery. Perhaps you can, but I worry about getting the cases correct.</p>
+
+<p>However, it suggest a way to do it relatively straightforwardly, using Kripke frames.</p>
+
+<p>It&rsquo;s well known that in frame semantics, a de Morgan negation can be modelled using a <a href="http://consequently.org/writing/negrl/">Routley star</a> operation. A unary function on points in the frame such that \(x^{&ast;&ast;}=x\) and if \(x\sqsubseteq y\) then \(y^{&ast;}\sqsubseteq x^{&ast;}\). Then we define
+\[
+x\Vdash {\mathord\sim}A
+\quad
+\Leftrightarrow
+x^{&ast;}\not\Vdash A
+\]
+and the result is a de Morgan negation. That&rsquo;s fair enough. But there&rsquo;s no way, in general, to take a Kripke frame for intuitionistic logic and slap a de Morgan negation onto it. Take the three-point tree on the set \(\{a,b,c\}\) where \(a\sqsubset b\) and \(a\sqsubset c\). There aren&rsquo;t enough candidates for \(b^{&ast;}\) and \(c^{&ast;}\). They need to be <em>different</em> and they need to be <em>earlier</em> than \(a^{&ast;}\) in the ordering, but there&rsquo;s not enough objects in the frame to satisfy this. To do this, we need three objects \(\{e,f,g\}\)&mdash;somewhere&ndash;where \(f\sqsubset e\) and \(g\sqsubset e\), so we can let \(a^{&ast;}=e\), \(b^{&ast;}=f\) and  \(c^{&ast;}=g\).</p>
+
+<p>One way to do this to <em>any</em> Kripke model \(\langle P,\sqsubseteq,\vDash\rangle\) is to add a new set \(P^{&ast;}\)&mdash;an extra copy of \(P\), so we operate on the disjoint union \(P\cup P^{&ast;}\).  We define the operation \({&ast;}\) in the obvious way: if \(x\) is in \(P\), then its star is the copy \(x^{&ast;}\) in \(P^{&ast;}\). Define the ordering by allowing \(x^{&ast;}\sqsubseteq y\) but not \(y \sqsubseteq x^{&ast;}\) for each \(x,y\) in \(P\) (so each of the \(P^{&ast;}\) points come <em>before</em> the \(P\) points) and setting \(x^{&ast;} \sqsubseteq y^{&ast;}\) iff \(y \sqsubseteq x\).</p>
+
+<p>(In other words, we take a copy of our Kripke frame, <em>invert</em> it, and have all of those points come <em>before</em> each of the original points.)</p>
+
+<p>The operation &ast; is a <a href="http://consequently.org/writing/negrl/">Routley star</a> on the structure, and it&rsquo;s still a poset, so we have a Kripke frame. We can use &ast; on the frame to define a de Morgan negation.</p>
+
+<p>Given the original model \(\langle P,\sqsubseteq,\Vdash\rangle\), extend the valuation to the new domain \(P \cup P^{&ast;}\) as required by heredity on frames. Any atom true at some point in \(P\) is true at all points in \(P^{&ast;}\), but any atom not true anywhere in \(P\) can remain not true everywhere in \(P^{&ast;}\). An easy induction shows that if formula is true at a point in \(P\) in the original model iff it’s true at that point in the extended model. (The extension \([\![p]\!]\) of an atom in the new model is now closed upward under \(\sqsubseteq\), and \([\![p]\!]\cap P\) remains the same as the extension of \(p\) in the old model. Furthermore, since all evaluation conditions for intuitionist connectives <em>look forward</em>, the restriction of \([\![A]\!]\) (for any complex formula \(A\)) to \(P\) is identical to the extension of  \([\![A]\!]\) in the old model, by an induction on the construction of \(A\).</p>
+
+<p>This construction shows how to embed the new propositions between the bottom element and anything else in the original Heyting algebra.</p>
+
+<p>A <em>dual</em> construction could add the elements in the Kripke frame <em>after</em> the original elements (and then everything gets embedded just below the top element), or they could be <em><a href="https://www.theincomparable.com">incomparable</a></em> with the objects in original frame. But as Lloyd Humberstone pointed out to me, the dual construction is not conservative, because the evaluation of formulas on the original set \(P\) now looks <em>forward</em> to more points, those in \(P^{&ast;}\), and this can change the truth of intuitionist formulas. For example, given a model consisting two points \(a,b\) which are incomparable through \(\sqsubseteq\), where we set \(a\Vdash p\) but \(b\not\Vdash p\), then if we add \(a^{&ast;}\) and \(b^{&ast;}\) to both occur <em>after</em> both \(a\) and \(b\) then we are in a quandry. Since \(p\) is true at \(a\), and since \(a\sqsubseteq a^{&ast;}\) we must have \(a^{&ast;}\Vdash p\). But then it follows that in the <em>new</em> model, \(b\not\Vdash \neg p\), despite the fact that in the <em>original</em> model, \(b\Vdash\neg p\). The addition does not preserve the logical structure of propositions on the original frame, so it cannot be used to demonstrate conservative extensions.</p>
+
+<p>However, the construction where the new points are placed <em>before</em> the original points, or where they are <em>alongside</em> (and incomparable) have no such problems.
+So there are at least 2 different ways to take a Kripke model for intuitionistic logic and to embed it into a structure supporting a de Morgan negation, and thus allowing the de Morgan laws to interdefine the intuitionistic conditional and dual intuitionistic subtraction. This shows that intuitionistic propositional logic is conservatively extended by a de Morgan negation, and this de Morgan negation can be used to define the weird binary connective of subtraction&mdash;all without doing damage to the underlying propositional logic.</p>
+
+<p>Thanks, Tomasz, for a fun <a href="http://philevents.org/event/show/17572">logic seminar</a> yesterday, and for reminding me of these results. After spending over seven years concentrating on proof theory, it feels comfortable to slip back into working with algebras and frames.</p>
+      </div>
+      <hr>
+      
+      <a href="/2015/05/27/verbal-disputes-in-oxford-workshop-report-#1/"><span class="pointer">2</span>&nbsp;Verbal Disputes in Oxford (Workshop Report #1)</a> |
+      
+      <a href="/blog">All posts</a>
+      
+      | <a href="/2015/06/04/another-day-at-the-office/">Another Day at the Office&nbsp;<span class="pointer">1</span></a>
+      
+    </div>
+    <div class="is-col is-30"></div>
+
+  </div>
+</div>
+
+
+
+<footer id="footer" class="is-hidden-print">
+  <div class="wrapper">
+    <div class="is-row .is-small is-muted">
+      <div class="is-col is-33">
+        <h3>About</h3>
+        <em>
+          <p>This is my personal website. Nothing here is endorsed by my employer or organizations I am part of.</p>
+          <p>Content on this site is released under a
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode">CC-BY 4.0 license.</a>
+            Source code of the site is provided under the <a href="https://opensource.org/licenses/MIT">MIT license</a>
+            and may be reused without restriction.</p>
+          <p>Huge thanks to <a href="https://www.noamross.net/">Noam Ross</a> for the beautifully designed website and detailed instruction on how to built it <a href="https://www.noamross.net/2019/08/09/a-new-website/">here</a>.</p>
+        </em>
+      </div>
+      <div class="is-col is-33">
+        <h3 id="connect">Say hello</h3>
+        <ul class="fa-ul">
+          <li><i class="fa-li fas fa-briefcase fa-fw"></i>3700 Hamilton Walk, D207, Philadelphia, PA 19104</li>
+          <li><a href="https://orcid.org/0000-0003-3737-6565"><i class="fa-li ai ai-orcid"></i></a><a href="https://orcid.org/0000-0003-3737-6565">0000-0003-3737-6565</a></li>
+          <li><a href="https://scholar.google.com/citations?user=OMpJVfsAAAAJ&hl=en"><i class="fa-li ai ai-google-scholar"></i></a><a href="https://scholar.google.com/citations?user=OMpJVfsAAAAJ">Google Scholar</a></li>
+          <li><a href="https://twitter.com/trang1618"><i class="fa-li fab fa-twitter fa-fw"></i></a><a href="https://twitter.com/trang1618">@trang1618</a></li>
+          <li><a href="https://github.com/trang1618"><i class="fa-li fab fa-github fa-fw"></i></a><a href="https://github.com/trang1618">github.com/trang1618</a>
+          <li><a href="https://slides.com/trang1618"><i class="fa-li fas fa-object-ungroup fa-fw"></i></a><a href="https://slides.com/trang1618">slides.com/trang1618</a>
+        </ul>
+      </div>
+      <div class="is-col is-33">
+        <h3 id="subscribe">Subscribe</h3>
+        <em><p>Follow me on Twitter at <a href="https://twitter.com/trang1618">@trang1618</a> where I'll update you if anything is posted.</p></em>
+        <h3 id="search">Search</h3>
+        <nav class="is-push-right is-left-mobile" class="is-hidden-mobile">
+					<form method="get" action="https://duckduckgo.com/">
+      <input type="search" name="q" maxlength="255" placeholder="Search on site">
+      <input type="hidden" name="sites" value="www.trang1618.github.io" />
+      <input type="hidden" name="ka" value="Alegreya" />
+      <input type="hidden" name="k7" value="#faf8f8" />
+      <input type="hidden" name="kj" value="#b33" />
+      <input type="hidden" name="ky" value="#fafafa" />
+      <input type="hidden" name="kx" value="b" />
+      <input type="hidden" name="ko" value="-1" />
+      <input type="hidden" name="k1" value="-1" />
+      <input type="hidden" name="kt" value="Alegreya Sans" />
+</form>
+				</nav>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript" src="/assets/js/kube.js"></script>
+<script>
+  $K.dom(window).on('load', $K.init);
+</script>
+
+
+</body>
+</html>

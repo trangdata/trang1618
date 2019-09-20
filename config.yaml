@@ -1,0 +1,20 @@
+baseurl: "/"
+languageCode: "en-us"
+title: "trang1618"
+enableEmoji: true
+pygmentsCodefences: true
+pygmentsStyle: "lovelace"
+ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+canonifyURLs: true
+permalinks:
+  blog: "/:year/:month/:day/:slug/"
+  archives: "/archives/:filename/"
+
+author:
+  name: "Trang Le"
+  email: "grixor@gmail.com"
+params:
+  title: "Dr. Trang Le"
+  copyright: "This work is licensed under a Creative Commons Attribution 4.0 International License."
+  description: "Postdoctoral fellow @Penn. Automated machine learning, informatics, #rstats, open science + code."
+rssLimit: 50

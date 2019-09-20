@@ -1,0 +1,158 @@
+statistical_2018:
+  name: statistical_2018
+  doi: 10.1101/359224
+  preprint: yes
+  type: paper
+  title: Statistical Inference Relief (STIR) feature selection
+  authors:
+  - Trang T. Le
+  - Ryan J. Urbanowicz
+  - Jason H. Moore
+  - Brett A. McKinney
+  date: '2018-06-30'
+  exurl: https://dx.doi.org/10.1101/359224
+' nonlinear_2018':
+  name: ' nonlinear_2018'
+  doi: 10.1101/377648
+  preprint: yes
+  type: paper
+  title: A nonlinear simulation framework supports adjusting for age when analyzing
+    BrainAGE
+  authors:
+  - Trang T. Le
+  - Rayus Kuplicki
+  - Brett A. McKinney
+  - Hung-wen Yeh
+  - Wesley K. Thompson
+  - Martin P. Paulus
+  - NA NA
+  date: '2018-07-26'
+  exurl: https://dx.doi.org/10.1101/377648
+effect_2018:
+  name: effect_2018
+  doi: 10.1016/j.bpsc.2018.05.002
+  preprint: []
+  type: paper
+  title: 'Effect of Ibuprofen on BrainAGE: A Randomized, Placebo-Controlled, Dose-Response
+    Exploratory Study'
+  authors:
+  - Trang T. Le
+  - Rayus Kuplicki
+  - Hung-Wen Yeh
+  - Robin L. Aupperle
+  - Sahib S. Khalsa
+  - W. Kyle Simmons
+  - Martin P. Paulus
+  date: '2018-06-23'
+  exurl: https://dx.doi.org/10.1016/j.bpsc.2018.05.002
+interoception_2017:
+  name: interoception_2017
+  doi: 10.1016/j.bpsc.2017.12.004
+  preprint: []
+  type: paper
+  title: 'Interoception and Mental Health: A Roadmap'
+  authors:
+  - Sahib S. Khalsa
+  - '...'
+  - Trang T Le
+  - '...'
+  - Nancy Zucker
+  date: '2017-12-28'
+  exurl: https://dx.doi.org/10.1016/j.bpsc.2017.12.004
+differential_2017:
+  name: differential_2017
+  doi: 10.1093/bioinformatics/btx298
+  preprint: []
+  type: paper
+  title: Differential privacy-based evaporative cooling feature selection and classification
+    with relief-F and random forests
+  authors:
+  - Trang T Le
+  - W Kyle Simmons
+  - Masaya Misaki
+  - Jerzy Bodurka
+  - Bill C White
+  - Jonathan Savitz
+  - Brett A McKinney
+  date: '2017-05-02'
+  exurl: https://dx.doi.org/10.1093/bioinformatics/btx298
+effect_2014:
+  name: effect_2014
+  doi: 10.1016/j.ijcip.2014.02.001
+  preprint: []
+  type: paper
+  title: Effect of air travel on the spread of an avian influenza pandemic to the
+    United States
+  authors:
+  - Necibe Tuncer
+  - Trang Le
+  date: '2014-02-07'
+  exurl: https://dx.doi.org/10.1016/j.ijcip.2014.02.001
+structural_2018:
+  name: structural_2018
+  doi: 10.1016/j.mbs.2018.02.004
+  preprint: []
+  type: paper
+  title: Structural and practical identifiability analysis of outbreak models
+  authors:
+  - Necibe Tuncer
+  - Trang T. Le
+  date: '2018-03-29'
+  exurl: https://dx.doi.org/10.1016/j.mbs.2018.02.004
+scaling_2018:
+  name: scaling_2018
+  doi: 10.1101/502484
+  preprint: yes
+  type: paper
+  title: Scaling tree-based automated machine learning to biomedical big data with
+    a dataset selector
+  authors:
+  - Trang T Le
+  - Weixuan Fu
+  - Jason H Moore
+  date: '2018-12-21'
+  exurl: https://dx.doi.org/10.1101/502484
+generalization_2019:
+  name: generalization_2019
+  doi: 10.1088/1402-4896/ab0811
+  preprint: []
+  type: paper
+  title: Generalization of the Fermi pseudopotential
+  authors:
+  - Trang T Lê
+  - Zach Osman
+  - D K Watson
+  - Martin Dunn
+  - B A McKinney
+  date: '2019-02-18'
+  exurl: https://dx.doi.org/10.1088/1402-4896/ab0811
+statistical_2018:
+  name: statistical_2018
+  doi: 10.1093/bioinformatics/bty788
+  preprint: []
+  type: paper
+  title: STatistical Inference Relief (STIR) feature selection
+  authors:
+  - Trang T Le
+  - Ryan J Urbanowicz
+  - Jason H Moore
+  - Brett A McKinney
+  date: '2018-09-17'
+  exurl: https://dx.doi.org/10.1093/bioinformatics/bty788
+scaling_2019:
+  name: scaling_2019
+  doi: 10.1093/bioinformatics/btz470
+  preprint: []
+  type: paper
+  title: Scaling tree-based automated machine learning to biomedical big data with
+    a feature set selector
+  authors:
+  - Trang T Le
+  - Weixuan Fu
+  - Jason H Moore
+  date: '2019-06-02'
+  exurl: https://dx.doi.org/10.1093/bioinformatics/btz470
+Hartman_2014:
+  preprint: yes
+Albery_2019:
+  preprint: yes

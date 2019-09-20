@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dr. Noam Ross on trang1618</title>
+    <link>/archives/</link>
+    <description>Recent content in Dr. Noam Ross on trang1618</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>grixor@gmail.com (Trang Le)</managingEditor>
+    <webMaster>grixor@gmail.com (Trang Le)</webMaster>
+    <lastBuildDate>Thu, 28 May 2015 09:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/archives/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Qualitative Text Analysis in R with RQDA</title>
+      <link>/archives/2015-05-28-johnson-rqda/</link>
+      <pubDate>Thu, 28 May 2015 09:00:00 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2015-05-28-johnson-rqda/</guid>
+      <description>Last Friday at the [Davis R Users&#39; Group](http://www.noamross.net/davis-r-users-group.html), Mallory Johnson gave a presentation on RQDA, an R-based GUI tool for doing coding on documents for use in qualitative text analysis. Here&#39;s the video, and you can view the slides [here](http://www.noamross.net/DRUG20150522Markdown.html).  *[Sorry about reverb in the video]* ## Resources - [The RQDA home page](http://rqda.r-forge.r-project.org/) - [More RQDA instructional videos](https://www.</description>
+    </item>
+    
+    <item>
+      <title>First Steps with Structural Equation Modeling</title>
+      <link>/archives/2015-05-20-charles-sems/</link>
+      <pubDate>Wed, 20 May 2015 11:30:00 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2015-05-20-charles-sems/</guid>
+      <description>Last Friday at the [Davis R Users&#39; Group](http://www.noamross.net/davis-r-users-group.html), [Grace Charles](https://scholar.google.com/citations?user=kc_fImQAAAAJ) gave a presentation on structural equation modeling in R using the [**Lavaan**](http://cran.r-project.org/web/packages/lavaan/index.html) package. Here&#39;s the video and her slides. We&#39;ve also posted Grace&#39;s script from the presentation as a gist [here](https://gist.github.com/noamross/9d5ae9680fe8357ccd94). More resources that Grace mentioned in her talk below.   ## Resources - [Jim Grace&#39;s website at USGS](http://www.nwrc.usgs.gov/SEM/) - [A Lavaan tutorial vingette by Yves Rosseel](http://lavaan.ugent.be/tutorial/tutorial.pdf) - [Materials from Jarret Byrnes&#39; short course](http://jarrettbyrnes.</description>
+    </item>
+    
+    <item>
+      <title>Visualizing fits, inference, implications of (G)LMMs with Jaime Ashander</title>
+      <link>/archives/2015-04-29-ashander-glms/</link>
+      <pubDate>Wed, 29 Apr 2015 14:00:00 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2015-04-29-ashander-glms/</guid>
+      <description>Last Fr [Davis R Users&#39; Group](http://www.noamross.net/davis-r-users-group.html), [Jaime Ashander](http://www.ashander.info/posts/2015/04/D-RUG-mixed-effects-viz/) gave a presentation on and visualizing and diagnosing (G)LMMs in R. Here&#39;s the video:  Jaime also wrote up the notes from his talk, including all the code, on his blog [here](http://www.ashander.info/posts/2015/04/D-RUG-mixed-effects-viz/) (with the raw R Markdown file on github [here](https://github.com/ashander/ashander.github.io/blob/content/content/notes/mixedeffects_viz.Rmd)). The material in the blog post is expanded and improved upon from the original talk, though this means the video and posted code don&#39;t match exactly.</description>
+    </item>
+    
+    <item>
+      <title>Back to basics: High quality plots using base R graphics</title>
+      <link>/archives/2015-04-24-koontz-base-plotting/</link>
+      <pubDate>Fri, 24 Apr 2015 11:50:00 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2015-04-24-koontz-base-plotting/</guid>
+      <description>Today at the [Davis R Users&#39; Group](http://www.noamross.net/davis-r-users-group.html), [Michael Koontz](http://michaeljkoontz.weebly.com/) gave *tour de force* lesson in using R&#39;s base graphics capabilities to plot data. Here&#39;s the video:  Get Michael&#39;s excellent annotated script, which covers much more than we got to during our tutorial, [here](https://gist.</description>
+    </item>
+    
+    <item>
+      <title>An introduction to ggplot with Myfanwy Johnston</title>
+      <link>/archives/2015-03-15-ggplot-tutorial-johnston/</link>
+      <pubDate>Sun, 15 Mar 2015 14:36:00 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2015-03-15-ggplot-tutorial-johnston/</guid>
+      <description>Last week at the [Davis R Users&#39; Group](http://www.noamross.net/davis-r-users-group.html), [Myfanwy Johnston](http://biotelemetry.ucdavis.edu/pages/bio_Johnston.asp) gave an introduction to the powerful and ubiquitous ggplot2 package for plotting in R. See below for the screencast and her particularly enlightening figure of how ggplot&#39;s syntax and conceptual approach. Myfanwy also placed all her slides, code, and links to more ggplot resources in [this GitHub repository](https://github.com/Myfanwy/ggplot2Intro).  (*In a D-RUG first, there was an actual small fire that occurred between ~23:10 - 25:40.</description>
+    </item>
+    
+    <item>
+      <title>Making Maps in R with Ryan Peek and Michele Tobias</title>
+      <link>/archives/2015-02-20-mapping-in-r-peek-tobias/</link>
+      <pubDate>Fri, 20 Feb 2015 14:31:00 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2015-02-20-mapping-in-r-peek-tobias/</guid>
+      <description>Today at the [Davis R Users&#39; Group](http://www.noamross.net/davis-r-users-group.html), [Ryan Peek](http://ucdavis.academia.edu/RyanPeek) and [Michele Tobias](https://sites.google.com/site/mtobiasresearch/) gave an introduction to making maps in R. Here&#39;s the webcast:  (Pardon the little scuffle at the beginning and as we switched computers halfway through. Still getting the hang of hangouts.) ### Resources: - Download all of Ryan&#39;s code and HTML files [here](http://www.noamross.net/files/makingmaps.zip). - See Michele&#39;s slides on Slideshare [here](http://www.slideshare.net/MicheleTobias/leafletr). - Code for Michele&#39;s example maps in [her GitHub.</description>
+    </item>
+    
+    <item>
+      <title>Carl Boettiger on accessing online data with ROpenSci</title>
+      <link>/archives/2015-01-30-boettiger-ropensci/</link>
+      <pubDate>Fri, 30 Jan 2015 12:40:00 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2015-01-30-boettiger-ropensci/</guid>
+      <description>*Today, [Carl Boettiger](http://www.carlboettiger.info/) gave a tutorial on the [ROpenSci project](http://ropensci.org/) and how to use their many packages to connect to online data repositories to retrieve and up deposit data. Here&#39;s our screencast of the talk.  All the code from this talk is available at this [github repository](https://github.com/ropensci/workshops-davis-2015-01), and you can download it as a *.zip file [here](https://github.com/ropensci/workshops-davis-2015-01/archive/gh-pages.zip). Thanks to Carl for for a great session and the ROpenSci team for their work!</description>
+    </item>
+    
+    <item>
+      <title>Tim Bowles on multivariate stats with vegan</title>
+      <link>/archives/2014-12-09-bowles-vegan/</link>
+      <pubDate>Tue, 09 Dec 2014 19:01:00 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2014-12-09-bowles-vegan/</guid>
+      <description> *Today, [Tim Bowles](http://ucanr.edu/sites/Jackson_Lab/Tim_Bowles/) gave this presentation on the [vegan](http://cran.r-project.org/web/packages/vegan/index.html) package to the [Davis R Users&#39; Group](http://www.noamross.net/davis-r-users-group.html). The screencast and slides are below. You can also download Tim&#39;s RStudio project with all the code, data, figures, and slides presented [here](https://dl.dropboxusercontent.com/u/3356641/blogstuff/vegan%20tutorial.zip). Thanks to Tim for a great session!*     </description>
+    </item>
+    
+    <item>
+      <title>More ESA 2014 Program Text-Mining: Topics as Communities</title>
+      <link>/archives/2014-08-22-topicmodeling/</link>
+      <pubDate>Fri, 22 Aug 2014 16:07:42 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2014-08-22-topicmodeling/</guid>
+      <description>In [my first pass at text analysis of the ESA program](http://www.noamross.net/blog/2014/7/24/esacorpuscompare.html), I looked at how the frequency of words used in the ESA program differed from last year to this year. There are much more sophisticated ways at looking at word use in text, though, and I began to dive into the text-mining literature to find other ways to draw insight from ESA abstracts. One method I found is *topic modeling* using [latent Dirichlet allocation](http://en.</description>
+    </item>
+    
+    <item>
+      <title>ESA 2014: Don&#39;t Know Much About History...</title>
+      <link>/archives/2014-08-05-nathist/</link>
+      <pubDate>Tue, 05 Aug 2014 08:14:11 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2014-08-05-nathist/</guid>
+      <description>After my [last post](http://www.noamross.net/blog/2014/7/24/esacorpuscompare.html) text-mining [ESA Annual Meeting](http://esa.org/am/) abstracts, [Nash Turley](http://www.nashturley.org/) [was interested](https://twitter.com/NashTurley/status/495272858038595587) in the presence of the term &#34;natural history&#34; in ESA abstracts. I decided to collect a little more data by including programs back to 2010, giving a five-year data set. Thankfully the program back to 2010 remains in mostly the same format, so it&#39;s easy to pull the data for these additional years. Now, not all talks that include natural history concepts will include the term &#34;</description>
+    </item>
+    
+    <item>
+      <title>What shall we talk about at ESA?</title>
+      <link>/archives/2014-07-24-esacorpuscompare/</link>
+      <pubDate>Thu, 24 Jul 2014 01:45:15 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2014-07-24-esacorpuscompare/</guid>
+      <description>[ESA](http://esa.org/am/) is just around the corner, and many of us are
+gearing up and trying to figure out a
+[schedule](http://eco.confex.com/eco/2014/schedule/index.cgi) to cover
+all the talks and people we can pack in. ESA is a big conference and
+there&#39;s far too much for any one person to see. In the end, everyone
+experiences a [different part of the
+elephant](http://en.wikipedia.org/wiki/Blind_men_and_an_elephant).
+However, I thought it would be interesting to take a look at the big</description>
+    </item>
+    
+    <item>
+      <title>Vectorization in R: Why?</title>
+      <link>/archives/2014-04-16-vectorization-in-r-why/</link>
+      <pubDate>Wed, 16 Apr 2014 11:05:35 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2014-04-16-vectorization-in-r-why/</guid>
+      <description>*Here are my notes from a recent talk I gave on vectorization at a [Davis R Users&#39; Group](http://www.noamross.net/davis-r-users-group.html) meeting. Thanks to [Vince Buffalo](https://twitter.com/vsbuffalo), [John Myles White](http://twitter.com/johnmyleswhite), and [Hadley Wickham](http://twitter.com/hadleywickham) for their input as I was preparing this. Feedback welcome!* Beginning R users are often told to &#34;vectorize&#34; their code. Here, I try to explain *why* vectorization can be advantageous in R by showing how R works under the hood. Now, remember, [premature optimization is the root of all evil (Knuth)](http://c2.</description>
+    </item>
+    
+    <item>
+      <title>ESA 2014 Abstract: Modeling forest disease using a macroparasite framework</title>
+      <link>/archives/2014-02-27-esaab/</link>
+      <pubDate>Thu, 27 Feb 2014 13:17:19 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2014-02-27-esaab/</guid>
+      <description>I just submitted the abstract below to the [ESA 2014 meeting](http://www.esa.org/sacramento/). Can&#39;t wait! I&#39;m also organizing an oral session with [Richard Cobb](https://sites.google.com/a/ucdavis.edu/richard-cobb/): &#34;[Ecosystem and Community Effects of Native and Invasive Diseases](http://esa.org/am/organizedorals/#id2743).&#34; Click through for more details. It&#39;s gonna be a good year! I haven&#39;t been to ESA since 2008.  ### Modeling forest disease using a macroparasite framework   Noam Ross, UC Davis Graduate Group in Ecology   **Background/Question/Methods:**   Forest pathogens are typically modeled using variants of *SI* models,  in which the infection states of trees are binary.</description>
+    </item>
+    
+    <item>
+      <title>Using Dates and Times in R</title>
+      <link>/archives/2014-02-10-using-times-and-dates-in-r-presentation-code/</link>
+      <pubDate>Mon, 10 Feb 2014 15:09:57 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2014-02-10-using-times-and-dates-in-r-presentation-code/</guid>
+      <description>*Today at the [Davis R Users&#39; Group](http://www.noamross.net/davis-r-users-group.html), [Bonnie Dixon](http://ffhi.ucdavis.edu/people/directory/bmdixon) gave a tutorial on the various ways to handle dates and times in R. Bonnie provided this great script which walks through essential classes, functions, and packages. Here it is piped through `knitr::spin`. The original R script can be found as a gist [here](https://gist.github.com/noamross/8928124).* Date/time classes ----------------- Three date/time classes are built-in in R, Date, POSIXct, and POSIXlt. ### Date This is the class to use if you have only dates, but no times, in your data.</description>
+    </item>
+    
+    <item>
+      <title>Ryan Peek on Creating Shiny Apps</title>
+      <link>/archives/2014-01-28-rpeekshiny/</link>
+      <pubDate>Tue, 28 Jan 2014 09:41:36 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2014-01-28-rpeekshiny/</guid>
+      <description> Yesterday at the [Davis R User&#39;s Group](http://www.noamross.net/davis-r-users-group.html)[^1], [Ryan Peek](https://watershed.ucdavis.edu/people/rapeek?destination=user/71) gave a talk about using the `shiny` package to create interactive web apps with R. Here are his slides. Ryan includes a bunch of links to examples and tutorials, as well as his own [thermohydrographs app](http://aquapeek.shinyapps.io/thermohydrographs/):  [^1]: Thanks to [Revolution Analytics](http://www.revolutionanalytics.com/) for another year of sponsorship! </description>
+    </item>
+    
+    <item>
+      <title>Dynamic Optimization in An Equation-Free Framework</title>
+      <link>/archives/2014-01-22-eqnfree-writeup/</link>
+      <pubDate>Wed, 22 Jan 2014 09:46:27 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2014-01-22-eqnfree-writeup/</guid>
+      <description>Many ecological processes are best represented by individual-based
+models (IBMs), where processes at the scale of individual scale of
+organisms and their actions are modeled explicitly. Such processes can
+pose a problem for management or control; our observational scale,
+control levers, or management goals may be limited to coarser scales
+than the individual.
+
+IBMs suffer from the curse of dimensionality. The number of possible
+states of the system, which consists of the possible states and</description>
+    </item>
+    
+    <item>
+      <title>How to format plots for publication using ggplot2 (with some help from Inkscape)</title>
+      <link>/archives/2013-11-20-formatting-plots-for-pubs/</link>
+      <pubDate>Wed, 20 Nov 2013 19:51:47 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2013-11-20-formatting-plots-for-pubs/</guid>
+      <description>***The following is the code from a presentation made by Rosemary Hartman to the [Davis R Users&#39; Group](http://www.noamross.net/davis-r-users-group.html). I&#39;ve run the code through the `spin` function in `knitr` to produce this post. Download the script to walk through [here](https://gist.github.com/noamross/7576436).*** First, make your plot. I am going to use the data already in R about sleep habits of different animals. It&#39;s the same one Noam used for [his intro to ggplot.</description>
+    </item>
+    
+    <item>
+      <title>MBI Meeting Poster: Optimal Control of Forest Disease</title>
+      <link>/archives/2013-11-07-mbi-poster-post/</link>
+      <pubDate>Thu, 07 Nov 2013 22:20:40 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2013-11-07-mbi-poster-post/</guid>
+      <description> For the past week I&#39;ve been at the [Mathematical Biosciences Institute](http://mbi.osu.edu/) at Ohio State, attending the [Workshop on Sustainable Management of Living Natural Resources](http://mbi.osu.edu/2013/ws3description.html). It&#39;s been an absolutely top-notch meeting. I need to get myself to more of these small workshops. I brought a poster describing some of my work in progress on managing Sudden Oak Death. Here it is, and it&#39;s archived over at [Figshare](http://dx.doi.org/10.6084/m9.figshare.833911).  </description>
+    </item>
+    
+    <item>
+      <title>Some analytics: Does age structure matter for disease spread?</title>
+      <link>/archives/2013-06-21-multi-infection-analytic/</link>
+      <pubDate>Fri, 21 Jun 2013 13:58:39 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2013-06-21-multi-infection-analytic/</guid>
+      <description>My [first crack at an age-structured disease model with multiple infections](http://www.noamross.net/blog/2013/6/11/multi-infection-tests.html) yielded the interesting result that one could observe differences in disease rates across age without any actual differences in the biology between old and young individuals. Today I&#39;m trying to answer a different question analytically: does age structure matter for the course of the disease in the whole population? Here&#39;s the model. There are two minor changes: I no longer scale $J$ and $A$ with $K$ in the third and fourth equations; there&#39;s no reason the encounter rate should be tied to carrying capacity.</description>
+    </item>
+    
+    <item>
+      <title>Printing R help files in the console or in knitr documents</title>
+      <link>/archives/2013-06-18-helpconsoleexample/</link>
+      <pubDate>Tue, 18 Jun 2013 10:57:22 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2013-06-18-helpconsoleexample/</guid>
+      <description>Yesterday, I was creating a `knitr` document based on a script, and was looking for a way to include content from an R help file. The script, which was a teaching document, had a `help()` command for when the author wanted to refer readers to R documentation. I wanted that text in my final document, though. There&#39;s no standard way to do this in R, but with some help from [Stack Overflow](http://stackoverflow.</description>
+    </item>
+    
+    <item>
+      <title>Dave Harris on Maximum Likelihood Estimation</title>
+      <link>/archives/2013-06-17-harrisbbmle/</link>
+      <pubDate>Mon, 17 Jun 2013 15:11:17 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2013-06-17-harrisbbmle/</guid>
+      <description>*At our last [Davis R Users&#39;
+Group](http://www.noamross.net/davis-r-users-group.html) meeting of the
+quarter, [Dave Harris](https://sihlab.wordpress.com/david-j-harris/)
+gave a talk on how to use the `bbmle` package to fit mechanistic models
+to ecological data. Here&#39;s his script, which I ran throgh the `spin`
+function in `knitr`:*
+
+~~~~ {.r}
+# Load data
+library(emdbook)
+~~~~
+
+    ## Loading required package: MASS Loading required package: lattice
+
+~~~~ {.r}
+library(bbmle)</description>
+    </item>
+    
+    <item>
+      <title>The null model for age effects with overdispersed infection</title>
+      <link>/archives/2013-06-12-multi-infection-overdispersed/</link>
+      <pubDate>Wed, 12 Jun 2013 17:32:30 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2013-06-12-multi-infection-overdispersed/</guid>
+      <description>How does overdispersion of infections affect the behavior of the [multiple-infection model](http://www.noamross.net/blog/2013/6/11/multi-infection-tests.html)? I redefine the model to account for overdispersion, assuming the same overdispersion occurs in both age classes. The parameter $k$ varies inversely with the degree of overdispersion. Again, the classes are demographically identical, and infection affects mortality but not growth: $$\begin{aligned} \frac{dJ}{dt} &amp;= A f_A \left(1 - \frac{J+A}{K} \right) + J \left(f_J \left(1 - \frac{J+A}{K} \right) - d_J - g\right) - \alpha P_J \\ \frac{dA}{dt} &amp;= J g - A d_A - \alpha P_A \\ \frac{dP_J}{dt} &amp;= \lambda \frac{J}{K} (P_J + P_A) - P_J \left(d_J + \mu + g + \alpha \left(1 + \frac{(k+1)P_J}{kJ} \right) \right) \\ \frac{dP_A}{dt} &amp;= \lambda \frac{J}{K} (P_J + P_A) + P_J g - PA \left(d_A + \mu + \alpha \left(1 + \frac{(k+1)P_A}{kA} \right) \right) \end{aligned}$$ I define the model and run it in R below, using values of $k$ ranging from 0.</description>
+    </item>
+    
+    <item>
+      <title>A Null Model for Age Effects in Disease with Multiple Infections</title>
+      <link>/archives/2013-06-11-multi-infection-tests/</link>
+      <pubDate>Tue, 11 Jun 2013 17:32:30 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2013-06-11-multi-infection-tests/</guid>
+      <description>*Here&#39;s a little thought exercise I did that has caused me to go back and restart my Sudden Oak Death modeling in a new framework. Feedback welcome. I&#39;m especially interested in relevant literature -- I haven&#39;t found many good examples of macroparasite/multiple infection models with age structure.* Introduction ------------ Cobb et al. (2012) develop two models of forest stand demography in the face of Sudden Oak Death. The first, a statistical survival model, estimated the rates of infection and time-to-mortality as functions of density of infected trees and tree size.</description>
+    </item>
+    
+    <item>
+      <title>Early Warning Signals: the Charted and Uncharted Territories</title>
+      <link>/archives/2013-05-30-new-paper-post/</link>
+      <pubDate>Thu, 30 May 2013 09:18:42 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2013-05-30-new-paper-post/</guid>
+      <description>[Carl Boettiger](carlboettiger.info), [Alan
+Hastings](http://two.ucdavis.edu/~me/) and I have [a new
+review](http://dx.doi.org/10.1007/s12080-013-0192-6) out on early warning signals and
+regime shifts. It&#39;s about an idea that Carl and I have been kicking
+around for a couple of years and finally got around to writing up for a
+special issue of [*Theoretical
+Ecology*](http://link.springer.com/journal/12080).
+
+There has been a lot of excitement in the past six years or so about
+*early warning signs* - statistical signals that indicate that an</description>
+    </item>
+    
+    <item>
+      <title>Robert Hijmans on Spatial Data Analysis</title>
+      <link>/archives/2013-05-23-robert-hijmans-on-spatial-data-analysis/</link>
+      <pubDate>Thu, 23 May 2013 13:08:43 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2013-05-23-robert-hijmans-on-spatial-data-analysis/</guid>
+      <description>Last week at the [Davis R Users&#39; Group](http://www.noamross.net/davis-r-users-group.html) Robert Hijmans gave a talk about spatial data analysis in R. Robert is [a professor of biogeography](http://scholar.google.com/citations?user=NWdPabcAAAAJ&amp;hl=en) at UC Davis and the author of the [`raster`](http://cran.r-project.org/web/packages/raster/) (analysis of gridded data), [`dismo`](http://cran.r-project.org/web/packages/dismo/) (species distribution modeling), and [`geosphere`](http://cran.r-project.org/web/packages/geosphere/) (spherical trigonometry), packages. Robert&#39;s presentation spanned topics including basic geographical data and geostatistics concepts, his `raster` package and its usage, and some great examples of visualization and other resources.</description>
+    </item>
+    
+    <item>
+      <title>Improved R Profiling Summaries</title>
+      <link>/archives/2013-05-02-improved-r-profiling-summaries/</link>
+      <pubDate>Thu, 02 May 2013 16:48:01 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2013-05-02-improved-r-profiling-summaries/</guid>
+      <description>In my [last post](http://www.noamross.net/blog/2013/4/25/faster-talk.html) I mentioned that I had improved on R&#39;s `summaryRprof()` function with a custom function called `proftable()`. I&#39;ve updated `proftable()` to take advantage of R 3.0.0&#39;s ability to record line numbers while profiling. I&#39;ve put it on github -- you can get it [there](https://github.com/noamross/noamtools/blob/master/R/proftable.R) or below. `proftable` reads in a file generated by `Rprof()` and creates an easy-to read table of the most time-consuming calls in your code, ordered from most time-consuming to least.</description>
+    </item>
+    
+    <item>
+      <title>FasteR! HigheR! StrongeR! - A Guide to Speeding Up R Code for Busy People</title>
+      <link>/archives/2013-04-25-faster-talk/</link>
+      <pubDate>Thu, 25 Apr 2013 14:49:34 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2013-04-25-faster-talk/</guid>
+      <description>*This is an overview of tools for speeding up your R code that I wrote for the [Davis R Users&#39; Group](http://www.noamross.net/davis-r-users-group.html).* First, Ask &#34;Why?&#34; ----------------- It&#39;s customary to [quote Donald Knuth](http://en.wikiquote.org/wiki/Donald_Knuth) at this point, but instead I&#39;ll quote my twitter buddy Ted Hart to illustrate a point:  I&#39;m just going to say it.I like for loops in \#Rstats, makes my code readable.All you [a-z]\*ply snobs can shove it! — Ted Hart (@DistribEcology) March 12, 2013   Code optimization is a matter is a matter of personal taste and *priorities*.</description>
+    </item>
+    
+    <item>
+      <title>Setting up Automated Reprint Requests in Gmail</title>
+      <link>/archives/2013-04-24-automating-preprints/</link>
+      <pubDate>Wed, 24 Apr 2013 17:37:22 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2013-04-24-automating-preprints/</guid>
+      <description>I recently wrote about [my first peer-reviewed publication](http://www.noamross.net/blog/2013/4/24/my-first-publication.html) and lamented that it&#39;s behind a \$1500 paywall. I am not allowed to post the file to my website, but I am able to distribute the paper by e-mail, so I&#39;ve set up a system to automate requests for the paper. [Michael McCarthy wrote a similar post](http://mickresearch.wordpress.com/2012/10/18/automating-reprint-requests/) this fall for people using Outlook e-mail. My method is similar but is meant for Gmail.</description>
+    </item>
+    
+    <item>
+      <title>My first peer-reviewed publication: Economics and Ecology of Open-Access Fisheries</title>
+      <link>/archives/2013-04-24-my-first-publication/</link>
+      <pubDate>Wed, 24 Apr 2013 10:57:21 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2013-04-24-my-first-publication/</guid>
+      <description>My first peer-reviewed publication is an encyclopedia article written with colleagues in economics in UC Davis:  ### [Economics and Ecology of Open-Access Fisheries](http://dx.doi.org/10.1016/B978-0-12-375067-9.00114-5)   K. Fuller, D. Kling, K. Kroetz, N. Ross and J.N. Sanchirico (2013)   In: Shogren, J.F., (ed.) Encyclopedia of Energy, Natural Resource, and  Environmental Economics, Vol. 2 *Encyclopedia of Energy, Natural  Resource, and Environmental Economics* p.39-49. Amsterdam: Elsevier.     #### Abstract   In open-access fisheries, participation and harvest by fishermen are  unregulated.</description>
+    </item>
+    
+    <item>
+      <title>Debugging Tools in R with Michael Hannon</title>
+      <link>/archives/2013-04-18-r-debug-tools/</link>
+      <pubDate>Thu, 18 Apr 2013 13:44:59 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2013-04-18-r-debug-tools/</guid>
+      <description>*Today at [Davis R Users&#39; Group](http://www.noamross.net/davis-r-users-group.html), Michael Hannon gave a great talk on how to use R&#39;s native debugging functions. Here are his notes and code.* Introduction ------------ This is a discussion of debugging techniques in R. It is based on a paper by Roger Peng, now at Johns Hopkins University () ### Focus on five functions: - traceback - debug - browser - trace - recover ### Severity level R mainly uses two ways of reporting a problem: - Warning: Does not stop execution - Error: More serious -- *does* stop execution Example of warning: ~~~~ {.</description>
+    </item>
+    
+    <item>
+      <title>Demographic analysis using the `popbio` library and some other fun stuff</title>
+      <link>/archives/2013-04-04-oleary-popbio-presentation/</link>
+      <pubDate>Thu, 04 Apr 2013 11:16:55 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2013-04-04-oleary-popbio-presentation/</guid>
+      <description>*This week at the [Davis R Users&#39; Group](http://www.noamross.net/davis-r-users-group.html) we had a great presentation by Kara Moore O&#39;Leary on using the [`popbio` package](http://cran.r-project.org/web/packages/popbio/) to examine rare plant demographics. The following is her script run through `knitr`. You can download the original script and associated data [here](https://gist.github.com/noamross/bf8ebdcf42fd2e0851a8). Find out more about Kara and her work at her website [here](http://dynamicecosciences.wordpress.com/)* Demographic analysis using the popbio library and some other fun stuff ---------------------------------------------------------------------- **A population viability type analysis for a rare herbacious perennial plant, *Penstemon albomarginatus*, for its only remaining California population** Objectives: 1) Estimating the population growth rate - deterministic and stochastic methods 2) Sensitivity and elasticity analysis - which transitions/rate are most variable, sensitive to change 3) Projecting the population stochastically for different scenarios, observing variation in growth rate 4) Quasi extinction probability 5) Estimating vital rates from real data, which will never be as good/much the data that you would like to have for a PVA - some therapy for me, and maybe you too Load popbio and some other helpful libraries.</description>
+    </item>
+    
+    <item>
+      <title>Model Selection and Multi-Model Inference</title>
+      <link>/archives/2013-02-20-model-selection-drug/</link>
+      <pubDate>Wed, 20 Feb 2013 17:14:43 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2013-02-20-model-selection-drug/</guid>
+      <description>*At [D-RUG](http://www.noamross.net/davis-r-users-group.html) this week [Rosemary Hartman](rosehartman@gmail.com) presented a really useful case study in model selection, based on her work on frog habitat. Here is her code run through &#39;knitr&#39;. Original code and data are posted [here](https://gist.github.com/noamross/5001172).* (yes, I am just doing this for the flying monkey) *Editor&#39;s note: we&#39;re giving away flying monkey dolls from our sponsor, [Revolution Analytics](revolutionanalytics.com), to all our D-RUG presenters.* So, let&#39;s say you want to find out where things are and why they are there.</description>
+    </item>
+    
+    <item>
+      <title>Mason Earles on interfacing R with the Forest Vegetation Simulator</title>
+      <link>/archives/2013-02-13-mason-earles-on-interfacing-r-with-fvs/</link>
+      <pubDate>Wed, 13 Feb 2013 15:06:42 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2013-02-13-mason-earles-on-interfacing-r-with-fvs/</guid>
+      <description>[Mason Earles](http://jmearles.net/) gave a great presentation this week at [Davis R Users&#39; Group](http://www.noamross.net/davis-r-users-group.html) about linking R with the [Forest Vegetation Simulator (FVS)](http://www.fs.fed.us/fmsc/fvs/). FVS is a model developed by the US Forest Service to simulate forest growth over time. It&#39;s written in FORTRAN and has been around since the 1970s. FVS has recently gone open-source (its [repository is on google code](http://code.google.com/p/open-fvs/)), and now has [an alpha-level API which can be called from R](http://code.</description>
+    </item>
+    
+    <item>
+      <title>Ryan Peek on using xts and ggplot for time-series data</title>
+      <link>/archives/2013-02-06-xtsmarkdown/</link>
+      <pubDate>Wed, 06 Feb 2013 15:44:25 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2013-02-06-xtsmarkdown/</guid>
+      <description>At [Davis R Users&#39; Group](http://www.noamross.net/davis-r-users-group.html) today, [Ryan Peek](http://watershed.ucdavis.edu/people/ryan-peek) gave a presentation on how he takes data from his field instruments and visualizes it in R. Here are his notes. The original \*.Rmd file and data can be found [here](https://gist.github.com/noamross/4727029) SHORT HOW-TO ON USING XTS AND GGPLOT FOR TIME SERIES DATA --------------------------------------------------------- XTS is a very helpful package when working with time series data. I work with temperature and flow data frequently, so the ability to work with timeseries, and particularly to shift intervals (from 15 min to hourly or daily) can be very handy.</description>
+    </item>
+    
+    <item>
+      <title>A Draft Dissertation Proposal:  Forest Disease Dynamics and Management</title>
+      <link>/archives/2013-01-27-dissertation-proposal/</link>
+      <pubDate>Sun, 27 Jan 2013 19:37:16 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2013-01-27-dissertation-proposal/</guid>
+      <description>*A first draft, just out to my committee. Feedback welcome! A modifiable souce version can be found on github [here](https://github.com/noamross/openquals/blob/master/Dissertation%20Proposal.md)* Abstract -------- Forest disease spreads through plant communities structured by species composition, age distribution, and spatial arrangement. I propose to examine the consequences of the interaction of these components of population structure *Phytophthora ramorum* invasion of California redwood forests. First, I will compare the dynamic behavior of a series of epidemiological models that include different combinations of population structure.</description>
+    </item>
+    
+    <item>
+      <title>I try to figure out when many trees will die together</title>
+      <link>/archives/2013-01-17-upgoer5/</link>
+      <pubDate>Thu, 17 Jan 2013 14:49:49 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2013-01-17-upgoer5/</guid>
+      <description>The amazing [UpGoer5 text editor](http://splasho.com/upgoer5/) only allows you to use the 1000 most commonly used words in the english language. Here is [my research described using only those words](http://splasho.com/upgoer5/?i=H29gMKEcoJImVT1uoaxtqUWyMKZtM2I0VUAcL2ftLJ5xVTEcMFO2MKW5VUS1nJAeoUxhVPOWVTkio2ftLKDtnT93VTEyLKEbVT1iqzImVTWyqUqyMJ4tMTyzMzIlMJ50VTgcozEmVT9zVUElMJImVTShMPObo3ptM3WiqKOmVT9zVTEcMzMypzIhqPO0pzIyplOwnTShM2HtnT93VTMup3DtMTIuqTttoJ92MKZhVPOWVUElrFO0olOznJq1pzHto3I0VUqbMJ4toJShrFO0pzIyplO3nJkfVTEcMFO0o2qyqTuypvjtLJ5xVUEbMFO0rKOyVT9zVUEbnJ5aplO3MFOhMJIxVUEiVTgho3ptnJ4to3WxMKVtqT8tMzyaqKWyVUEbnKZto3I0VTSbMJSxVT9zVUEcoJHhVPOHnTIhVRxtqUW5VUEiVTMcM3IlMFOiqKDtq2uuqPO0olOxolO0olO0nTHtqUWyMKZto3MypvO0nJ1yVUImnJ5aVUEbMFOfMJSmqPOgo25yrFNtp28tqTuuqPOxMJS0nPOjpz9vLJWfrFO3nJkfVT5iqPOwo21yYPOyqzIhVTyzVT91pvOcMTIuplOiMvObo3ptMTIuqTttoJ92MKZtoJyanUDtLzHtq3Wiozpto3Vto2MzVTRtLzy0Yt==):  Sometimes many trees get sick and die very quickly. I look at how  death moves between different kinds of trees and how groups of  different trees change how fast death moves. I try to figure out when  many trees will die together, and the type of things we need to know  in order to figure this out ahead of time.</description>
+    </item>
+    
+    <item>
+      <title>Steve Culman on the `plyr` Package</title>
+      <link>/archives/2013-01-17-steve-culman-on-plyr/</link>
+      <pubDate>Thu, 17 Jan 2013 10:11:48 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2013-01-17-steve-culman-on-plyr/</guid>
+      <description>At [Davis R Users&#39; Group](http://www.noamross.net/davis-r-users-group.html) yesteray, [Steve Culman](http://ucanr.edu/sites/Jackson_Lab/Steve_Culman_519/) gave us an introduction to the `plyr` package and how to use it to manipulate data. Here&#39;s his presentation, and the accompanying demonstration script:   Steve&#39;s talk is based on [this paper by Hadley Wickham in the Journal of Statistical Software](http://www.jstatsoft.org/v40/i01/paper). A lot of useful related resources are at [Hadley Wickham&#39;s `plyr` website](http://plyr.had.co.nz/). We had a quick exchange about using `plyr` for parallel processing.</description>
+    </item>
+    
+    <item>
+      <title>Don&#39;t R alone! A guide to tools for collaboration with R</title>
+      <link>/archives/2013-01-07-collaborating-with-r/</link>
+      <pubDate>Mon, 07 Jan 2013 09:10:36 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2013-01-07-collaborating-with-r/</guid>
+      <description>This a brief guide to using R in collaborative, social ways. R is a powerful open-source programming language for data analysis, statistics, and visualization, but much of its power derives from a large, engaged *community* of users. This is an introduction to tools for engaging the community to improve your R code and collaborate with others. *(Am I missing anything? Let me know in the [comments](#disqus_thread) and I&#39;ll update this guide.</description>
+    </item>
+    
+    <item>
+      <title>Quals Reading: Sudden Oak Death</title>
+      <link>/archives/2013-01-07-sod-readings/</link>
+      <pubDate>Mon, 07 Jan 2013 00:07:16 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2013-01-07-sod-readings/</guid>
+      <description>My study system is Sudden Oak Death (SOD) in California Forests, so my examiner [David Rizzo] has given me plenty of readings on the subject. There&#39;s too much for a pithy summary here, but some highlights about the disease&#39;s biology: - SOD is caused by *Phytophthora ramorum*, a water mold in the same family as brown algae. It&#39;s origin is unknown, but 3 lineages are known, two dominant in California and one in Europe.</description>
+    </item>
+    
+    <item>
+      <title>Quals Reading: Modeling Philosophy</title>
+      <link>/archives/2012-12-23-modeling-philosophy/</link>
+      <pubDate>Sun, 23 Dec 2012 07:44:27 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2012-12-23-modeling-philosophy/</guid>
+      <description>My examiner on theoretical ecology, [Marissa
+Baskett](http://www.des.ucdavis.edu/faculty/baskett/), suggested that I
+return to some basic literature on the *why* of mathematical modeling in
+ecology. Here are notes on three papers:
+
+Summary
+-------
+
+-   Modeling *purpose* must be clearly defined, as this determines
+    whether to focus on generality, realisms, and/or precision
+-   Complexity is as often obfuscating as illuminating</description>
+    </item>
+    
+    <item>
+      <title>Quals Reading: Four Reviews of Forest Epidemiology</title>
+      <link>/archives/2012-12-21-landscape-epidemiology-readings/</link>
+      <pubDate>Fri, 21 Dec 2012 12:02:48 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2012-12-21-landscape-epidemiology-readings/</guid>
+      <description>Here&#39;s the first of my quals reading summaries, this landscape forest
+pathology. [David Rizzo](http://ucanr.org/sites/rizzolab/) will be
+examining me on this topic.
+
+Summary
+-------
+
+Much of our knowledge of pathology is at the organismal level
+(host-pathogen interactions), but actual management occurs at stand,
+forest, and regional levels. To understand and manage forest diseases at
+this scale, we need appropriate epidemiological and landscape ecology
+tools and frameworks.</description>
+    </item>
+    
+    <item>
+      <title>Qualifying Exam Reading List</title>
+      <link>/archives/2012-12-17-quals-reading-list/</link>
+      <pubDate>Mon, 17 Dec 2012 16:20:45 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2012-12-17-quals-reading-list/</guid>
+      <description>My qualifying exams are on March 5, 2013. 78 days away! I&#39;ll be trying
+to blog my reading as well as the development of my proposal here and in
+a [github repository](http://github.com/noamross/openquals). Today - my
+topics and reading list.
+
+-   [Forest Landscape Pathology](#forest-landscape-pathology)
+    -   [Landscape-level disease
+        management](#landscape-level-disease-management)
+    -   [Sudden Oak Death](#sudden-oak-death)</description>
+    </item>
+    
+    <item>
+      <title>Lauren Yamane on Matrix Population Models in R</title>
+      <link>/archives/2012-11-30-lauren-yamane-on-matrix-population-models/</link>
+      <pubDate>Fri, 30 Nov 2012 10:11:17 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2012-11-30-lauren-yamane-on-matrix-population-models/</guid>
+      <description>Last week in [Davis R Users&#39; Group](http://www.noamross.net/davis-r-users-group.html), Lauren Yamane showed us how she created and analyzed a stochastic age-structured population in R. Her examples are below. Her original scripts can be found as `*.Rmd` files [here](https://gist.github.com/4197507) A note to UC Davis students: This topic and others will be covered by Marissa Baskett and Sebastian Schreiber in their course this winter, *Computational methods in population biology* (ECL298) * * * * * A discrete time, age-structured model of a salmon population (semelparous) that can live to age 5, with fishing and environmental stochasticity ----------------------------------------------------------------------------------------------------------------------------------------------- Parameter values ~~~~ {.</description>
+    </item>
+    
+    <item>
+      <title>A multi-species, age-structured model for forest disease</title>
+      <link>/archives/2012-11-28-lab-meeting-presentation-outline/</link>
+      <pubDate>Wed, 28 Nov 2012 18:00:20 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2012-11-28-lab-meeting-presentation-outline/</guid>
+      <description>This is a description of the model I&#39;ve implemented in the [SODDr
+package](http://www.noamross.net/blog/2012/11/16/sod-dynamics-1.html),
+which I prepared for a presentation for the Hastings lab meeting on
+November 29, 2012.
+
+Background
+----------
+
+[Sudden Oak Death](http://en.wikipedia.org/wiki/Sudden_oak_death) (SOD)
+is a disease that threatens tanoak populations in California. It&#39;s cause
+is an introduced pathogen, *Phytophthora ramorum*. *Phytophthora* is a
+water mold that spreads by wind-blown rain and fog as well as through</description>
+    </item>
+    
+    <item>
+      <title>A quick function for editing CSV files in R</title>
+      <link>/archives/2012-11-19-editing-csv-files-in-r/</link>
+      <pubDate>Mon, 19 Nov 2012 13:47:25 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2012-11-19-editing-csv-files-in-r/</guid>
+      <description>I&#39;ve been hunting for a lightweight CSV editor for OSX so I could to make fixes to data files and not need to fire up Excel. While you can edit a CSV file in any text editor, it&#39;s a pain to navigate the files without a spreadsheet-like interface. Unfortunately [there doesn&#39;t seem to be a good, free option out there](http://apple.stackexchange.com/questions/66214/are-there-any-free-and-lightweight-spreadsheet-programs-for-the-mac). Today I remembered R has a native XCode editor for editing data frames, and I realized I could write a function that would load the CSV as a data frame, let me edit it, then close and save it in CSV format again.</description>
+    </item>
+    
+    <item>
+      <title>Simulating Sudden Oak Death Dynamics</title>
+      <link>/archives/2012-11-16-sod-dynamics-1/</link>
+      <pubDate>Fri, 16 Nov 2012 10:22:42 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2012-11-16-sod-dynamics-1/</guid>
+      <description>I am working on a project with the [Rizzo Lab](http://ucanr.edu/sites/rizzolab/) examining the dynamics of Sudden Oak Death (SOD). I really have to write more about this, but today I&#39;m just going to post the results of an initial exercise. Here I attempt to replicate model results from Cobb et al. (2012). The model in that paper simulates the spread of disease and resulting tree mortality and stand dynamics in a mixed system of tanoak, bay laurel, and redwood.</description>
+    </item>
+    
+    <item>
+      <title>Jordi Bascompte on Mutualistic Networks</title>
+      <link>/archives/2012-11-15-lecture-jordi-bascompte/</link>
+      <pubDate>Thu, 15 Nov 2012 16:09:23 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2012-11-15-lecture-jordi-bascompte/</guid>
+      <description>[Jordi Bascompte](http://bascompte.net/) gave a [Storer
+Lecture](http://bioscinet.ucdavis.edu/Events/Events/Storer) at UC Davis
+on November 15, 2012. Here are my rough notes:
+
+-   Biodiversity as the set of interactions *between* species, rather
+    than accounting of species
+-   Most research in mutualism in evolution focus on bilateral
+    interactions (e.g., Darwin&#39;s orchids and moths)
+-   Jordi&#39;s goal is to use network theory to represent mutualism in</description>
+    </item>
+    
+    <item>
+      <title>Ecological Stoichiometry: Population Dynamics</title>
+      <link>/archives/2012-11-13-ecological-stoichiometry-notes-on-andersen-et-al-2004/</link>
+      <pubDate>Tue, 13 Nov 2012 10:05:03 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2012-11-13-ecological-stoichiometry-notes-on-andersen-et-al-2004/</guid>
+      <description>Lauren Yamane talked about Andersen et al. (2004) in our Ecological Stoichiometry course today. Here are her slides, and below, my rough notes on the paper:  Notes on the Paper ------------------ - Stoichiometry is a way of representing food quality - there is evidence that consumers have preference for high quality (e.g., low C:N) food. - There is often a mismatch between composition of prey (autotrophs) and needs of consumers.</description>
+    </item>
+    
+    <item>
+      <title>Exploring GAMs with Rosemary Hartman</title>
+      <link>/archives/2012-11-09-gams-for-drug/</link>
+      <pubDate>Fri, 09 Nov 2012 12:49:25 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2012-11-09-gams-for-drug/</guid>
+      <description>Today at [Davis R Users&#39; Group](http://www.noamross.net/davis-r-users-group.html), Rosemary Hartman took us through her work in progress fitting general additive models to organism presence/absence data. Below is her presentation and script. You can get the original script and data [here](https://gist.github.com/4048075) Also, check the comments below for some discussion of other options for this type of analysis, such as boosted regression trees.  ~~~~ {.r} ## GAMs using mgcv and amphibian presence/absence dataset ## code and data by Rosemary Hartman (rosehartman at gmail dot com) ## First, load the mgcv package (Simon Wood) library(mgcv) ## Now, attach your data set (or my data set) fishlakes |z|) ## (Intercept) 3.</description>
+    </item>
+    
+    <item>
+      <title>Dynamics of Coupled Nutrient Cycling and Acclimation: 3 Modeling Papers</title>
+      <link>/archives/2012-11-05-notes-for-stoichiometry-presentation/</link>
+      <pubDate>Mon, 05 Nov 2012 19:47:23 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2012-11-05-notes-for-stoichiometry-presentation/</guid>
+      <description>Tomorrow in my stoichiometry seminar I&#39;ll be talking about the dynamics
+of growth under multiple nutrient limitation and acclimation. Here are
+my notes:
+
+Rastetter and Shaver (1992)
+---------------------------
+
+In this paper, Rastetter and Shaver introduce a model of plant growth on
+multiple nutrients, with the goal of understanding the conditions under
+which single- and multiple-nutrient limitation arise, the difference
+between short- and long-term behavior, and the role of</description>
+    </item>
+    
+  </channel>
+</rss>

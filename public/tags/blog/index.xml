@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog on trang1618</title>
+    <link>/tags/blog/</link>
+    <description>Recent content in blog on trang1618</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>grixor@gmail.com (Trang Le)</managingEditor>
+    <webMaster>grixor@gmail.com (Trang Le)</webMaster>
+    <lastBuildDate>Wed, 04 Apr 2012 11:02:57 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Displaying Math in RSS feeds</title>
+      <link>/archives/2012-04-04-math-in-rss-feeds/</link>
+      <pubDate>Wed, 04 Apr 2012 11:02:57 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2012-04-04-math-in-rss-feeds/</guid>
+      <description>The equations in this blog are rendered using [MathJax](http://www.mathjax.org), which creates beautiful math from $\LaTeX$-style markup. However, the math doesn&#39;t appear in RSS feeds, because RSS doesn&#39;t allow Javascript. While I have a total of 12 RSS followers, this is how my closest collaborators, and my most math-y readers, are likely to read my posts, so I&#39;ve been looking for a way to produce readable equations in the RSS feed.</description>
+    </item>
+    
+    <item>
+      <title>A New, Shiny Website!</title>
+      <link>/archives/2012-04-01-a-new-shiny-website/</link>
+      <pubDate>Sun, 01 Apr 2012 17:27:15 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2012-04-01-a-new-shiny-website/</guid>
+      <description>I&#39;ve finally got this new website built using
+[Jekyll](https://github.com/mojombo/jekyll) and migrated my old content
+over. I&#39;ve been looking to move to a new system for a while - one that
+would fit with my workflow and help me keep a blog as an [open lab
+notebook](http://www.carlboettiger.info/archives/211).
+[Squarespace](http://www.squarespace.com) was a great place to start a
+blog, but a Jekyll site hosted on [Github](www.github.com) is (A)
+faster, (B) free, (C) more customizable.</description>
+    </item>
+    
+    <item>
+      <title>Links and Resources</title>
+      <link>/archives/2012-04-01-links-and-resources/</link>
+      <pubDate>Sun, 01 Apr 2012 16:44:09 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2012-04-01-links-and-resources/</guid>
+      <description>*(Material migrated over from my old website)*
+
+**Blogs and News Sources**
+
+-   [Grist](http://www.grist.org/), especially [David
+    Roberts](http://www.grist.org/people/David+Roberts)&#39; sharp political
+    commentary
+-   [Resilience Science](http://rs.resalliance.org/), by Garry Peterson.
+    See also the [Resilience
+    Wiki](http://wiki.resalliance.org/index.php/Main_Page) and the
+    [Resilience Alliance](http://www.resalliance.org/1.php)
+-   [Conservation Bytes](http://conservationbytes.com/), a blog on</description>
+    </item>
+    
+  </channel>
+</rss>

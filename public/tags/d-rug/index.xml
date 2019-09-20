@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>D-RUG on trang1618</title>
+    <link>/tags/d-rug/</link>
+    <description>Recent content in D-RUG on trang1618</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>grixor@gmail.com (Trang Le)</managingEditor>
+    <webMaster>grixor@gmail.com (Trang Le)</webMaster>
+    <lastBuildDate>Thu, 28 May 2015 09:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/d-rug/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Qualitative Text Analysis in R with RQDA</title>
+      <link>/archives/2015-05-28-johnson-rqda/</link>
+      <pubDate>Thu, 28 May 2015 09:00:00 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2015-05-28-johnson-rqda/</guid>
+      <description>Last Friday at the [Davis R Users&#39; Group](http://www.noamross.net/davis-r-users-group.html), Mallory Johnson gave a presentation on RQDA, an R-based GUI tool for doing coding on documents for use in qualitative text analysis. Here&#39;s the video, and you can view the slides [here](http://www.noamross.net/DRUG20150522Markdown.html).  *[Sorry about reverb in the video]* ## Resources - [The RQDA home page](http://rqda.r-forge.r-project.org/) - [More RQDA instructional videos](https://www.</description>
+    </item>
+    
+    <item>
+      <title>First Steps with Structural Equation Modeling</title>
+      <link>/archives/2015-05-20-charles-sems/</link>
+      <pubDate>Wed, 20 May 2015 11:30:00 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2015-05-20-charles-sems/</guid>
+      <description>Last Friday at the [Davis R Users&#39; Group](http://www.noamross.net/davis-r-users-group.html), [Grace Charles](https://scholar.google.com/citations?user=kc_fImQAAAAJ) gave a presentation on structural equation modeling in R using the [**Lavaan**](http://cran.r-project.org/web/packages/lavaan/index.html) package. Here&#39;s the video and her slides. We&#39;ve also posted Grace&#39;s script from the presentation as a gist [here](https://gist.github.com/noamross/9d5ae9680fe8357ccd94). More resources that Grace mentioned in her talk below.   ## Resources - [Jim Grace&#39;s website at USGS](http://www.nwrc.usgs.gov/SEM/) - [A Lavaan tutorial vingette by Yves Rosseel](http://lavaan.ugent.be/tutorial/tutorial.pdf) - [Materials from Jarret Byrnes&#39; short course](http://jarrettbyrnes.</description>
+    </item>
+    
+    <item>
+      <title>Visualizing fits, inference, implications of (G)LMMs with Jaime Ashander</title>
+      <link>/archives/2015-04-29-ashander-glms/</link>
+      <pubDate>Wed, 29 Apr 2015 14:00:00 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2015-04-29-ashander-glms/</guid>
+      <description>Last Fr [Davis R Users&#39; Group](http://www.noamross.net/davis-r-users-group.html), [Jaime Ashander](http://www.ashander.info/posts/2015/04/D-RUG-mixed-effects-viz/) gave a presentation on and visualizing and diagnosing (G)LMMs in R. Here&#39;s the video:  Jaime also wrote up the notes from his talk, including all the code, on his blog [here](http://www.ashander.info/posts/2015/04/D-RUG-mixed-effects-viz/) (with the raw R Markdown file on github [here](https://github.com/ashander/ashander.github.io/blob/content/content/notes/mixedeffects_viz.Rmd)). The material in the blog post is expanded and improved upon from the original talk, though this means the video and posted code don&#39;t match exactly.</description>
+    </item>
+    
+    <item>
+      <title>Back to basics: High quality plots using base R graphics</title>
+      <link>/archives/2015-04-24-koontz-base-plotting/</link>
+      <pubDate>Fri, 24 Apr 2015 11:50:00 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2015-04-24-koontz-base-plotting/</guid>
+      <description>Today at the [Davis R Users&#39; Group](http://www.noamross.net/davis-r-users-group.html), [Michael Koontz](http://michaeljkoontz.weebly.com/) gave *tour de force* lesson in using R&#39;s base graphics capabilities to plot data. Here&#39;s the video:  Get Michael&#39;s excellent annotated script, which covers much more than we got to during our tutorial, [here](https://gist.</description>
+    </item>
+    
+    <item>
+      <title>An introduction to ggplot with Myfanwy Johnston</title>
+      <link>/archives/2015-03-15-ggplot-tutorial-johnston/</link>
+      <pubDate>Sun, 15 Mar 2015 14:36:00 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2015-03-15-ggplot-tutorial-johnston/</guid>
+      <description>Last week at the [Davis R Users&#39; Group](http://www.noamross.net/davis-r-users-group.html), [Myfanwy Johnston](http://biotelemetry.ucdavis.edu/pages/bio_Johnston.asp) gave an introduction to the powerful and ubiquitous ggplot2 package for plotting in R. See below for the screencast and her particularly enlightening figure of how ggplot&#39;s syntax and conceptual approach. Myfanwy also placed all her slides, code, and links to more ggplot resources in [this GitHub repository](https://github.com/Myfanwy/ggplot2Intro).  (*In a D-RUG first, there was an actual small fire that occurred between ~23:10 - 25:40.</description>
+    </item>
+    
+    <item>
+      <title>Making Maps in R with Ryan Peek and Michele Tobias</title>
+      <link>/archives/2015-02-20-mapping-in-r-peek-tobias/</link>
+      <pubDate>Fri, 20 Feb 2015 14:31:00 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2015-02-20-mapping-in-r-peek-tobias/</guid>
+      <description>Today at the [Davis R Users&#39; Group](http://www.noamross.net/davis-r-users-group.html), [Ryan Peek](http://ucdavis.academia.edu/RyanPeek) and [Michele Tobias](https://sites.google.com/site/mtobiasresearch/) gave an introduction to making maps in R. Here&#39;s the webcast:  (Pardon the little scuffle at the beginning and as we switched computers halfway through. Still getting the hang of hangouts.) ### Resources: - Download all of Ryan&#39;s code and HTML files [here](http://www.noamross.net/files/makingmaps.zip). - See Michele&#39;s slides on Slideshare [here](http://www.slideshare.net/MicheleTobias/leafletr). - Code for Michele&#39;s example maps in [her GitHub.</description>
+    </item>
+    
+    <item>
+      <title>Carl Boettiger on accessing online data with ROpenSci</title>
+      <link>/archives/2015-01-30-boettiger-ropensci/</link>
+      <pubDate>Fri, 30 Jan 2015 12:40:00 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2015-01-30-boettiger-ropensci/</guid>
+      <description>*Today, [Carl Boettiger](http://www.carlboettiger.info/) gave a tutorial on the [ROpenSci project](http://ropensci.org/) and how to use their many packages to connect to online data repositories to retrieve and up deposit data. Here&#39;s our screencast of the talk.  All the code from this talk is available at this [github repository](https://github.com/ropensci/workshops-davis-2015-01), and you can download it as a *.zip file [here](https://github.com/ropensci/workshops-davis-2015-01/archive/gh-pages.zip). Thanks to Carl for for a great session and the ROpenSci team for their work!</description>
+    </item>
+    
+    <item>
+      <title>Tim Bowles on multivariate stats with vegan</title>
+      <link>/archives/2014-12-09-bowles-vegan/</link>
+      <pubDate>Tue, 09 Dec 2014 19:01:00 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2014-12-09-bowles-vegan/</guid>
+      <description> *Today, [Tim Bowles](http://ucanr.edu/sites/Jackson_Lab/Tim_Bowles/) gave this presentation on the [vegan](http://cran.r-project.org/web/packages/vegan/index.html) package to the [Davis R Users&#39; Group](http://www.noamross.net/davis-r-users-group.html). The screencast and slides are below. You can also download Tim&#39;s RStudio project with all the code, data, figures, and slides presented [here](https://dl.dropboxusercontent.com/u/3356641/blogstuff/vegan%20tutorial.zip). Thanks to Tim for a great session!*     </description>
+    </item>
+    
+    <item>
+      <title>Vectorization in R: Why?</title>
+      <link>/archives/2014-04-16-vectorization-in-r-why/</link>
+      <pubDate>Wed, 16 Apr 2014 11:05:35 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2014-04-16-vectorization-in-r-why/</guid>
+      <description>*Here are my notes from a recent talk I gave on vectorization at a [Davis R Users&#39; Group](http://www.noamross.net/davis-r-users-group.html) meeting. Thanks to [Vince Buffalo](https://twitter.com/vsbuffalo), [John Myles White](http://twitter.com/johnmyleswhite), and [Hadley Wickham](http://twitter.com/hadleywickham) for their input as I was preparing this. Feedback welcome!* Beginning R users are often told to &#34;vectorize&#34; their code. Here, I try to explain *why* vectorization can be advantageous in R by showing how R works under the hood. Now, remember, [premature optimization is the root of all evil (Knuth)](http://c2.</description>
+    </item>
+    
+    <item>
+      <title>Using Dates and Times in R</title>
+      <link>/archives/2014-02-10-using-times-and-dates-in-r-presentation-code/</link>
+      <pubDate>Mon, 10 Feb 2014 15:09:57 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2014-02-10-using-times-and-dates-in-r-presentation-code/</guid>
+      <description>*Today at the [Davis R Users&#39; Group](http://www.noamross.net/davis-r-users-group.html), [Bonnie Dixon](http://ffhi.ucdavis.edu/people/directory/bmdixon) gave a tutorial on the various ways to handle dates and times in R. Bonnie provided this great script which walks through essential classes, functions, and packages. Here it is piped through `knitr::spin`. The original R script can be found as a gist [here](https://gist.github.com/noamross/8928124).* Date/time classes ----------------- Three date/time classes are built-in in R, Date, POSIXct, and POSIXlt. ### Date This is the class to use if you have only dates, but no times, in your data.</description>
+    </item>
+    
+    <item>
+      <title>Ryan Peek on Creating Shiny Apps</title>
+      <link>/archives/2014-01-28-rpeekshiny/</link>
+      <pubDate>Tue, 28 Jan 2014 09:41:36 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2014-01-28-rpeekshiny/</guid>
+      <description> Yesterday at the [Davis R User&#39;s Group](http://www.noamross.net/davis-r-users-group.html)[^1], [Ryan Peek](https://watershed.ucdavis.edu/people/rapeek?destination=user/71) gave a talk about using the `shiny` package to create interactive web apps with R. Here are his slides. Ryan includes a bunch of links to examples and tutorials, as well as his own [thermohydrographs app](http://aquapeek.shinyapps.io/thermohydrographs/):  [^1]: Thanks to [Revolution Analytics](http://www.revolutionanalytics.com/) for another year of sponsorship! </description>
+    </item>
+    
+    <item>
+      <title>How to format plots for publication using ggplot2 (with some help from Inkscape)</title>
+      <link>/archives/2013-11-20-formatting-plots-for-pubs/</link>
+      <pubDate>Wed, 20 Nov 2013 19:51:47 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2013-11-20-formatting-plots-for-pubs/</guid>
+      <description>***The following is the code from a presentation made by Rosemary Hartman to the [Davis R Users&#39; Group](http://www.noamross.net/davis-r-users-group.html). I&#39;ve run the code through the `spin` function in `knitr` to produce this post. Download the script to walk through [here](https://gist.github.com/noamross/7576436).*** First, make your plot. I am going to use the data already in R about sleep habits of different animals. It&#39;s the same one Noam used for [his intro to ggplot.</description>
+    </item>
+    
+    <item>
+      <title>Dave Harris on Maximum Likelihood Estimation</title>
+      <link>/archives/2013-06-17-harrisbbmle/</link>
+      <pubDate>Mon, 17 Jun 2013 15:11:17 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2013-06-17-harrisbbmle/</guid>
+      <description>*At our last [Davis R Users&#39;
+Group](http://www.noamross.net/davis-r-users-group.html) meeting of the
+quarter, [Dave Harris](https://sihlab.wordpress.com/david-j-harris/)
+gave a talk on how to use the `bbmle` package to fit mechanistic models
+to ecological data. Here&#39;s his script, which I ran throgh the `spin`
+function in `knitr`:*
+
+~~~~ {.r}
+# Load data
+library(emdbook)
+~~~~
+
+    ## Loading required package: MASS Loading required package: lattice
+
+~~~~ {.r}
+library(bbmle)</description>
+    </item>
+    
+    <item>
+      <title>Robert Hijmans on Spatial Data Analysis</title>
+      <link>/archives/2013-05-23-robert-hijmans-on-spatial-data-analysis/</link>
+      <pubDate>Thu, 23 May 2013 13:08:43 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2013-05-23-robert-hijmans-on-spatial-data-analysis/</guid>
+      <description>Last week at the [Davis R Users&#39; Group](http://www.noamross.net/davis-r-users-group.html) Robert Hijmans gave a talk about spatial data analysis in R. Robert is [a professor of biogeography](http://scholar.google.com/citations?user=NWdPabcAAAAJ&amp;hl=en) at UC Davis and the author of the [`raster`](http://cran.r-project.org/web/packages/raster/) (analysis of gridded data), [`dismo`](http://cran.r-project.org/web/packages/dismo/) (species distribution modeling), and [`geosphere`](http://cran.r-project.org/web/packages/geosphere/) (spherical trigonometry), packages. Robert&#39;s presentation spanned topics including basic geographical data and geostatistics concepts, his `raster` package and its usage, and some great examples of visualization and other resources.</description>
+    </item>
+    
+    <item>
+      <title>FasteR! HigheR! StrongeR! - A Guide to Speeding Up R Code for Busy People</title>
+      <link>/archives/2013-04-25-faster-talk/</link>
+      <pubDate>Thu, 25 Apr 2013 14:49:34 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2013-04-25-faster-talk/</guid>
+      <description>*This is an overview of tools for speeding up your R code that I wrote for the [Davis R Users&#39; Group](http://www.noamross.net/davis-r-users-group.html).* First, Ask &#34;Why?&#34; ----------------- It&#39;s customary to [quote Donald Knuth](http://en.wikiquote.org/wiki/Donald_Knuth) at this point, but instead I&#39;ll quote my twitter buddy Ted Hart to illustrate a point:  I&#39;m just going to say it.I like for loops in \#Rstats, makes my code readable.All you [a-z]\*ply snobs can shove it! — Ted Hart (@DistribEcology) March 12, 2013   Code optimization is a matter is a matter of personal taste and *priorities*.</description>
+    </item>
+    
+    <item>
+      <title>Debugging Tools in R with Michael Hannon</title>
+      <link>/archives/2013-04-18-r-debug-tools/</link>
+      <pubDate>Thu, 18 Apr 2013 13:44:59 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2013-04-18-r-debug-tools/</guid>
+      <description>*Today at [Davis R Users&#39; Group](http://www.noamross.net/davis-r-users-group.html), Michael Hannon gave a great talk on how to use R&#39;s native debugging functions. Here are his notes and code.* Introduction ------------ This is a discussion of debugging techniques in R. It is based on a paper by Roger Peng, now at Johns Hopkins University () ### Focus on five functions: - traceback - debug - browser - trace - recover ### Severity level R mainly uses two ways of reporting a problem: - Warning: Does not stop execution - Error: More serious -- *does* stop execution Example of warning: ~~~~ {.</description>
+    </item>
+    
+    <item>
+      <title>Demographic analysis using the `popbio` library and some other fun stuff</title>
+      <link>/archives/2013-04-04-oleary-popbio-presentation/</link>
+      <pubDate>Thu, 04 Apr 2013 11:16:55 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2013-04-04-oleary-popbio-presentation/</guid>
+      <description>*This week at the [Davis R Users&#39; Group](http://www.noamross.net/davis-r-users-group.html) we had a great presentation by Kara Moore O&#39;Leary on using the [`popbio` package](http://cran.r-project.org/web/packages/popbio/) to examine rare plant demographics. The following is her script run through `knitr`. You can download the original script and associated data [here](https://gist.github.com/noamross/bf8ebdcf42fd2e0851a8). Find out more about Kara and her work at her website [here](http://dynamicecosciences.wordpress.com/)* Demographic analysis using the popbio library and some other fun stuff ---------------------------------------------------------------------- **A population viability type analysis for a rare herbacious perennial plant, *Penstemon albomarginatus*, for its only remaining California population** Objectives: 1) Estimating the population growth rate - deterministic and stochastic methods 2) Sensitivity and elasticity analysis - which transitions/rate are most variable, sensitive to change 3) Projecting the population stochastically for different scenarios, observing variation in growth rate 4) Quasi extinction probability 5) Estimating vital rates from real data, which will never be as good/much the data that you would like to have for a PVA - some therapy for me, and maybe you too Load popbio and some other helpful libraries.</description>
+    </item>
+    
+    <item>
+      <title>Model Selection and Multi-Model Inference</title>
+      <link>/archives/2013-02-20-model-selection-drug/</link>
+      <pubDate>Wed, 20 Feb 2013 17:14:43 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2013-02-20-model-selection-drug/</guid>
+      <description>*At [D-RUG](http://www.noamross.net/davis-r-users-group.html) this week [Rosemary Hartman](rosehartman@gmail.com) presented a really useful case study in model selection, based on her work on frog habitat. Here is her code run through &#39;knitr&#39;. Original code and data are posted [here](https://gist.github.com/noamross/5001172).* (yes, I am just doing this for the flying monkey) *Editor&#39;s note: we&#39;re giving away flying monkey dolls from our sponsor, [Revolution Analytics](revolutionanalytics.com), to all our D-RUG presenters.* So, let&#39;s say you want to find out where things are and why they are there.</description>
+    </item>
+    
+    <item>
+      <title>Mason Earles on interfacing R with the Forest Vegetation Simulator</title>
+      <link>/archives/2013-02-13-mason-earles-on-interfacing-r-with-fvs/</link>
+      <pubDate>Wed, 13 Feb 2013 15:06:42 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2013-02-13-mason-earles-on-interfacing-r-with-fvs/</guid>
+      <description>[Mason Earles](http://jmearles.net/) gave a great presentation this week at [Davis R Users&#39; Group](http://www.noamross.net/davis-r-users-group.html) about linking R with the [Forest Vegetation Simulator (FVS)](http://www.fs.fed.us/fmsc/fvs/). FVS is a model developed by the US Forest Service to simulate forest growth over time. It&#39;s written in FORTRAN and has been around since the 1970s. FVS has recently gone open-source (its [repository is on google code](http://code.google.com/p/open-fvs/)), and now has [an alpha-level API which can be called from R](http://code.</description>
+    </item>
+    
+    <item>
+      <title>Ryan Peek on using xts and ggplot for time-series data</title>
+      <link>/archives/2013-02-06-xtsmarkdown/</link>
+      <pubDate>Wed, 06 Feb 2013 15:44:25 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2013-02-06-xtsmarkdown/</guid>
+      <description>At [Davis R Users&#39; Group](http://www.noamross.net/davis-r-users-group.html) today, [Ryan Peek](http://watershed.ucdavis.edu/people/ryan-peek) gave a presentation on how he takes data from his field instruments and visualizes it in R. Here are his notes. The original \*.Rmd file and data can be found [here](https://gist.github.com/noamross/4727029) SHORT HOW-TO ON USING XTS AND GGPLOT FOR TIME SERIES DATA --------------------------------------------------------- XTS is a very helpful package when working with time series data. I work with temperature and flow data frequently, so the ability to work with timeseries, and particularly to shift intervals (from 15 min to hourly or daily) can be very handy.</description>
+    </item>
+    
+    <item>
+      <title>Steve Culman on the `plyr` Package</title>
+      <link>/archives/2013-01-17-steve-culman-on-plyr/</link>
+      <pubDate>Thu, 17 Jan 2013 10:11:48 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2013-01-17-steve-culman-on-plyr/</guid>
+      <description>At [Davis R Users&#39; Group](http://www.noamross.net/davis-r-users-group.html) yesteray, [Steve Culman](http://ucanr.edu/sites/Jackson_Lab/Steve_Culman_519/) gave us an introduction to the `plyr` package and how to use it to manipulate data. Here&#39;s his presentation, and the accompanying demonstration script:   Steve&#39;s talk is based on [this paper by Hadley Wickham in the Journal of Statistical Software](http://www.jstatsoft.org/v40/i01/paper). A lot of useful related resources are at [Hadley Wickham&#39;s `plyr` website](http://plyr.had.co.nz/). We had a quick exchange about using `plyr` for parallel processing.</description>
+    </item>
+    
+    <item>
+      <title>Don&#39;t R alone! A guide to tools for collaboration with R</title>
+      <link>/archives/2013-01-07-collaborating-with-r/</link>
+      <pubDate>Mon, 07 Jan 2013 09:10:36 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2013-01-07-collaborating-with-r/</guid>
+      <description>This a brief guide to using R in collaborative, social ways. R is a powerful open-source programming language for data analysis, statistics, and visualization, but much of its power derives from a large, engaged *community* of users. This is an introduction to tools for engaging the community to improve your R code and collaborate with others. *(Am I missing anything? Let me know in the [comments](#disqus_thread) and I&#39;ll update this guide.</description>
+    </item>
+    
+    <item>
+      <title>Exploring GAMs with Rosemary Hartman</title>
+      <link>/archives/2012-11-09-gams-for-drug/</link>
+      <pubDate>Fri, 09 Nov 2012 12:49:25 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2012-11-09-gams-for-drug/</guid>
+      <description>Today at [Davis R Users&#39; Group](http://www.noamross.net/davis-r-users-group.html), Rosemary Hartman took us through her work in progress fitting general additive models to organism presence/absence data. Below is her presentation and script. You can get the original script and data [here](https://gist.github.com/4048075) Also, check the comments below for some discussion of other options for this type of analysis, such as boosted regression trees.  ~~~~ {.r} ## GAMs using mgcv and amphibian presence/absence dataset ## code and data by Rosemary Hartman (rosehartman at gmail dot com) ## First, load the mgcv package (Simon Wood) library(mgcv) ## Now, attach your data set (or my data set) fishlakes |z|) ## (Intercept) 3.</description>
+    </item>
+    
+    <item>
+      <title>Ryan Peek on Customizing Your R Setup</title>
+      <link>/archives/2012-11-02-rprofile/</link>
+      <pubDate>Fri, 02 Nov 2012 11:37:00 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2012-11-02-rprofile/</guid>
+      <description>[Ryan Peek](http://watershed.ucdavis.edu/people/ryan-peek) showed us how to use an `.Rprofile` file to customize your R setup. Here are his instructions and script: For Windows ----------- - To change profile for R, go here: `C:\Program Files\R\R-2.15.1\etc` (or whatever version you are using) - Edit the &#34;Rprofile.site&#34; file - Restart R For Macs -------- - Create your Rprofile file. -use TextEdit or another editor to create a file called Rprofile.txt - In a terminal window, type: ` cp Rprofile.</description>
+    </item>
+    
+    <item>
+      <title>Chris Hamm on using plot.new() for better combined plots</title>
+      <link>/archives/2012-10-26-plotnew/</link>
+      <pubDate>Fri, 26 Oct 2012 10:41:35 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2012-10-26-plotnew/</guid>
+      <description>At DRUG today, [Chris Hamm](https://www.msu.edu/~chamm/Welcome.html) ([email](mailto:cahamm@ucdavis.edu)) showed us an easier way to combine multiple figures into one plot using `plot.new`, rather than `par(mfrow=...)` Here&#39;s his script:   .knitr.inline { background-color: #f7f7f7; border:solid 1px #B0B0B0; } .error { font-weight: bold; color: #FF0000; }, .warning { font-weight: bold; } .message { font-style: italic; } .source, .output, .warning, .error, .message { padding: 0em 1em; border:solid 1px #F7F7F7; } .source { background-color: #f7f7f7; } .</description>
+    </item>
+    
+    <item>
+      <title>Stella Copeland&#39;s Intro to Mixed Models in R</title>
+      <link>/archives/2012-10-19-stella-copeland-on-mixed-models/</link>
+      <pubDate>Fri, 19 Oct 2012 10:26:56 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2012-10-19-stella-copeland-on-mixed-models/</guid>
+      <description> In D-RUG today, [Stella Copeland](http://www.des.ucdavis.edu/faculty/Harrison/people/stella/copeland.html) gave a quick introduction to mixed models in R. Here&#39;s the script that she presented:  Get the data file for this script [here](https://gist.github.com/3919839#file_mixed_model_ex_data) Stella also recommends [this paper](http://dx.doi.org/10.1016/j.tree.2008.10.008) by [Ben Bolker](http://www.math.mcmaster.ca/~bolker/) as a quick introduction to the topic. </description>
+    </item>
+    
+    <item>
+      <title>A quick introduction to ggplot()</title>
+      <link>/archives/2012-10-05-ggplot-introduction/</link>
+      <pubDate>Fri, 05 Oct 2012 12:05:10 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2012-10-05-ggplot-introduction/</guid>
+      <description>*I gave a short talk today to the [Davis R Users&#39; Group] about ggplot. This what I presented. Additional resources [at the bottom of this post](#some-resources)* `ggplot` is an R package for data exploration and producing plots. It produces fantastic-looking graphics and allows one to slice and dice one&#39;s data in many different ways. ### Comparing with base graphics *(This example from [Stack Overflow](http://stackoverflow.com/questions/11679019/recreating-a-ggplot2-geom-point-using-base-graphics))* First, get the package: ~~~~ {.</description>
+    </item>
+    
+    <item>
+      <title>Michael Levy on Data Manipulation using dplyr</title>
+      <link>/archives/0014-10-08-levyplyr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/0014-10-08-levyplyr/</guid>
+      <description>*Editor&#39;s Note: This is a repost of [Michael&#39;s original post](http://www.michaellevy.name/blog/dplyr-data-manipulation-in-r-made-easy) at his own site.* Here is the dplyr talk that I recently gave to the Davis R Users&#39; Group. dplyr is an R library that does basic data manipulation extremely well. It is designed to make the data handling tasks that we all do over and over as easy as possible. It produces highly readable syntax that is low cognitive overhead to write.</description>
+    </item>
+    
+    <item>
+      <title>Ongoing learning with user groups</title>
+      <link>/archives/0014-11-10-usergroups/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/0014-11-10-usergroups/</guid>
+      <description>-------------------------------
+
+-   **Work sessions**: We have weekly, 2-hour co-work sessions where users come
+    to work on their own projects and get help.
+
+-   **Talks and tutorials**: About every other week, the first half of our work
+    sessions is dedicated to a presentation. These are mainly tutorials on tools
+    in R. Sometimes they are &#34;</description>
+    </item>
+    
+  </channel>
+</rss>

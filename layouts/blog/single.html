@@ -1,0 +1,47 @@
+{{ $asset_base := .Site.BaseURL }}
+{{ if ne (getenv "HUGO_ASSET_BASEURL") "" }}
+  {{ $asset_base = (getenv "HUGO_ASSET_BASEURL") }}
+{{ end }}
+<!DOCTYPE html>
+<html>
+{{ partial "head.html" . }}
+<body>
+
+{{ partial "navbar.html" . }}
+
+<div class="wrapper">
+  <div class="is-row is-stack-20">
+    <div class="is-col is-10">&nbsp;</div>
+    <div class="is-col is-60">
+    <h1 class="is-text-center"><a href="">{{ .Title }}</a></h1>
+    <h4 class="is-bigger is-text-center">{{ .Date.Format "January 2, 2006" }}</h4>
+    </div>
+    <div class="is-col is-30">&nbsp;</div>
+  </div>
+  <div class="is-row is-stack-20">
+  </div>
+  <div class="is-row is-stack-20">
+    <div class="is-col is-10 is-stack-20">
+    </div>
+    <div class="is-col is-60">
+      <div class="story">
+      {{ .Content }}
+      </div>
+      <hr>
+      {{ if .PrevInSection }}
+      <a href="{{.PrevInSection.Permalink}}"><span class="pointer">2</span>&nbsp;{{.PrevInSection.Title}}</a> |
+      {{ end }}
+      <a href="{{ .Site.BaseURL }}blog">All posts</a>
+      {{ if .NextInSection }}
+      | <a href="{{.NextInSection.Permalink}}">{{.NextInSection.Title}}&nbsp;<span class="pointer">1</span></a>
+      {{ end }}
+    </div>
+    <div class="is-col is-30"></div>
+
+  </div>
+</div>
+
+{{ partial "footer.html" . }}
+
+</body>
+</html>

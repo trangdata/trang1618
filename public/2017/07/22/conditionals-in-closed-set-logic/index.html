@@ -1,0 +1,247 @@
+
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conditionals in Closed Set Logic</title>
+  <link rel="canonical" href="/2017/07/22/conditionals-in-closed-set-logic/" />
+
+  
+  <link rel="stylesheet" href="/assets/css/kube.css" />
+  <link rel="stylesheet" href="/assets/css/custom.css" />
+  <link rel="stylesheet" href="/assets/css/tufte.css" />
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Alegreya:400italic,400,700,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Alegreya+SC:400&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=IM+Fell+English:400,400i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+  <link href="/assets/fonts/fell-flowers/style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack-subset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.0/css/academicons.min.css">
+  <link href="/assets/fonts/fontawesome/css/all.css" rel="stylesheet">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="shortcut icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="shortcut icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="manifest" href="/assets/site.webmanifest">
+  <link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="theme-color" content="#ffffff">
+
+  
+  
+
+  
+  <meta name="description" content="I tweeted the claim that in single-premise multiple-conclusion logic, the conditional rules aren&#39;t satisfactory. In this post, I explain what that means.
+" />
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="/2017/07/22/conditionals-in-closed-set-logic/">
+  <meta name="twitter:title" content="Conditionals in Closed Set Logic">
+  <meta name="twitter:description" content="I tweeted the claim that in single-premise multiple-conclusion logic, the conditional rules aren&#39;t satisfactory. In this post, I explain what that means.">
+  <meta name="twitter:image" content="/assets/true}">
+  <meta name="twitter:site" content="trang1618.github.io">
+  <meta name="twitter:creator" content="@trang1618">
+
+  <meta property="og:title" content="Conditionals in Closed Set Logic" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="trang1618.github.io" />
+  <meta property="og:description" content="  I tweeted the claim that in single-premise multiple-conclusion logic, the conditional rules aren&#39;t satisfactory. In this post, I explain what that means." />
+  <meta property="og:url" content="/2017/07/22/conditionals-in-closed-set-logic/" />
+  <script type="application/ld+json">
+    {"@type":"WebSite","url":"\/2017\/07\/22\/conditionals-in-closed-set-logic\/","headline":"Conditionals in Closed Set Logic", "name":"trang1618.github.io","description":"I tweeted the claim that in single-premise multiple-conclusion logic, the conditional rules aren\x27t satisfactory. In this post, I explain what that means.","@context":"http://schema.org"}
+  </script>
+
+  
+  
+</head>
+
+<body>
+
+<div id="topbar" class="is-hidden-print">
+	<div class="wrapper">
+		<header>
+			<div class="is-navbar-container">
+				<nav>
+				<div class="is-brand">
+					<a href="/">t  r  a  n  g </a>
+					<a href="#"
+						 class="is-push-right-mobile is-shown-mobile icon-kube-menu"
+						 data-kube="toggle"
+						 data-target="#navbar-main"></a>
+				</div>
+				</nav>
+				<div id="navbar-main" class="is-navbar is-hidden-mobile is-center-mobile">
+					<nav>
+						<ul>
+						  <li><a href="/vitae">vitae</a></li>
+							<li><a href="/blog">blog</a></li>
+						
+							<li><a href="#connect">say hello</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+	</div>
+</div>
+
+
+<div class="wrapper">
+  <div class="is-row is-stack-20">
+    <div class="is-col is-10">&nbsp;</div>
+    <div class="is-col is-60">
+    <h1 class="is-text-center"><a href="">Conditionals in Closed Set Logic</a></h1>
+    <h4 class="is-bigger is-text-center">July 22, 2017</h4>
+    </div>
+    <div class="is-col is-30">&nbsp;</div>
+  </div>
+  <div class="is-row is-stack-20">
+  </div>
+  <div class="is-row is-stack-20">
+    <div class="is-col is-10 is-stack-20">
+    </div>
+    <div class="is-col is-60">
+      <div class="story">
+      <p>Over the last couple of days on Twitter, I was <a href="https://twitter.com/sigfpe/status/887754687318966272">involved in a thread</a>, kicked off by <a href="https://twitter.com/sigfpe">Dan Piponi</a>, discussing closed set logic&mdash;the natural dual of intuitionistic logic in which the law of the excluded middle holds but the law of non-contradiction fails, and which has models in the closed sets of any topological space, as opposed to the open sets, which model intuitionistic logic.</p>
+
+<p>\(\def\ydash{\succ}\)This logic also has a nice sequent calculus in which sequents have one premise (or zero) and multiple conclusions. In the thread I made the claim that this is a natural and beautiful sequent calculus (it is!) but that the structure of the sequents means that the logic doesn&rsquo;t have a natural conditional. The <em>dual</em> to the conditional (subtraction) can be defined, for which \(A\ydash B\lor C\)  if and only if \(A-B\ydash C\). But the traditional conditional rules don&rsquo;t work so well.</p>
+
+<p>I realised, when I thought about it a bit more, that this fact is something I&rsquo;ve just believed for the last 20 years or so, but I&rsquo;ve never seen written down, so now is as good as a time, and here is as good as a place as any to explain what I mean.</p>
+
+<p>Consider the conditional rules in the classical sequent calculus. They look something like this (give or take variations in the presentation, all equivalent given the classical structural rules):</p>
+
+<figure>
+    <img src="/images/classical-conditional-rules.png" alt="Classical Sequent Rules for the Conditional">
+    <figcaption>Classical sequent rules for the conditional.</figcaption>
+</figure>
+
+<p>If we restrict these rules to multiple conclusion <em>single premise</em> sequents, we get rules which look like these:</p>
+
+<figure>
+    <img src="/images/closed-set-conditional-rules.png" alt="closed set logic Sequent Rules for the Conditional">
+    <figcaption>Closed set logic sequent rules for the conditional.</figcaption>
+</figure>
+
+<p>You can see an immediate issue with the [\(\supset\)<em>R</em>&ast;] rule. The concluding sequent is \(\ydash A\supset B,Y\) which tells you when a conditional (with alternate conclusion cases) is derivable from <em>no</em> premises. It does not tell you anything else about when a conditional (with alternate conclusion cases) is derivable from another premise. It does not tell us what to do if we want to derive \(C\ydash A\supset B,Y\) in any case where the \(C\) is doing some logical work. The best guidance we get is to ignore the \(C\) and to hope that we can derive \(\ydash A\supset B,Y\). (In classical logic, that&rsquo;s fine, because we could stash the \(C\) premise away as an alternate conclusion \(\neg C\) among the \(Y\)s in the right hand side, but in an asymmetric sequent calculus like this, that&rsquo;s not necessarily within our powers.)</p>
+
+<p>The fact that the rules seem too weak to constrain arbitrary sequents of the form \(C\ydash A\supset B,Y\) gives us a hint that these rules might not be strong enough to actually <em>characterise</em> or <em>uniquely define</em> the connective \(\supset\). And that hint bears out when you attempt to derive uniqueness. Here&rsquo;s the issue. Imagine that you and I both use rules like these to define a conditional connective. Yours is \(\supset_1\) and mine is \(\supset_2\). Try to derive the sequent \(p\supset_1 q\ydash p\supset_2 q\) and you&rsquo;ll see that you get stuck:</p>
+
+<figure>
+    <img src="/images/attempted-identity-derivation.png" alt="Attempted derivation of an identity sequent">
+    <figcaption>Attempted derivation of an identity sequent.</figcaption>
+</figure>
+
+<p>You get stuck at just the point where we&rsquo;d like to know when \(p\supset_2 q\) follows from other premises, and our rules give us no guidance at all. So, it looks as if our rules are not uniquely characterising in this sequent calculus.</p>
+
+<p>That&rsquo;s just a suspicion. It&rsquo;d be nice to have a demonstration of this fact&mdash;an explanation of how it is that these rules could be interpreted in different, incompatible ways.</p>
+
+<p>Here&rsquo;s <em>one</em> way to show that the single premise / multiple conclusion conditional rules do not define a unique connective in closed set logic. We&rsquo;ll use very simple algebras that are known to model closed set logic. Finite total orders. To be concrete, we&rsquo;ll interpret propositions as taking values from some given subset of the interval \([0,1]\), at least including \(0\) and \(1\), so each formula \(A\) will take some value \(a\) in that set of values, and we&rsquo;ll interpret a sequent \(A\ydash B_1,\ldots,B_n\) as saying that \(a\le \max(b_1,\ldots,b_n)\), which amounts to saying that \(a\le b_i\) for some \(i\). And similarly, \(\ydash B_1,\ldots,B_n\) amounts to \(1\le b_i\) for some \(i\). A sequent holds if the value of the left hand formula (or \(1\), if the formula is absent) is less than or equal to the value of one of the right hand formulas. (If the language has conjunction and disjunction, you can interpret them as \(\min\) and \(\max\) respectively, and the top and bottom values are \(0\) and \(1\).)</p>
+
+<p>(What has this to do with closed set logic? An \(n+1\) valued algebra corresponds to the closed sets in the topological space of an \(n\)-element totally ordered set where the closure of a set is its upwards closure in the ordering. \(0\) is the empty set and \(1\) is the whole space.)</p>
+
+<p>Now, look at what the sequent rules for a conditional mean in this setting. Collapsing the finite set \(Y\) in the rules to a single formula \(C\) for simplicity&rsquo;s sake (without any loss of generality), [\(\supset\)<em>R</em>&ast;]  tells us that if \(a\le\max(b,c)\) then \(1\le\max(a\supset b,c)\). That is, if \(a\le b\) or \(a\le c\) then either \(a\supset b=1\) or \(c=1\). This is to hold for all values for \(a\), \(b\) and \(c\).  A little bit of algebraic manipulation shows that this is equivalent to saying that when \(a\le b\) or \(a\lt 1\) then \(a\supset b=1\).</p>
+
+<p>And [\(\supset\)<em>L</em>&ast;] tells us that if \(1\le \max(a,c)\) and \(b\le c\) then \(a\supset b\le c\) for all  \(a\), \(b\) and \(c\). That is, if either \(1\le a\) or \(1\le c\) and \(b\le c\) then \(a\supset b\le c\). Some more  manipulation tells shows that this holds if and only if \(1\supset b\le b\).</p>
+
+<p>So, [\(\supset\)<em>L</em>&ast;] and [\(\supset\)<em>R</em>&ast;] are satisfied in our order models when we have</p>
+
+<ul>
+<li>\(1\supset b\le b\)</li>
+<li>If \(a\le b\) or \(a\lt 1\) then \(a\supset b=1\)</li>
+</ul>
+
+<p>And this is enough to fix <em>many</em> of the values of \(a\supset b\), but it is nowhere near enough to fix all of them. They do tell us that \(a\supset b=1\) whenever \(a\lt 1\), and also, when \(a=b=1\). But the values for \(1\supset b\) are less constrained. For example these rules are satisfied by setting \(1\supset b =b\) for all \(b\). And they&rsquo;re also satisfied by setting \(1\supset 1 = 1\) and \(1\supset b=0\) when \(b\lt 1\). Provided that there&rsquo;s at least one extra value between \(0\) and \(1\) in the ordering, that gives us wiggle room.</p>
+
+<figure>
+    <img src="/images/two-conditional-tables.png" alt="Two truth tables for conditionals">
+    <figcaption>Two truth tables for conditionals.</figcaption>
+</figure>
+
+<p>No wonder we couldn&rsquo;t show that \(p\supset_1 q\) entails \(p\supset_2 q\)! In this case (when \(p\) takes the value \(1\) and \(q\) takes the value \(\frac{1}{2}\)) that inference takes us from \(\frac{1}{2}\) to \(0\). That sequent isn&rsquo;t valid.</p>
+
+<p><em>That&rsquo;s</em> what I meant when I said that the conditional rules were not so good in closed set logic. The rules tell us something about conditionals, but they are not specific or strong enough to characterise a single concept.</p>
+      </div>
+      <hr>
+      
+      <a href="/2017/07/11/typesetting-flow-graphs-with-tikz/"><span class="pointer">2</span>&nbsp;Typesetting Flow Graphs with tikz</a> |
+      
+      <a href="/blog">All posts</a>
+      
+      | <a href="/2017/09/04/twelve-things-i-love-about-philosophical-logic/">Twelve things I love about philosophical logic&nbsp;<span class="pointer">1</span></a>
+      
+    </div>
+    <div class="is-col is-30"></div>
+
+  </div>
+</div>
+
+
+
+<footer id="footer" class="is-hidden-print">
+  <div class="wrapper">
+    <div class="is-row .is-small is-muted">
+      <div class="is-col is-33">
+        <h3>About</h3>
+        <em>
+          <p>This is my personal website. Nothing here is endorsed by my employer or organizations I am part of.</p>
+          <p>Content on this site is released under a
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode">CC-BY 4.0 license.</a>
+            Source code of the site is provided under the <a href="https://opensource.org/licenses/MIT">MIT license</a>
+            and may be reused without restriction.</p>
+          <p>Huge thanks to <a href="https://www.noamross.net/">Noam Ross</a> for the beautifully designed website and detailed instruction on how to built it <a href="https://www.noamross.net/2019/08/09/a-new-website/">here</a>.</p>
+        </em>
+      </div>
+      <div class="is-col is-33">
+        <h3 id="connect">Say hello</h3>
+        <ul class="fa-ul">
+          <li><i class="fa-li fas fa-briefcase fa-fw"></i>3700 Hamilton Walk, D207, Philadelphia, PA 19104</li>
+          <li><a href="https://orcid.org/0000-0003-3737-6565"><i class="fa-li ai ai-orcid"></i></a><a href="https://orcid.org/0000-0003-3737-6565">0000-0003-3737-6565</a></li>
+          <li><a href="https://scholar.google.com/citations?user=OMpJVfsAAAAJ&hl=en"><i class="fa-li ai ai-google-scholar"></i></a><a href="https://scholar.google.com/citations?user=OMpJVfsAAAAJ">Google Scholar</a></li>
+          <li><a href="https://twitter.com/trang1618"><i class="fa-li fab fa-twitter fa-fw"></i></a><a href="https://twitter.com/trang1618">@trang1618</a></li>
+          <li><a href="https://github.com/trang1618"><i class="fa-li fab fa-github fa-fw"></i></a><a href="https://github.com/trang1618">github.com/trang1618</a>
+          <li><a href="https://slides.com/trang1618"><i class="fa-li fas fa-object-ungroup fa-fw"></i></a><a href="https://slides.com/trang1618">slides.com/trang1618</a>
+        </ul>
+      </div>
+      <div class="is-col is-33">
+        <h3 id="subscribe">Subscribe</h3>
+        <em><p>Follow me on Twitter at <a href="https://twitter.com/trang1618">@trang1618</a> where I'll update you if anything is posted.</p></em>
+        <h3 id="search">Search</h3>
+        <nav class="is-push-right is-left-mobile" class="is-hidden-mobile">
+					<form method="get" action="https://duckduckgo.com/">
+      <input type="search" name="q" maxlength="255" placeholder="Search on site">
+      <input type="hidden" name="sites" value="www.trang1618.github.io" />
+      <input type="hidden" name="ka" value="Alegreya" />
+      <input type="hidden" name="k7" value="#faf8f8" />
+      <input type="hidden" name="kj" value="#b33" />
+      <input type="hidden" name="ky" value="#fafafa" />
+      <input type="hidden" name="kx" value="b" />
+      <input type="hidden" name="ko" value="-1" />
+      <input type="hidden" name="k1" value="-1" />
+      <input type="hidden" name="kt" value="Alegreya Sans" />
+</form>
+				</nav>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript" src="/assets/js/kube.js"></script>
+<script>
+  $K.dom(window).on('load', $K.init);
+</script>
+
+
+</body>
+</html>

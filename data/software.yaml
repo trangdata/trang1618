@@ -1,0 +1,33 @@
+npdr:
+  name: npdr
+  type: software
+  github: https://github.com/insilico/npdr/
+  description: Select features with nearest-neighbor concepts
+  long_description: >
+    a nearest-neighbor feature selection algorithm that fits a generalized linear model for projected distances of a given attribute over all pairs of instances in a neighborhood. 
+    In the NPDR model, the predictor is the attribute distance between neighbors projected onto the attribute dimension, and the outcome is the projected phenotype distance (for quantitative traits) or hit/miss (for case/control) between all pairs of nearest neighbor instances. 
+  date: 2019-08-05
+  version: 0.1.2
+  exurl: https://insilico.github.io/npdr/
+stir:
+  name: stir
+  type: software
+  github: https://github.com/insilico/stir/
+  description: ReliefF on steroid
+  long_description: >
+    Precursor of **npdr**
+  date: 2018-05-11
+  version: 0.1.0
+  exurl: http://insilico.utulsa.edu/software/STIR/
+privateEC:
+  name: privateEC
+  type: software
+  github: https://github.com/insilico/privateEC/
+  exurl: http://insilico.utulsa.edu/index.php/privateec/
+  description: Differential privacy for machine learning
+  long_description: >
+    a stochastic privacy-preserving machine learning algorithm that uses ReliefF for feature selection and random forest for privacy preserving classification.
+  date: 2017-05-04
+  version: 1.0.2
+
+

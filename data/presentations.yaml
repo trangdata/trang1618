@@ -1,0 +1,294 @@
+mrs_2019:
+  type: presentation
+  venue: Penn Genetics Retreat
+  subtype: Poster
+  who: '**Le T. T.**'
+  description: Multilocus risk scores
+  short_name: mrs
+  slides: doi.org/c9zg
+  year: 2019
+  invited: yes
+  manual: yes
+  start: 1.5676272e+09
+  end: 1.5676326e+09
+  abstract: ''
+  date: '2019-09-04'
+  long_description: ''
+  exurl: ''
+  full_name: mrs_2019
+tpot_overview_2019:
+  type: presentation
+  venue: Clinical Research Informatics Core, University of Pennsylvania
+  subtype: Oral Presentation
+  who: '**Le T. T.**'
+  description: 'TPOT: Overview and live demonstration'
+  short_name: tpot_overview
+  slides: ''
+  year: 2019
+  invited: yes
+  manual: yes
+  start: 1.5524748e+09
+  end: 1.5524784e+09
+  abstract: ''
+  date: '2019-03-13'
+  long_description: ''
+  exurl: ''
+  full_name: tpot_overview_2019
+stir_psb_2019:
+  type: presentation
+  venue: Pacific Symposium on Biocomputing
+  subtype: Poster
+  who: '**Le T. T.**, Urbanowicz R.J., Moore J.H., McKinney B.A.'
+  description: STIR feature selection
+  short_name: stir_psb
+  slides: doi.org/cv5g
+  year: 2019
+  invited: yes
+  manual: yes
+  start: 1.546695e+09
+  end: 1.5466986e+09
+  abstract: ''
+  date: '2019-01-05'
+  long_description: ''
+  exurl: ''
+  full_name: stir_psb_2019
+tpot_thera_ai_2018:
+  type: presentation
+  venue: AI Therapeutics
+  subtype: Oral Presentation
+  who: '**Le T. T.**'
+  description: Scalable automated machine learning
+  short_name: tpot_thera_ai
+  slides: ''
+  year: 2018
+  invited: yes
+  manual: yes
+  start: 1.5454008e+09
+  end: 1.5454038e+09
+  abstract: ''
+  date: '2018-12-21'
+  long_description: ''
+  exurl: ''
+  full_name: tpot_thera_ai_2018
+stir_mabc_2018:
+  type: presentation
+  venue: Mid-Atlantic Bioinformatics Conference
+  subtype: Poster
+  who: '**Le T. T.**, Urbanowicz R.J., Moore J.H., McKinney B.A.'
+  description: Statistical Inference Relief (STIR) feature selection
+  short_name: stir_mabc
+  slides: doi.org/cv5g
+  year: 2018
+  invited: yes
+  manual: yes
+  start: 1.5408108e+09
+  end: 1.5408198e+09
+  abstract: ''
+  date: '2018-10-29'
+  long_description: ''
+  exurl: ''
+  full_name: stir_mabc_2018
+brainage_sobp_2018:
+  type: presentation
+  venue: Society of Biological Psychiatry Meeting
+  subtype: Poster
+  who: '**Le T. T.**, McKinney B.A.'
+  description: Transcriptomics of Brain Age Gap Estimate
+  short_name: brainage_sobp
+  slides: ''
+  year: 2018
+  invited: yes
+  manual: yes
+  start: 1.526058e+09
+  end: 1.5260652e+09
+  abstract: ''
+  date: '2018-05-11'
+  long_description: 'Transcriptomics of Brain Age Gap Estimate (BrainAGE): association
+    analysis of depressed and healthy individuals'
+  exurl: ''
+  full_name: brainage_sobp_2018
+lupus_research_day_2018:
+  type: presentation
+  venue: DBEI and CCEB Research Day, University of Pennsylvania
+  subtype: Oral Presentation
+  who: '**Le T. T.**, Breitenstein M.K.'
+  description: Deciphering interdependent immunologic biomarkers of lupus
+  short_name: lupus_research_day
+  slides: ''
+  year: 2018
+  invited: yes
+  manual: yes
+  start: 1.523358e+09
+  end: 1.5233607e+09
+  abstract: ''
+  date: '2018-04-10'
+  long_description: ''
+  exurl: ''
+  full_name: lupus_research_day_2018
+privateec_ohbm_2017:
+  type: presentation
+  venue: Organization for Human Brain Mapping Meeting
+  subtype: Poster
+  who: '**Le T. T.**, Misaki M., Savitz J., Suzuki H., Marino J.H., Drevets W., Bodurka
+    J., McKinney B.A.'
+  description: Integrative network analysis for major depressive disorder
+  short_name: privateec_ohbm
+  slides: ''
+  year: 2017
+  invited: yes
+  manual: yes
+  start: 1.4986476e+09
+  end: 1.4986548e+09
+  abstract: ''
+  date: '2017-06-28'
+  long_description: Integrative network analysis of resting-state fMRI and RNA-Seq
+    data for major depressive disorder
+  exurl: ''
+  full_name: privateec_ohbm_2017
+privateec_imse_2016:
+  type: presentation
+  venue: International Conference on Integral Methods in Science and Engineering
+  subtype: Oral Presentation
+  who: '**Le T. T.**,  Simmons W.K., McKinney B.A.'
+  description: Optimized random forest classification accuracy
+  short_name: privateec_imse
+  slides: ''
+  year: 2016
+  invited: yes
+  manual: yes
+  start: 1.4694597e+09
+  end: 1.4694615e+09
+  abstract: ''
+  date: '2016-07-25'
+  long_description: Optimized random forest classification accuracy by privacy-preserving
+    simulated evaporative cooling feature selection
+  exurl: ''
+  full_name: privateec_imse_2016
+identifiability_aims_2016:
+  type: presentation
+  venue: American Institute of Mathematical Sciences Meeting
+  subtype: Oral Presentation
+  who: '**Le T. T.**, Tuncer N.'
+  description: Structural and practical identifiability issues of epidemic models
+  short_name: identifiability_aims
+  slides: ''
+  year: 2016
+  invited: yes
+  manual: yes
+  start: ''
+  end: ''
+  abstract: ''
+  date: ''
+  long_description: ''
+  exurl: ''
+  full_name: identifiability_aims_2016
+identifiability_jmm_2016:
+  type: presentation
+  venue: Joint Mathematics Meeting
+  subtype: Oral Presentation
+  who: '**Le T. T.**, Tuncer N.'
+  description: Structural identifiability issues of epidemic models
+  short_name: identifiability_jmm
+  slides: ''
+  year: 2016
+  invited: yes
+  manual: yes
+  start: ''
+  end: ''
+  abstract: ''
+  date: ''
+  long_description: ''
+  exurl: ''
+  full_name: identifiability_jmm_2016
+identifiability_imse_2015:
+  type: presentation
+  venue: International Conference on Integral Methods in Science and Engineering Special
+    Session
+  subtype: Oral Presentation
+  who: '**Le T. T.**, Tuncer N.'
+  description: Structural identifiability issues of epidemiological models
+  short_name: identifiability_imse
+  slides: ''
+  year: 2015
+  invited: yes
+  manual: yes
+  start: ''
+  end: ''
+  abstract: ''
+  date: ''
+  long_description: ''
+  exurl: ''
+  full_name: identifiability_imse_2015
+rsfmri_2015:
+  type: presentation
+  venue: Research Colloquium, University of Tulsa
+  subtype: Oral Presentation
+  who: '**Le T. T.**, McKinney B.A.'
+  description: Simulation and identification of synchronization in resting-state fMRI
+    networks
+  short_name: rsfmri
+  slides: ''
+  year: 2015
+  invited: yes
+  manual: yes
+  start: ''
+  end: ''
+  abstract: ''
+  date: ''
+  long_description: ''
+  exurl: ''
+  full_name: rsfmri_2015
+avian_ams_2013:
+  type: presentation
+  venue: American Mathematics Society Sectional Meeting
+  subtype: Oral Presentation
+  who: '**Le T. T.**, Tuncer N.'
+  description: Spread of Avian influenza pandemic to USA via air travel
+  short_name: avian_ams
+  slides: ''
+  year: 2013
+  invited: yes
+  manual: yes
+  start: ''
+  end: ''
+  abstract: ''
+  date: ''
+  long_description: ''
+  exurl: ''
+  full_name: avian_ams_2013
+avian_siam_2013:
+  type: presentation
+  venue: Society for Industrial and Applied Mathematics Meeting
+  subtype: Oral Presentation
+  who: '**Le T. T.**, Tuncer N.'
+  description: Spread of Avian influenza pandemic to USA via air travel
+  short_name: avian_siam
+  slides: ''
+  year: 2013
+  invited: yes
+  manual: yes
+  start: ''
+  end: ''
+  abstract: ''
+  date: ''
+  long_description: ''
+  exurl: ''
+  full_name: avian_siam_2013
+seait_2013:
+  type: presentation
+  venue: Research Colloquium, University of Tulsa
+  subtype: Oral Presentation
+  who: '**Le T. T.**'
+  description: Mathematical analysis of the spread of HIV/AIDS using SEAIT model
+  short_name: seait
+  slides: ''
+  year: 2013
+  invited: yes
+  manual: yes
+  start: ''
+  end: ''
+  abstract: ''
+  date: ''
+  long_description: ''
+  exurl: ''
+  full_name: seait_2013

@@ -1,0 +1,32 @@
+ph_d_mathematics_2017:
+  name: ph_d_mathematics_2017
+  type: degree
+  title: Ph.D.
+  university: University of Tulsa
+  department: Mathematics
+  location: Tulsa, OK
+  date: '2017-12-16'
+b_s_mathematics_2013:
+  name: b_s_mathematics_2013
+  type: degree
+  title: B.S.
+  university: University of Tulsa
+  department: Mathematics
+  location: Tulsa, OK
+  date: '2013-12-21'
+b_s_geology_2013:
+  name: b_s_geology_2013
+  type: degree
+  title: B.S.
+  university: University of Tulsa
+  department: Geology
+  location: Tulsa, OK
+  date: '2013-12-21'
+m_s_mathematics_2013:
+  name: m_s_mathematics_2013
+  type: degree
+  title: M.S.
+  university: University of Tulsa
+  department: Mathematics
+  location: Tulsa, OK
+  date: '2013-12-21'

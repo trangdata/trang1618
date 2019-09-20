@@ -1,0 +1,32 @@
+---
+title: Hello world
+author: Trang Le
+date: 2019-09-20
+slug: hello-world
+tags: ['writing']
+---
+
+[Penn Genetics](https://www.med.upenn.edu/genetics/) recently held a wonderful retreat at [Bear Creek Moutain resort](https://www.bcmountainresort.com/).
+I enjoyed the many wonderful scientific talks at the retreat, but I was most moved by [Arjun Raj](http://rajlaboratory.blogspot.com/)'s call to action: blogging.{{%mn%}}Arjun also delivered a great talk on *How to give a talk*.{{%/mn%}}
+
+I have always wanted to start a blog since graduate school, when I read [Daniel Lakens' post](http://daniellakens.blogspot.com/2017/04/five-reasons-blog-posts-are-of-higher.html) on why blog posts may have higher quality than scientific journals.
+Personally, I think these posts are great for formalizing one's thoughts on scientific concepts and experimental ideas.
+
+A few days after the retreat, I stumbled upon [Noam Ross' newly created  website](http://noamross.net/) on twitter, and I fell in love!
+The fonts, theme, basic Kube setups, Tufte design... it's everything I have ever wanted...
+Well, almost everything.
+The only thing I didn't love is Noam's choice of syntax highlighting, so I removed the [lua filter](https://github.com/noamross/noamross.net/blob/5196414a79b7b1d64914a0a627c9fb5104656253/scripts/syntax-highlight-hugo.lua) and changed `_output.yml` to
+
+```{yaml, eval = FALSE}
+blogdown::html_page:
+  highlight: tango
+```
+
+Here's to the beginning of something new, a personal website that I'm currently very happy with.
+And who knows, I may be able use some material I write here for my scientific outputs (especially when the journal permits citations of blogposts).
+
+Here's a photo of the bike crew (I didn't have time to photoshop in [Bill La Cava](http://williamlacava.com/) here ) before heading back to Philly from Bear Creek (we did 120+ miles in total!):
+
+![](bike-crew.jpg)
+
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>early-warnings on trang1618</title>
+    <link>/tags/early-warnings/</link>
+    <description>Recent content in early-warnings on trang1618</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>grixor@gmail.com (Trang Le)</managingEditor>
+    <webMaster>grixor@gmail.com (Trang Le)</webMaster>
+    <lastBuildDate>Thu, 30 May 2013 09:18:42 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/early-warnings/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Early Warning Signals: the Charted and Uncharted Territories</title>
+      <link>/archives/2013-05-30-new-paper-post/</link>
+      <pubDate>Thu, 30 May 2013 09:18:42 +0000</pubDate>
+      <author>grixor@gmail.com (Trang Le)</author>
+      <guid>/archives/2013-05-30-new-paper-post/</guid>
+      <description>[Carl Boettiger](carlboettiger.info), [Alan
+Hastings](http://two.ucdavis.edu/~me/) and I have [a new
+review](http://dx.doi.org/10.1007/s12080-013-0192-6) out on early warning signals and
+regime shifts. It&#39;s about an idea that Carl and I have been kicking
+around for a couple of years and finally got around to writing up for a
+special issue of [*Theoretical
+Ecology*](http://link.springer.com/journal/12080).
+
+There has been a lot of excitement in the past six years or so about
+*early warning signs* - statistical signals that indicate that an</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,35 @@
+r-intro:
+  name: r-intro
+  type: course
+  description: "Introduction to R seminar"
+  venue: University of Tulsa
+  date: 2017-08-25
+  long_description: >
+    An immersive, "bootcamp" styled seminar designed to rapidly build student proficiency in R programming.
+    The seminar is conducted over a long weekend or similarly condensed timeframe in a computer laboratory setting.
+precalculus:
+  name: Precalculus
+  type: course
+  description: Precalculus instructor
+  venue: University of Tulsa
+  date: 2016-01-11
+  long_description: >
+    I prepare 30+ students for the study of calculus.
+calculus-1-2:
+  name: calculus12
+  type: course
+  description: Calculus I & II teaching assistant
+  venue: University of Tulsa
+  date: 2014-01-13
+  long_description: >
+    I lead Calculus I & II problem-solving sections and design and grade quizzes.
+    I had 200+ students over the course of four semesters.
+math-general:
+  name: math-general
+  type: course
+  description: Natural science tutors
+  venue: University of Tulsa
+  date: 2011-02-07
+  long_description: >
+    I tutor students (including many student athletes) in math, physics and chemistry.
+    I also worked in Math Lab - a free, walk-in tutor service for students at all levels.

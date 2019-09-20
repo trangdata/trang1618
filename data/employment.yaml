@@ -1,0 +1,28 @@
+university_of_pennsylvania_2018:
+  name: university_of_pennsylvania_2018
+  title: Postdoctoral fellow
+  organization: University of Pennsylvania
+  location: Philadelphia, PA
+  start_date: '2018-01-22'
+  end_date: []
+laureate_institute_for_brain_research_2016:
+  name: laureate_institute_for_brain_research_2016
+  title: Graduate intern
+  organization: Laureate Institute for Brain Research
+  location: Tulsa, OK
+  start_date: '2016-05-01'
+  end_date: '2017-12-31'
+university_of_tulsa_2015:
+  name: university_of_tulsa_2015
+  title: Graduate research assistant
+  organization: University of Tulsa
+  location: Tulsa, OK
+  start_date: '2015-01-01'
+  end_date: '2017-12-31'
+university_of_tulsa_2012:
+  name: university_of_tulsa_2012
+  title: Undergraduate research assistant
+  organization: University of Tulsa
+  location: Tulsa, OK
+  start_date: '2012-05-01'
+  end_date: '2013-08-01'

@@ -1,0 +1,31 @@
+Package: trang1618
+Title: Trang Le Hugo Website
+Version: 0.0.1
+Author: Trang Le
+Imports:
+ dplyr,
+ here,
+ humaniformat,
+ janitor,
+ jsonlite,
+ purrr,
+ rcrossref,
+ rorcid,
+ snakecase,
+ yaml,
+ rmarkdown,
+ broom,
+ knitr,
+ lubridate,
+ noamtools,
+ stringi,
+ tidyverse,
+ blogdown,
+ roxygen2,
+ devtools
+Remotes:
+  noamross/noamtools
+Maintainer: Trang Le <grixor@gmail.com>
+License: MIT + file LICENSE
+Encoding: UTF-8
+

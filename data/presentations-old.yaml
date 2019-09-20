@@ -1,0 +1,12 @@
+docker-user:
+  type: presentation
+  name: docker-user
+  slides: https://github.com/noamross/nyhackr-docker-talk
+  video: https://www.youtube.com/watch?v=803oZI5dvAU
+  description: DockeR for the UseR
+  venue: New York Open Statistical Programming Meetup
+  exurl: https://www.meetup.com/nyhackr/events/251652534/
+  long_description: >
+     An introduction to Docker with demonstration of different workflows and
+     applications for R users. Lots of resources and links included.
+  date: 2018-07-11
