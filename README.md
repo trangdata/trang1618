@@ -1,6 +1,7 @@
-# trang1618
+# Trang Le's personal website
 
 This is the repository for my personal website, <https://www.trang1618.github.io>.
+Apart from minor changes, I mostly followed [Noam Ross' open code](https://www.noamross.net/2019/08/09/a-new-website/) for this website:
 
 -   The site is generated using the [Hugo](https://gohugo.io/) static site
     generator, with the R package [blogdown](https://bookdown.org/yihui/blogdown/)
@@ -16,7 +17,6 @@ This is the repository for my personal website, <https://www.trang1618.github.io
     [Google Fonts](https://fonts.google.com/). Icons are provided by
     [Font Awesome](https://fontawesome.com).
 -   My [CV](/vitae/) is generated from data on [ORCiD](https://orcid.org) using the [*rorcid*](https://github.com/ropensci/rorcid) package.
--   The site is hosted at [nearlyfreespeech.net](http://nearlyfreespeech.net)
-    and deployed using [Circle CI](https://circleci.com). Assets are delivered via the [jsDeliver](https://www.jsdelivr.com/) CDN.
+-   The site is deployed using [Netlify](https://netlify.com).
 
 
