@@ -27,12 +27,13 @@
               <h4>{{ .Date.Format "January 2 2006" }}</h4>
             </div>
             <div class="is-col is-66 summary">
-              {{ if .Truncated }}
-              {{ .Summary }}
-              <p class="is-text-right"><a href="{{ .RelPermalink }}">Read More…</a></p>
-              {{ else }}
-              {{ .Content }}
-              {{ end }}
+                      {{ if .Truncated }}
+          {{ $.Scratch.Set "summary" ((delimit (findRE "(<p(.|\n)*?>.*?</p>\\s*)+" .Content) "[&hellip;] ") | plainify | truncate (default 400 .Site.Params.summary_length) (default " &hellip;" .Site.Params.text.truncated ) | replaceRE "&amp;" "&" | safeHTML)  }}
+        {{ $.Scratch.Get "summary" }}
+        <p class="is-text-right is-text-center-mobile"><a href="{{ .RelPermalink }}">Read More…</a></p>
+        {{ else }}
+        {{ .Content }}
+        {{ end }}
             </div>
           </div>
           {{ end }}
