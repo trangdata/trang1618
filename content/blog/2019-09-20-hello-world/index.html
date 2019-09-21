@@ -74,16 +74,17 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 
 <p><a href="https://www.med.upenn.edu/genetics/">Penn Genetics</a> recently held a wonderful retreat at <a href="https://www.bcmountainresort.com/">Bear Creek Moutain resort</a>.
 I enjoyed the many wonderful scientific talks at the retreat, but I was most moved by <a href="http://rajlaboratory.blogspot.com/">Arjun Raj</a>’s call to action: blog.{{%mn%}} At the retreat, Arjun also delivered a great talk on <em>How to give a talk</em>.{{%/mn%}}</p>
-<p>I have always wanted to start a blog since graduate school when I read <a href="http://daniellakens.blogspot.com/2017/04/five-reasons-blog-posts-are-of-higher.html">Daniel Lakens’ post</a> on why blog posts may have higher quality than scientific journals.{{%mn%}}which I highly recommend you have a read{{%/mn%}}
-Personally, I think these posts are great for formalizing one’s thoughts on scientific concepts and experimental ideas.</p>
-<p>A few days after the retreat, I stumbled upon <a href="http://noamross.net/">Noam Ross’ newly created website</a> on twitter, and I fell in love!
-The fonts, theme, basic Kube setups, Tufte design… it’s everything I have ever wanted…
+<p>I have always wanted to start a blog since graduate school when I read <a href="http://daniellakens.blogspot.com/2017/04/five-reasons-blog-posts-are-of-higher.html">Daniel Lakens’ post</a> on why blog posts may have higher quality than scientific journals.{{%mn%}}I highly recommend you have a read.{{%/mn%}}
+Personally, I think these posts are great for formalizing one’s thoughts on scientific concepts or experiment ideas.
+However, I feared that I needed to read a lot more before I write, and the lack of a personal website added to my hesitation.</p>
+<p>A few days after the retreat, I stumbled upon <a href="http://noamross.net/">Noam Ross’ newly created site</a> on twitter, and I fell in love!
+The fonts, theme, basic Kube setups, Tufte design… everything I have ever wanted!
 Well, almost everything.
 The only thing I didn’t love is Noam’s choice of syntax highlighting, and his <a href="https://github.com/noamross/noamross.net/blob/5196414a79b7b1d64914a0a627c9fb5104656253/scripts/syntax-highlight-hugo.lua">lua filter</a> also didn’t quite work for me, so I removed this file and changed <code>_output.yml</code> to</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1"></a><span class="at">blogdown:</span><span class="fu">:html_page</span><span class="kw">:</span></span>
 <span id="cb1-2"><a href="#cb1-2"></a><span class="at">  </span><span class="fu">highlight</span><span class="kw">:</span><span class="at"> tango</span></span></code></pre></div>
-<p>Now, this creates another issue.
-You see, this code adds to the generated .html <em>style</em> tags and everything in between,</p>
+<p>Now, this action creates another issue.
+You see, this code adds to the generated .html <em>style</em> tags and everything in between</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1"></a><span class="kw">&lt;style</span><span class="ot"> type=</span><span class="st">&quot;text/css&quot;</span><span class="kw">&gt;</span></span>
 <span id="cb2-2"><a href="#cb2-2"></a><span class="ex">[...]</span></span>
 <span id="cb2-3"><a href="#cb2-3"></a><span class="kw">&lt;/style&gt;</span></span></code></pre></div>
@@ -91,20 +92,19 @@ You see, this code adds to the generated .html <em>style</em> tags and everythin
 <blockquote>
 <p>a.sourceLine { display: inline-block; line-height: 1.25; }.</p>
 </blockquote>
-<p>I try to strip out this <em>style</em> chunk with <code>replaceRE</code> and <code>plainify</code> <a href="https://github.com/gohugoio/hugo/issues/3235">but that didn’t work</a>.
-Finally, Yihui Xie’s <a href="https://yihui.name/en/2017/08/hugo-post-summary/#fn:Why-Scratch-Beca">post</a> on how to generate a Hugo summary came to the rescue.
+<p>I try to strip out this <em>style</em> chunk with <code>replaceRE</code> and <code>plainify</code>, <a href="https://github.com/gohugoio/hugo/issues/3235">but that didn’t work</a>.
+Finally, Yihui Xie’s <a href="https://yihui.name/en/2017/08/hugo-post-summary/#fn:Why-Scratch-Beca">post</a> on how to generate a Hugo summary came to the rescue.{{%mn%}}Why didn’t I look for Yihui’s advice in the first place?!{{%/mn%}}
 Following Yihui’s guide gets me very close but still not quite what is expected.
-Finally, 林志扬’s incredible insight:</p>
+Finally, 林志扬’s incredible insight saves the day.</p>
 <blockquote>
 <p>I suggest using <code>(.|\n)*?</code> instead of <code>.*?</code> when searching for paragraph contents, since a single line break won’t start a new paragraph.</p>
 </blockquote>
-<p>saves the day.
-I probably should not have spent this much time on syntax highlighting, but I desperately preferred <em>some</em> highlighting to none at all.
+<p>I probably should not have spent this much time on syntax highlighting, but I desperately wanted <em>some</em> highlighting.
 And yes, I do need a crash course on regular expression.</p>
-<p>Here’s to the beginning of something new, a personal website that I’m at the moment very excited about.
+<p>Here’s to the beginning of something new, a personal website that I’m, at the moment, very excited about.
 With or without scientific content, I hope to keep the blog updated with my musings.
 And who knows, I may be able use some material I write here for my scientific outputs (given the journal permits citations of blogposts).</p>
 <div class="figure">
 <img src="bike-crew.jpg" alt="" />
-<p class="caption">the bike crew before heading back to Philly from Bear Creek (we did 120+ miles in total!) I still need to photoshop in our last biker <a href="http://williamlacava.com/">Bill La Cava</a>)</p>
+<p class="caption">The bike crew before heading back to Philly from Bear Creek (we did 120+ miles in total!). *Photoshop in our last biker <a href="http://williamlacava.com/">Bill La Cava</a> here*.</p>
 </div>
