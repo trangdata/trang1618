@@ -3,7 +3,7 @@
 This is the repository for my personal webpage, <https://trang.page>.
 Apart from minor changes, I mostly followed [Noam Ross' open code](https://www.noamross.net/2019/08/09/a-new-website/) for this site:
 
--   The site is generated using the [Hugo](https://gohugo.io/) static site
+-   The page is generated using the [Hugo](https://gohugo.io/) static site
     generator, with the R package [blogdown](https://bookdown.org/yihui/blogdown/)
     generating [R Markdown](https://rmarkdown.rstudio.com/ss) posts.
 -   The [Kube](https://imperavi.com/kube/) framework by Imperavi provides basic layout and user-interaction.
@@ -17,4 +17,4 @@ Apart from minor changes, I mostly followed [Noam Ross' open code](https://www.n
     [Google Fonts](https://fonts.google.com/). Icons are provided by
     [Font Awesome](https://fontawesome.com).
 -   My [CV](/vitae/) is generated from data on [ORCiD](https://orcid.org) using the [*rorcid*](https://github.com/ropensci/rorcid) package.
--   The site is deployed using [Netlify](https://netlify.com).
+-   The page is deployed using [Netlify](https://netlify.com).
