@@ -1,6 +1,6 @@
 # Trang Le's personal webpage
 
-This is the repository for my personal webpage, <https://www.trang.page>.
+This is the repository for my personal webpage, <https://trang.page>.
 Apart from minor changes, I mostly followed [Noam Ross' open code](https://www.noamross.net/2019/08/09/a-new-website/) for this site:
 
 -   The site is generated using the [Hugo](https://gohugo.io/) static site
