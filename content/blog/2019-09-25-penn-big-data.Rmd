@@ -1,0 +1,75 @@
+---
+title: 'Penn Big Data: Opportunities and challenges in health science applications'
+author: Trang Le
+date: '2019-09-25'
+slug: penn-big-data
+categories:
+  - science
+tags:
+  - data
+  - informatics
+  - statistics
+  - health
+---
+
+Earlier this week, I attended the [first Penn conference on big data in
+population health sciences](https://www.dbei.med.upenn.edu/big-data).
+This was my first conference where I got to attend all the talks, and it was gratifying.
+The organizers did a wonderful job on selecting a great breadth of topics to cover, from electronic databases and biobanks to digital and mobile health.
+I learned so much!
+Some of these topics, according to my PI, were *right up my alley*,{{%sn%}}Maybe that’s why I really enjoyed these talks?{{%/sn%}} and I will go a little deeper in some of them in later posts.
+But for now, I thought I’d share some of my key takeaways from this conference.
+
+## Big data can be useful. 
+
+I remember "big data" as a buzzword when I was an undergrad.
+Dan Ariely tweeted,
+
+> Big data is like teenage sex: everyone talks about it, nobody really knows how to do it, everyone thinks everyone else is doing it, so everyone claims they are doing it.
+
+That was back in 2012.
+Things have changed a bit since then, and I believe everyone in the room understands that this buzzword is simply a shorthand for the complex data or databases we all are working with.
+In addition to a good chunk of heart/brain imaging, whole exome/genome sequencing, gene expression and Electronic Medical Records (EMR) data, it was neat to see analyses of various unfamiliar types of data, including wearable device, social network and geographical.
+One striking result came from Mitesh Patel’s work on leveraging the EMR to identify patients eligible for cardiac rehabilitation and alert their physicians: patient attendance goes from 5% up to 40% simply by changing the referral process from opt-in to opt-out.{{%sn%}}[Opt-out increases cardiac rehab referral rates ](doi.org/10.1161/circ.136.suppl_1.19699){{%/sn%}}
+As another example, Casey Green showed that models trained on big data compendia can reveal patterns associated with rare diseases in smaller datasets.{{%sn%}}[Even of different types, *e.g.*, microarray vs RNASeq](doi.org/10.1016/j.cels.2019.04.003){{%/sn%}}
+
+## Useful objectives are important.
+Just like in every evolutionary algorithm design (or any other optimization technique for that matter), defining a good objective is crucial for the discovery of an optimal solution.
+Many of the presented works go beyond a binary diagnosis classification problem, cleverly reframe the questions and implement very innovative ideas to solve them. 
+Taki Shinohara transferred batch effect correction tools in gene expression analysis to harmonize multi-site imaging data.{{%sn%}}[Harmonization of multi-site DTI data](doi.org/10.1016/j.neuroimage.2017.08.047){{%/sn%}}
+Lyle Ungar linked social media with EMR to reveal individual’s clinically relevant information from their Facebook posts.{{%sn%}}[Predicting medical conditions from social media posts](https://doi.org/10.1371/journal.pone.0215476){{%/sn%}}{{%sn%}}[Facebook language predicts depression in medical records](doi.org/10.1073/pnas.1802331115){{%/sn%}}
+Daniel Rueckert applied reverse classification accuracy for automated quality control of image segmentation.{{%sn%}}[Automated quality control in image segmentation](doi.org/10.1186/s12968-019-0523-x){{%/sn%}}
+Unsupervised machine learning was mentioned at different points to reduce bias and enables disease subphenotyping.
+The importance of refining objectives in predictive analytics were further emphasized by Amol Navathe and Ziad Obermeyer via the selective labels problem.
+
+
+## We still have a ways to go.
+
+While methods like David Madigan’s P value calibration, Jinbo Chen’s anchor variable framework and Ian Barnett’s incorporation of random effects in neural nets have been proposed to address several technical challenges, I think a lot more are needed.
+Big data are inherently messy and require a lot of domain knowledge to be cleaned, transformed and analyzed.{{%sn%}}For wearables with fine time resolution in multiple facets, I would not even know where to start looking.{{%/sn%}}
+Further, these challenges are not limited to techniques.
+Rosalind Picard reminded us to take caution in interpreting individual-level data, especially before translating it to clinically meaningful actions.
+Marylyn Ritchie and Daniel Rueckert noted the heterogeneity and disparity in both imaging and genetic studies, and this issue will remain until more studies of diverse ancestries are carried out.
+Li Shen reiterated that no drug has yet cured Alzheimer’s disease or even slowed its progression, and the same go for many other diseases.
+And what about privacy?
+Do our works get us any closer to the ultimate goal of improving health?
+Is our objective function right?
+
+## Conclusion
+
+A big thank you to all of the speakers for the delightful talks and enlightening conversations! And once again, kudos to the organizers for a successful conference! 
+
+P.S. During a break, I spotted a spotted lantern fly on the right arm of an audience member sitting right in front of me.
+Now, if you haven’t heard, these flies are harmful invasive species that should be killed.
+So, like a true West Philadelphian, I asked the man: 
+
+\- Sir, may I swat your arm?
+
+\- I’m sorry, what?
+
+\- There’s a bug on your right arm. May I swat it?
+
+\- Huh? Oh! Uhhh… okay.
+
+I smacked his sleeve with my rolled up papers, and the fly fell on the floor. I apologized and tried to explain my bizarre approach just to learn that he was the last speaker of the day, Nilanjan Chatterjee :woman_facepalming:.
+
