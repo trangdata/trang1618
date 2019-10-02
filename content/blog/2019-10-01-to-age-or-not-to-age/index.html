@@ -1,0 +1,176 @@
+---
+title: To age or not to age
+author: Trang Le
+date: '2019-10-01'
+tags:
+  - aging
+  - brain
+  - informatics
+  - machine learning
+  - modeling
+  - statistics
+slug: to-age-or-not-to-age
+---
+
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  background-color: #f8f8f8; }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<p>I recently stumbled upon <a href="doi.org/10.1016/j.ecolmodel.2008.05.006">this article</a> by Gervasio Piñeiroa and colleages analyzing the method of model evaluation via plotting observed and predicted <span class="math inline">\(y\)</span>.
+The authors argue that, in plotting predicted or observed values, observed should be place on the <span class="math inline">\(y\)</span>-axis vs. predicted on the <span class="math inline">\(x\)</span>-axis.</p>
+<p>Because this article is unfortunately behind paywall, I’m going to show the quick simulation I have reproduced following the same parameter setting as in the paper.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="#cb1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="kw">set.seed</span>(<span class="fl">1.618</span>)</span>
+<span id="cb1-4"><a href="#cb1-4"></a>n_samp &lt;-<span class="st"> </span><span class="dv">60</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a></span>
+<span id="cb1-6"><a href="#cb1-6"></a>sim_dats &lt;-<span class="st"> </span><span class="kw">tibble</span>(</span>
+<span id="cb1-7"><a href="#cb1-7"></a>  <span class="dt">x =</span> <span class="kw">seq.int</span>(n_samp),</span>
+<span id="cb1-8"><a href="#cb1-8"></a>  <span class="dt">e =</span> <span class="kw">rnorm</span>(n_samp, <span class="dv">0</span>, <span class="dv">15</span>),</span>
+<span id="cb1-9"><a href="#cb1-9"></a>  <span class="dt">y =</span> x <span class="op">+</span><span class="st"> </span>e,</span>
+<span id="cb1-10"><a href="#cb1-10"></a>  <span class="dt">y_pred =</span> x</span>
+<span id="cb1-11"><a href="#cb1-11"></a>)</span>
+<span id="cb1-12"><a href="#cb1-12"></a></span>
+<span id="cb1-13"><a href="#cb1-13"></a>fit1 &lt;-<span class="st"> </span><span class="kw">lm</span>(y_pred <span class="op">~</span><span class="st"> </span>y, <span class="dt">data =</span> sim_dats)</span>
+<span id="cb1-14"><a href="#cb1-14"></a>fit2 &lt;-<span class="st"> </span><span class="kw">lm</span>(y <span class="op">~</span><span class="st"> </span>y_pred, <span class="dt">data =</span> sim_dats)</span>
+<span id="cb1-15"><a href="#cb1-15"></a></span>
+<span id="cb1-16"><a href="#cb1-16"></a>cowplot<span class="op">::</span><span class="kw">plot_grid</span>(</span>
+<span id="cb1-17"><a href="#cb1-17"></a>  <span class="kw">ggplot</span>(sim_dats, <span class="kw">aes</span>(y, y_pred, <span class="dt">label =</span> y)) <span class="op">%&gt;%</span></span>
+<span id="cb1-18"><a href="#cb1-18"></a><span class="st">    </span><span class="kw">my_theme</span>(fit1, <span class="st">&#39;y&#39;</span>, <span class="st">&#39;y_pred&#39;</span>),</span>
+<span id="cb1-19"><a href="#cb1-19"></a>  <span class="kw">ggplot</span>(sim_dats, <span class="kw">aes</span>(y_pred, y, <span class="dt">label =</span> y)) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb1-20"><a href="#cb1-20"></a><span class="st">    </span><span class="kw">my_theme</span>(fit2, <span class="st">&#39;y_pred&#39;</span>, <span class="st">&#39;y&#39;</span>)</span>
+<span id="cb1-21"><a href="#cb1-21"></a>)</span></code></pre></div>
+<p><img src="/blog/2019-10-01-to-age-or-not-to-age/index_files/figure-html/setup-1.png" width="672" /></p>
+<p>Here, with the same data points, I plotted predicted versus observed (left) and observed versus predicted (right) and performed a linear regression.
+This plot is very similar to Fig. 2 presented in Piñeiroa et al., with some stochasticity.</p>
+<p>My first reaction to this plot was, “What kind of sorcery is this?!”
+It seemed so counterintuitive that flipping the <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> axes does not simply flip the regression line about the <span class="math inline">\(y=x\)</span> dashed line.
+Is this an artifact of training then plotting the same dataset?
+Does it only apply for linear regression?</p>
+<p>I proceeded to run a quick test on a real-world dataset — the Boston dataset — but this time, with separate training and testing sets.
+In a few lines below, I attached the data, trained a random forest model to predict the median housing value with 13 features on half of the samples and tested on the other half.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>dat &lt;-<span class="st"> </span>MASS<span class="op">::</span>Boston</span>
+<span id="cb2-2"><a href="#cb2-2"></a>train_idx &lt;-<span class="st"> </span><span class="kw">sample.int</span>(<span class="kw">nrow</span>(dat), <span class="kw">nrow</span>(dat)<span class="op">*</span><span class="fl">0.5</span>)</span>
+<span id="cb2-3"><a href="#cb2-3"></a>rf &lt;-<span class="st"> </span>randomForest<span class="op">::</span><span class="kw">randomForest</span>(medv <span class="op">~</span><span class="st"> </span>. , dat, <span class="dt">subset =</span> train_idx)</span>
+<span id="cb2-4"><a href="#cb2-4"></a>results &lt;-<span class="st"> </span><span class="kw">tibble</span>(<span class="dt">y =</span> dat[<span class="op">-</span>train_idx, <span class="st">&#39;medv&#39;</span>],</span>
+<span id="cb2-5"><a href="#cb2-5"></a>                  <span class="dt">y_pred =</span> <span class="kw">predict</span>(rf, <span class="dt">newdata =</span> dat[<span class="op">-</span>train_idx, ]))</span></code></pre></div>
+<p>We see a similar pattern:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>fit1 &lt;-<span class="st"> </span><span class="kw">lm</span>(y_pred <span class="op">~</span><span class="st"> </span>y, <span class="dt">data =</span> results)</span>
+<span id="cb3-2"><a href="#cb3-2"></a>fit2 &lt;-<span class="st"> </span><span class="kw">lm</span>(y <span class="op">~</span><span class="st"> </span>y_pred, <span class="dt">data =</span> results)</span>
+<span id="cb3-3"><a href="#cb3-3"></a></span>
+<span id="cb3-4"><a href="#cb3-4"></a>cowplot<span class="op">::</span><span class="kw">plot_grid</span>(</span>
+<span id="cb3-5"><a href="#cb3-5"></a>  <span class="kw">ggplot</span>(results, <span class="kw">aes</span>(y, y_pred, <span class="dt">label =</span> y)) <span class="op">%&gt;%</span></span>
+<span id="cb3-6"><a href="#cb3-6"></a><span class="st">    </span><span class="kw">my_theme</span>(fit1, <span class="st">&#39;y&#39;</span>, <span class="st">&#39;y_pred&#39;</span>, <span class="dv">5</span>, <span class="dv">50</span>),</span>
+<span id="cb3-7"><a href="#cb3-7"></a>  <span class="kw">ggplot</span>(results, <span class="kw">aes</span>(y_pred, y, <span class="dt">label =</span> y)) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb3-8"><a href="#cb3-8"></a><span class="st">    </span><span class="kw">my_theme</span>(fit2, <span class="st">&#39;y_pred&#39;</span>, <span class="st">&#39;y&#39;</span>, <span class="dv">5</span>, <span class="dv">50</span>)</span>
+<span id="cb3-9"><a href="#cb3-9"></a>)</span></code></pre></div>
+<p><img src="/blog/2019-10-01-to-age-or-not-to-age/index_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p>I’m embarassed to admit that only after seeing this second plot did I stop to really think.
+I realized that, when we perform a regression, we’re minimizing the sum squared distance between <span class="math inline">\(y\)</span> and <span class="math inline">\(\hat{y}\)</span> <em>in the vertical direction</em>, not the distance to the regression line.</p>
+<div id="okay.-this-is-an-interesting-observation-but-does-it-matter" class="section level4">
+<h4>Okay. This is an interesting observation, but does it matter?</h4>
+<p>{{%mn%}}Piñeiroa et al. also recommended root mean squared deviation (RMSD) as a better performance evaluation metric compared to RMSE. However, I don’t think the authors have the same definitions of RMSE and RMSD as standard literature. Most studies, including the ones cited in the paper, do not distinguish RMSE and RMSD. The formula the authors use for RMSE is somehow not symmetric: <span class="math inline">\(RMSE(\hat{y}, y) \neq RMSE(y, \hat{y})\)</span>. And finally, instead of dividing by <span class="math inline">\(n\)</span>, the sum in the formula for RMSD (Eq. 10) is divded by <span class="math inline">\(n-1\)</span>. Strange.{{%/mn%}}Some of us might be thinking, “So what? Does it matter? After plotting, I will use mean squared error to evaluate my model anyway”.
+That’s fine.
+But it does matter if we want to evaluate our model performance based on slope and <span class="math inline">\(y\)</span>-intercept.
+I don’t often do this, but according to Piñeiroa and colleagues, a number of ecological modelling studies do.
+In my work, I often compute <span class="math inline">\(R^2\)</span>, root mean squared error (RMSE) and mean absolute error to compare my model’s performance to others’.</p>
+<p>To recap, most of the time, it probably does not matter unless we were to infer further from the slope and intercept of the fit.
+However, I will show below what the implications are for a specific kind of studies, where plotting <span class="math inline">\(\hat{y}\)</span> versus <span class="math inline">\(y\)</span> helped me identify the issue.</p>
+</div>
+<div id="what-is-regression-to-the-mean" class="section level4">
+<h4>What is regression to the mean?</h4>
+<p>First off, here’s <a href="https://twitter.com/kareem_carr/status/1156589945676554241">a tweet</a> from my favorite statistician/data scientist Kareem Carr:</p>
+<blockquote>
+<p>me: I discovered a new statistical law that says that all jokes on twitter are based on other jokes on twitter</p>
+<p>friend: that’s really cool! what do you call it?</p>
+<p>me: *slowly takes off sun glasses* regression to the meme {{%mn%}}OK sorry this tweet does not improve our understanding, but I had to do it.{{%/mn%}}</p>
+</blockquote>
+<p>What you see in the above plots on the left hand side, where the green regression line’s slope is less than 1, is the “overestimation of the low values and underestimation of the high values” — a universal phenomenon called “regression to the mean”.
+{{%mn%}}In this context, “regression to the mean” means the age of younger individuals tends to be overestimated and the age of older individuals tends to be underestimated.{{%/mn%}}
+In a <a href="doi.org/10.3389/fnagi.2018.00317">recent study</a>, Rayus Kuplicki and I together with our colleagues investigated the phenomenon of “regression to the mean” in the context of brainPAD (brain Predicted Age Difference).
+{{%mn%}}Another synonym of brainPAD is brainAGE (brain age gap estimate), which was what we used in this paper. However, brainAGE induces the confusion of the absolute predicted age vs. the “gap”. Therefore, I will use brainPAD from now on.{{%/mn%}}
+To give you a little bit of background, the general framework for using neuroimage features to predict age of an individual is as follows:</p>
+<p><img src="brainpad.png" style="width:100.0%" /></p>
+<p>A crucial step in this framework is step 4, where brainPAD = predicted age - chronological age.
+So, ultimately, brainPAD is the <em>residual</em> of the regression of predicted age on real age.
+Hence, because of regression to the mean, brainPAD is automatically associated with age.
+This is problematic for step 5, when brainPAD is regressed on other variables of interest, <em>e.g.</em>, brainPAD ~ BMI.
+Specifically, if, say, BMI positively correlates with age, this regression could result in an inflated coefficient showing having high BMI decreases brainPAD.</p>
+</div>
+<div id="wait-so-what-if-i-flip-the-calculation-of-brainpad-just-like-flipping-the-axes-will-this-effect-go-away" class="section level4">
+<h4>Wait… so what if I flip the calculation of brainPAD just like flipping the axes? Will this effect go away?</h4>
+<p>No.
+The problem is not how we take the difference.
+The problem lies at the fact the covariates (<em>e.g.</em>, BMI) are correlated with age, not predicted age.
+Therefore, age will always be on the right hand side of the equation and get regressed <em>on</em>.
+The effect stays.</p>
+<p>In any event, had we not plotted predicted age vs. chronological age, I am not sure we would have found this problematic behavior of brainPAD.
+After many Venn diagrams of shared variances between age, predicted age and other variables of interest, our suggestion is to include chronological age as a covariate in this regression.</p>
+<p>Do you have another suggestion?
+Should we rescale the variables?
+Is there a better way to compute brainPAD?
+Perhaps divide the difference by absolute age?
+If you would like to see more detailed analyses or suggest new ideas, please head over to <a href="www.doi.org/10.3389/fnagi.2018.00317">the paper</a> (open access) and leave me a comment!</p>
+</div>
