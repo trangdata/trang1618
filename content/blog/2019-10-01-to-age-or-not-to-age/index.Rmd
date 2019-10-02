@@ -1,14 +1,14 @@
 ---
-title: To age or not to age
-author: Trang Le
+title: "To age or not to age"
+author: "Trang Le"
 date: '2019-10-01'
 tags:
-  - aging
-  - brain
-  - informatics
-  - machine learning
-  - modeling
-  - statistics
+- aging
+- brain
+- informatics
+- machine learning
+- modeling
+- statistics
 slug: to-age-or-not-to-age
 ---
 
