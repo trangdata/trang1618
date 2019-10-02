@@ -27,7 +27,7 @@ my_theme <- function(plot, fit, x, y, low = 0, high = 65) {
     coord_equal(xlim = c(low, high), ylim = c(low, high)) +
     geom_smooth(method = 'lm', se = F, formula = y ~ x, color = '#4e9a06') +
     theme_minimal() +
-    annotate("text", x = low + (high - low)*0.25, y = high - 5, 
+    annotate('text', x = low + (high - low)*0.25, y = high - 5, 
              label = glue::glue('{y} ~ {b0} + {b1}{x} \n R^2 = {r2}'))
 }
 ```
@@ -113,9 +113,9 @@ First off, here's [a tweet](https://twitter.com/kareem_carr/status/1156589945676
 >
 > me: \*slowly takes off sun glasses\* regression to the meme {{%mn%}}OK sorry this tweet does not improve our understanding, but I had to do it.{{%/mn%}}
 
-What you see in the above plots on the left hand side, where the green regression line's slope is less than 1, is the "overestimation of the low values and underestimation of the high values" — a universal phenomenon called "regression to the mean".
-{{%mn%}}In this context, "regression to the mean" means the age of younger individuals tends to be overestimated and the age of older individuals tends to be underestimated.{{%/mn%}}
-In a [recent study](doi.org/10.3389/fnagi.2018.00317), Rayus Kuplicki and I together with our colleagues investigated the phenomenon of "regression to the mean" in the context of brainPAD (brain Predicted Age Difference).
+What you see in the above plots on the left hand side where the green regression line's slope is less than 1 is the *overestimation of the low values and underestimation of the high values* — a universal phenomenon called *regression to the mean*.
+{{%mn%}}In this context, *regression to the mean* means the age of younger individuals tends to be overestimated and the age of older individuals tends to be underestimated.{{%/mn%}}
+In a [recent study](doi.org/10.3389/fnagi.2018.00317), Rayus Kuplicki and I together with our colleagues investigated the phenomenon of *regression to the mean* in the context of brainPAD (brain Predicted Age Difference).
 {{%mn%}}Another synonym of brainPAD is brainAGE (brain age gap estimate), which was what we used in this paper. However, brainAGE induces the confusion of the absolute predicted age vs. the "gap". Therefore, I will use brainPAD from now on.{{%/mn%}}
 To give you a little bit of background, the general framework for using neuroimage features to predict age of an individual is as follows:
 
