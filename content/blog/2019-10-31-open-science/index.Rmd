@@ -12,7 +12,7 @@ categories:
 - science
 ---
 
-Last week, I got to attend [a series of presentations](https://libcal.library.upenn.edu/calendar/wicshops/openscience) followed by a panel discussion on **open science** at Penn Van Pelt-Dietrich library during the Open Access week. The panel featured (from left to right) [Ted Satterthwaite](https://www.satterthwaitelab.com/), [Jennifer Sisto](http://www.jenniferstiso.com/), [Daniel Himmelstein](dhimmel.com) – all initiated enlightening discussions around different aspects of open science.
+Last week, I got to attend [a series of presentations](https://libcal.library.upenn.edu/calendar/wicshops/openscience) followed by a panel discussion on **open science** at Penn Van Pelt-Dietrich library during the Open Access week. The panel featured (from left to right) [Ted Satterthwaite](https://www.satterthwaitelab.com/), [Jennifer Sisto](http://www.jenniferstiso.com/), [Daniel Himmelstein](https://dhimmel.com/) – all initiated enlightening discussions around different aspects of open science.
 
 ![](panel.png){width=100%}
 {{%mn%}}Photo credit: [Rebecca Miller](https://twitter.com/RebeccaAnne207){{%/mn%}}
@@ -33,7 +33,7 @@ Stiso referenced Tal Yarkoni's blog post [I hate open science](https://www.talya
 
 Stiso unbundled this definition into smaller chunks and shared the resources that tackle each chunk to help make science more open while facing minimal downsides. Details on these techniques and resources can be found in her slide linked at the end of this post among other relevant links. Two resources I want to highlight:
 
-- Makin and Orban de Xivry's [Ten common statistical mistakes to watch out for when writing or reviewing a manuscript](doi.org/10.7554/eLife.48175)
+- Makin and Orban de Xivry's [Ten common statistical mistakes to watch out for when writing or reviewing a manuscript](https://doi.org/10.7554/eLife.48175)
 - [Frontiers for Young Minds](https://kids.frontiersin.org/): an OA scientific journal written by scientists and reviewed by a board of kids and teens{{%sn%}}I'm very intrigued by this one. I would love to submit an article here some time.{{%/sn%}}
 
 Complementing these techniques, Ted Satterthwaite provided an impressively concise yet comprehensive list of computational tools for reproducible science:
@@ -48,7 +48,7 @@ Complementing these techniques, Ted Satterthwaite provided an impressively conci
 
 Satterthwaite also suggested an interesting model with a “replication buddy” who helps double check whether our analyses are reproducible, from walking through our analytic notebooks to reviewing code and wikis.
 
-Himmelstein delivered a lively talk on the history of [*Manubot*](manubot.org) – a software that supports open collaborative writing – and how it was inspired by the MOOP{{%sn%}}massively open online paper{{%/sn%}} codenamed [Deep Review](https://greenelab.github.io/deep-review/). {{%mn%}}Some Github users actually came to this repository's issues section to [request for source codes and datasets](https://github.com/greenelab/deep-review/issues/748#issuecomment-370299092) of the works being referenced in the review paper, which showed how important immediate responses can be.{{%/mn%}} He also shared his frustration when encountering legal barriers to reuse data to build the network of biomedical knowledge [Hetionet](https://het.io/), and how that motivated him to open source his products and encourage others to do the same.
+Himmelstein delivered a lively talk on the history of [*Manubot*](https://manubot.org) – a software that supports open collaborative writing – and how it was inspired by the MOOP{{%sn%}}massively open online paper{{%/sn%}} codenamed [Deep Review](https://greenelab.github.io/deep-review/). {{%mn%}}Some Github users actually came to this repository's issues section to [request for source codes and datasets](https://github.com/greenelab/deep-review/issues/748#issuecomment-370299092) of the works being referenced in the review paper, which showed how important immediate responses can be.{{%/mn%}} He also shared his frustration when encountering legal barriers to reuse data to build the network of biomedical knowledge [Hetionet](https://het.io/), and how that motivated him to open source his products and encourage others to do the same.
 
 I loved how interactive and intimate the discussion was, and the audience raised very relevant and important questions. We requested more details on many aspects; I only took notes of some here:
 
