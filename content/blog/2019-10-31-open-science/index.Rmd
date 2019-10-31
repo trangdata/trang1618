@@ -12,14 +12,14 @@ categories:
 - science
 ---
 
-Last week, I got to attend [a series of presentations](https://libcal.library.upenn.edu/calendar/wicshops/openscience) followed by a panel discussion on **open science** at Penn Van Pelt-Dietrich library during the Open Access week. The panel featured (from left to right) [Ted Satterthwaite](https://www.satterthwaitelab.com/), [Jennifer Sisto](http://www.jenniferstiso.com/), [Daniel Himmelstein](https://dhimmel.com/) – all initiated enlightening discussions around different aspects of open science.
+Last week, I got to attend [a series of presentations](https://libcal.library.upenn.edu/calendar/wicshops/openscience) followed by a panel discussion on *open science* at Penn Van Pelt-Dietrich library during the Open Access week. The panel featured (from left to right) [Ted Satterthwaite](https://www.satterthwaitelab.com/), [Jennifer Sisto](http://www.jenniferstiso.com/), [Daniel Himmelstein](https://dhimmel.com/) – all initiated enlightening discussions around different aspects of *open science*.
 
 ![](panel.png){width=100%}
 {{%mn%}}Photo credit: [Rebecca Miller](https://twitter.com/RebeccaAnne207){{%/mn%}}
 
 Jennifer Stiso motivates the *open science* best practices by recapitulating the  reproducibility crisis.
 Stiso referenced Tal Yarkoni's blog post [I hate open science](https://www.talyarkoni.org/blog/2019/07/13/i-hate-open-science/) to remark the different values that the open science community holds near and dear:
-{{%mn%}}Yarkoni pointed out potential internal conflicts among the set values when we treat open science as a movement or identity, mostly due to the community's heterogeneity. Perhaps I don't see enough tweets with ongoing arguments about *open science* to understand Yarkoni's frustration. However, I think *open science* is a useful umbrella term even when we focus on not all but only a few values such as reproducibility, accessibility and metascience.{{%/mn%}}
+{{%mn%}}Yarkoni pointed out potential internal conflicts among the set values when we treat *open science* as a movement or identity, mostly due to the community's heterogeneity. Perhaps I don't see enough tweets with ongoing arguments about *open science* to understand Yarkoni's frustration. However, I think *open science* is a useful umbrella term even when we focus on not all but only a few values such as reproducibility, accessibility and metascience.{{%/mn%}}
 
 > Potential solutions to the [reproducibility problems] now fit under a big umbrella called "open science"
 >
