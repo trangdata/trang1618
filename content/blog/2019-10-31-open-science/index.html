@@ -1,0 +1,76 @@
+---
+title: '#Openscience: impact of scientific research through open resources'
+author: "Trang Le"
+date: '2019-10-31'
+slug: open-science
+tags:
+- imaging
+- writing
+- open science
+categories:
+- research
+- science
+---
+
+
+
+<p>Last week, I got to attend <a href="https://libcal.library.upenn.edu/calendar/wicshops/openscience">a series of presentations</a> followed by a panel discussion on <strong>open science</strong> at Penn Van Pelt-Dietrich library during the Open Access week. The panel featured (from left to right) <a href="https://www.satterthwaitelab.com/">Ted Satterthwaite</a>, <a href="http://www.jenniferstiso.com/">Jennifer Sisto</a>, <a href="dhimmel.com">Daniel Himmelstein</a> – all initiated enlightening discussions around different aspects of open science.</p>
+<p><img src="panel.png" style="width:100.0%" />
+{{%mn%}}Photo credit: <a href="https://twitter.com/RebeccaAnne207">Rebecca Miller</a>{{%/mn%}}</p>
+<p>Jennifer Stiso motivates the <em>open science</em> best practices by recapitulating the reproducibility crisis.
+Stiso referenced Tal Yarkoni’s blog post <a href="https://www.talyarkoni.org/blog/2019/07/13/i-hate-open-science/">I hate open science</a> to remark the different values that the open science community holds near and dear:
+{{%mn%}}Yarkoni pointed out potential internal conflicts among the set values when we treat open science as a movement or identity, mostly due to the community’s heterogeneity. Perhaps I don’t see enough tweets with ongoing arguments about <em>open science</em> to understand Yarkoni’s frustration. However, I think <em>open science</em> is a useful umbrella term even when we focus on not all but only a few values such as reproducibility, accessibility and metascience.{{%/mn%}}</p>
+<blockquote>
+<p>Potential solutions to the [reproducibility problems] now fit under a big umbrella called “open science”</p>
+<ul>
+<li>Reproducibility (reporting clarity, appropriate statistics)</li>
+<li>Accessibility (preprints, open access journals)</li>
+<li>Incentive Alignment (publishing null results)</li>
+<li>Diversity (outreach)</li>
+<li>Metascience (reporting clarity)</li>
+</ul>
+<p>Some of these initiatives are in conflict with incentive structures inherent to science, making their widespread adoption difficult (but that doesn’t mean we shouldn’t try)</p>
+</blockquote>
+<p>Stiso unbundled this definition into smaller chunks and shared the resources that tackle each chunk to help make science more open while facing minimal downsides. Details on these techniques and resources can be found in her slide linked at the end of this post among other relevant links. Two resources I want to highlight:</p>
+<ul>
+<li>Makin and Orban de Xivry’s <a href="doi.org/10.7554/eLife.48175">Ten common statistical mistakes to watch out for when writing or reviewing a manuscript</a></li>
+<li><a href="https://kids.frontiersin.org/">Frontiers for Young Minds</a>: an OA scientific journal written by scientists and reviewed by a board of kids and teens{{%sn%}}I’m very intrigued by this one. I would love to submit an article here some time.{{%/sn%}}</li>
+</ul>
+<p>Complementing these techniques, Ted Satterthwaite provided an impressively concise yet comprehensive list of computational tools for reproducible science:</p>
+<ul>
+<li>Pre-registration of hypotheses (OSF preregistration)</li>
+<li>Standardized naming and directory structures (Brain Imaging Data Structure)</li>
+<li>Version controlled code repositories (GitHub, Bitbucket)</li>
+<li>Analytic notebooks (Jupyter notebook, Rmarkdown)</li>
+<li>Continuous integration testing of software (CircleCI)</li>
+<li>Containerized pipelines (Docker)</li>
+<li>Clear, human-readable wikis (README.md)</li>
+</ul>
+<p>Satterthwaite also suggested an interesting model with a “replication buddy” who helps double check whether our analyses are reproducible, from walking through our analytic notebooks to reviewing code and wikis.</p>
+<p>Himmelstein delivered a lively talk on the history of <a href="manubot.org"><em>Manubot</em></a> – a software that supports open collaborative writing – and how it was inspired by the MOOP{{%sn%}}massively open online paper{{%/sn%}} codenamed <a href="https://greenelab.github.io/deep-review/">Deep Review</a>. {{%mn%}}Some Github users actually came to this repository’s issues section to <a href="https://github.com/greenelab/deep-review/issues/748#issuecomment-370299092">request for source codes and datasets</a> of the works being referenced in the review paper, which showed how important immediate responses can be.{{%/mn%}} He also shared his frustration when encountering legal barriers to reuse data to build the network of biomedical knowledge <a href="https://het.io/">Hetionet</a>, and how that motivated him to open source his products and encourage others to do the same.</p>
+<p>I loved how interactive and intimate the discussion was, and the audience raised very relevant and important questions. We requested more details on many aspects; I only took notes of some here:</p>
+<ul>
+<li><em>What is continuous integration?</em> In this context, continuous integration is a way to automatically build the changes we made into the current status of the product. It is commonly used for automatically performing unit tests. In <em>Manubot</em>, continuous integration is used to build the living manuscripts <em>almost immediately</em> after the edits are merged.</li>
+<li><em>Should I be worried that the journal won’t consider my article because it has a preprint?</em> Most journals allow manuscripts that had been previously deposited to a preprint server. We can double check the <a href="https://en.wikipedia.org/wiki/List_of_academic_journals_by_preprint_policy">list of academic journals by preprint policy</a>.</li>
+<li><em>What if I do not have permission to make the data I’m analyzing public?</em> The philosophy here is to be <strong>“as open as possible and as closed as necessary”</strong>. Whether that involves publishing data with derived variables, using checksum, or simply being transparent with the code, do the best you can.</li>
+</ul>
+<p>I myself asked one question about challenges in open peer review, and Himmelstein suggested that an incentive for more orthogonal (and correct) opinions may help alleviate the information cascade effect. After thinking about this a bit more, I’m not sure my question was relevant because, after all, with or without open peer review, readers can still openly post what they think on twitter, pubmed or the journal site anyway.</p>
+<p>An older audience member commented “I’m fine with this because I’m more senior, but I’m worried for you guys”, and proceeded to explain that perhaps open science should not be the highest priority for junior investigators given the current academic incentives. This is true, and Satterthwaite actually did describe the risks when we do open science: it is time-consuming, the analysis is completely transparent for criticism, and the incentives are misaligned. {{%mn%}}For example, in a <a href="https://twitter.com/jessicapolka/status/1186419519482466304">recent presentation</a>, Anna Hatch showed that researchers think <em>contribution to open science</em> is the least important factor in tenure track hiring decisions.{{%/mn%}} I think we all agree that doing open science is not without risks. However, I believe, with the changing academic culture (even though very slowly), the benefits will eventually outweigh the risks. A personal benefit was mentioned by Himmelstein in his recent <a href="https://youtu.be/F_ghnwG5ejA">talk at the 2019 Workshop for Penn’s GCB PhD Students</a>:</p>
+<blockquote>
+<p>You may not be the most experienced coder, but the process of sharing &amp; documenting the code &amp; engaging others, will, by the time you complete your PhD, almost certainly result in you having better code than if you didn’t.</p>
+</blockquote>
+<p>Doing open science takes time, but that does not mean we shouldn’t do it.</p>
+<div id="relevant-links" class="section level3">
+<h3>Relevant links</h3>
+<ul>
+<li>Talks: <a href="https://slides.com/dhimmel/penn-oa-panel#/7">Himmelstein</a>, <a href="http://www.jenniferstiso.com/talks/os_talk.pdf">Stiso</a>, <a href="https://docs.google.com/file/d/1h-ZXmoqvUPDW-wmtoKu66aQkqhpf4DvR/edit?filetype=mspresentation">Satterthwaite</a></li>
+<li>Open science services: <a href="https://arxiv.org/">arXiv</a>, <a href="http://bioRxiv.org/">biorxiv</a>, <a href="https://psyarxiv.com/">PsyArXiv</a>, <a href="https://peerj.com/">PeerJ</a>{{%sn%}}now offers only peer-reviewed OA journal publishing, no more preprints{{%/sn%}}, <a href="https://pubpeer.com/">PubPeer</a>, <a href="https://www.prereview.org/">PREreview</a>, <a href="https://www.bioverlay.org/">BiOverlay</a>, <a href="https://web.hypothes.is/">hypothes.is</a>, <a href="https://theconversation.com/">The conversation</a>, <a href="https://sci-hub.tw/">sci-hub.tw</a></li>
+<li>Others:
+<ul>
+<li><a href="http://opendefinition.org/licenses/">Open licenses</a></li>
+<li><a href="https://github.com/lab-carpentry/blueprint-resourcesharing/blob/master/examples/NIH-example.md">NIH example for open licensing in your resource sharing plan</a></li>
+<li>Himmelstein’s <a href="https://blog.dhimmel.com/biorxiv-licenses/">blog post on the licensing of bioRxiv preprints</a></li>
+<li><a href="http://web.stanford.edu/~gentzkow/research/CodeAndData.pdf">Code and Data for the Social Sciences: A Practitioner’s Guide</a></li>
+</ul></li>
+</ul>
+</div>
