@@ -66,7 +66,7 @@ Doing open science takes time, but that does not mean we shouldn't do it.
 
 
 ### Relevant links
-- Talks: [Himmelstein](https://slides.com/dhimmel/penn-oa-panel#/7), [Stiso](http://www.jenniferstiso.com/talks/os_talk.pdf), [Satterthwaite](https://docs.google.com/file/d/1h-ZXmoqvUPDW-wmtoKu66aQkqhpf4DvR/edit?filetype=mspresentation)
+- Talks: [Himmelstein](https://slides.com/dhimmel/penn-oa-panel#/), [Stiso](http://www.jenniferstiso.com/talks/os_talk.pdf), [Satterthwaite](https://docs.google.com/file/d/1h-ZXmoqvUPDW-wmtoKu66aQkqhpf4DvR/edit?filetype=mspresentation)
 - Open science services: [arXiv](https://arxiv.org/), [biorxiv](http://bioRxiv.org/), [PsyArXiv](https://psyarxiv.com/), [PeerJ](https://peerj.com/){{%sn%}}now offers only peer-reviewed OA journal publishing, no more preprints{{%/sn%}}, [PubPeer](https://pubpeer.com/), [PREreview](https://www.prereview.org/), [BiOverlay](https://www.bioverlay.org/), [hypothes.is](https://web.hypothes.is/), [The conversation](https://theconversation.com/), [sci-hub.tw](https://sci-hub.tw/)
 - Others:
   - [Open licenses](http://opendefinition.org/licenses/)
