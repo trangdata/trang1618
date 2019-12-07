@@ -7,7 +7,7 @@ rladies-ml:
   exurl: https://github.com/trang1618/rladies-caret/
   date: 2019-12-02
   long_description: >
-    A brief introduction to machine learning and hands-on exercise of building predictive models with caret.
+    A brief introduction to machine learning and hands-on exercise of building models to predict the alcohol concentration of beers from a beer review dataset.
 r-intro:
   name: r-intro
   type: course
