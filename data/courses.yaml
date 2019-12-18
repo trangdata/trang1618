@@ -6,6 +6,16 @@ foundations-ai:
   date: 2020-03-30
   long_description: >
     I give two 80-minute guest lectures on Information Theory and Stochastic Processes and their roles in artificial intelligence and biomedical applications.
+rladies-ml:
+  name: rladies
+  type: course
+  description: "Machine learning workshop"
+  venue: R Ladies Philly
+  slides: https://slides.com/trang1618/caret-rladies#/
+  exurl: https://github.com/trang1618/rladies-caret/
+  date: 2019-12-02
+  long_description: >
+    A brief introduction to machine learning and hands-on exercise of building models to predict the alcohol concentration of beers from a beer review dataset.
 r-intro:
   name: r-intro
   type: course
