@@ -56,8 +56,8 @@ git remote set-url <remote-name> <remote-url>
 ```
 
 Finally, I made the project an *assignment* according to [the Cloud Guide](https://rstudio.cloud/learn/guide). This allows each attendee to have a copy of their work.
-I find this approach worked really well for my short, one-time workshop.
-However, if you have time for your students to familiarize themselves with the cloud space and package installation, [others have suggested](https://community.rstudio.com/t/using-rstudio-cloud-for-r-training-courses/11511/6) creating your materials in a zipped file for students to download and reupload on their own space.
+This approach worked really well for my short, one-time workshop.
+But if you have time for your students to familiarize themselves with the cloud space and package installation, [others have suggested](https://community.rstudio.com/t/using-rstudio-cloud-for-r-training-courses/11511/6) creating your materials in a zipped file for students to download and reupload on their own space.
 
 Let me know if you have a preferred method for your workshop!
-I know RStudio Cloud is continually being improved upon, but hopefully this post proves useful to some of you before it becomes obsolete.
+I know RStudio Cloud is continually being improved upon, but hopefully this post will prove useful to some of you before it becomes obsolete.
