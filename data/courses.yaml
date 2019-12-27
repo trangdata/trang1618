@@ -1,3 +1,11 @@
+foundations-ai:
+  name: foundations-ai
+  type: course
+  description: Fundamentals of AI guest lecturer
+  venue: University of Pennsylvania
+  date: 2020-03-30
+  long_description: >
+    I give two 80-minute guest lectures on Information Theory and Stochastic Processes and their roles in artificial intelligence and biomedical applications.
 rladies-ml:
   name: rladies
   type: course
