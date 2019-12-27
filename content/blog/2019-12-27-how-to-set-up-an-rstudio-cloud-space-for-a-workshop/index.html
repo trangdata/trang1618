@@ -80,9 +80,9 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 
 
 <p>Earlier this month, I had a blast leading a <a href="https://www.meetup.com/rladies-philly/events/266229730/">machine learning workshop</a> at an R Ladies Philly meetup.
-After an introduction to machine learning, we used a beer review dataset to predict the alcohol concentration of beer using the <a href="https://topepo.github.io/caret/">caret</a> R package.
+After an introduction to machine learning, we used a <a href="https://www.kaggle.com/c/beer-ratings/data">beer review dataset</a> to predict the alcohol concentration of beer using the <a href="https://topepo.github.io/caret/"><em>caret</em></a> R package.
 We even dabbled in text analysis. Everyone was awesome and asked many excellent questions throughout!</p>
-<p>I used RStudio Cloud to facilitate this workshop to avoid any incompatibility with operating systems or nuisance of package installation.
+<p>I used <a href="https://rstudio.cloud/projects">RStudio Cloud</a> to facilitate this workshop to avoid any incompatibility with operating systems or nuisance of package installation.
 I thought I’d share what I have learned from various <a href="https://community.rstudio.com/">RStudio Community</a> questions in a single post.
 <a href="https://slides.com/trang1618/caret-rladies">Slides</a> and <a href="https://github.com/trang1618/rladies-caret">code</a> from the workshop are available if you’re interested.</p>
 <p><img src="slide-cover.png" style="width:100.0%" /></p>
@@ -112,8 +112,14 @@ As it turned out, it was quite simple.
 On the RStudio Cloud project page, Tools → Global Options → Git/SVN → View Public Key and use this key (which should start with <code>ssh-rsa</code>) to create your Github New SSH key.
 From there, we can create a new repo on Github and set origin as usual (a neat trick is to switch the Console panel to Terminal right on the project page).</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">git</span> remote set-url <span class="op">&lt;</span>remote-name<span class="op">&gt;</span> <span class="op">&lt;</span>remote-url<span class="op">&gt;</span></span></code></pre></div>
-<p>Finally, I made the project an <em>assignment</em> according to <a href="https://rstudio.cloud/learn/guide">the Cloud Guide</a>. This allows each attendee to have a copy of their work.
+<p>Finally, I made the project an <em>assignment</em> according to <a href="https://rstudio.cloud/learn/guide">the Cloud Guide</a>.
+This allows each attendee to have a copy of their work.
+So, if there is still available space, you can go to the link provided in the cover slide, sign in RStudio Cloud with either your Gmail or Github login information, and you will see something similar to this:</p>
+<p><img src="rstudio-cloud.png" style="width:100.0%" /></p>
+<p>There you have it!
 This approach worked really well for my short, one-time workshop.
 But if you have time for your students to familiarize themselves with the cloud space and package installation, <a href="https://community.rstudio.com/t/using-rstudio-cloud-for-r-training-courses/11511/6">others have suggested</a> creating your materials in a zipped file for students to download and reupload on their own space.</p>
 <p>Let me know if you have a preferred method for your workshop!
 I know RStudio Cloud is continually being improved upon, but hopefully this post will prove useful to some of you before it becomes obsolete.</p>
+<p><em>P.S.</em> Max Kuhn, the author of the <em>caret</em> package himself, suggested that the beer review dataset be used in an example of Emil Hvitfeldt’s <a href="https://github.com/tidymodels/textrecipes"><em>textrecipes</em></a> package.
+Of course, Max!</p>

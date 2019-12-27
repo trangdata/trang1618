@@ -14,10 +14,10 @@ tags:
 ---
 
 Earlier this month, I had a blast leading a [machine learning workshop](https://www.meetup.com/rladies-philly/events/266229730/) at an R Ladies Philly meetup.
-After an introduction to machine learning, we used a beer review dataset to predict the alcohol concentration of beer using the [caret](https://topepo.github.io/caret/) R package.
+After an introduction to machine learning, we used a [beer review dataset](https://www.kaggle.com/c/beer-ratings/data) to predict the alcohol concentration of beer using the [*caret*](https://topepo.github.io/caret/) R package.
 We even dabbled in text analysis. Everyone was awesome and asked many excellent questions throughout! 
 
-I used RStudio Cloud to facilitate this workshop to avoid any incompatibility with operating systems or nuisance of package installation.
+I used [RStudio Cloud](https://rstudio.cloud/projects) to facilitate this workshop to avoid any incompatibility with operating systems or nuisance of package installation.
 I thought I'd share what I have learned from various [RStudio Community](https://community.rstudio.com/) questions in a single post.
 [Slides](https://slides.com/trang1618/caret-rladies) and [code](https://github.com/trang1618/rladies-caret) from the workshop are available if you're interested.
 
@@ -55,9 +55,18 @@ From there, we can create a new repo on Github and set origin as usual (a neat t
 git remote set-url <remote-name> <remote-url>
 ```
 
-Finally, I made the project an *assignment* according to [the Cloud Guide](https://rstudio.cloud/learn/guide). This allows each attendee to have a copy of their work.
+Finally, I made the project an *assignment* according to [the Cloud Guide](https://rstudio.cloud/learn/guide).
+This allows each attendee to have a copy of their work.
+So, if there is still available space, you can go to the link provided in the cover slide, sign in RStudio Cloud with either your Gmail or Github login information, and you will see something similar to this:
+
+![](rstudio-cloud.png){width=100%}
+
+There you have it!
 This approach worked really well for my short, one-time workshop.
 But if you have time for your students to familiarize themselves with the cloud space and package installation, [others have suggested](https://community.rstudio.com/t/using-rstudio-cloud-for-r-training-courses/11511/6) creating your materials in a zipped file for students to download and reupload on their own space.
 
 Let me know if you have a preferred method for your workshop!
 I know RStudio Cloud is continually being improved upon, but hopefully this post will prove useful to some of you before it becomes obsolete.
+
+*P.S.* Max Kuhn, the author of the *caret* package himself, suggested that the beer review dataset be used in an example of Emil Hvitfeldt's [*textrecipes*](https://github.com/tidymodels/textrecipes) package.
+Of course, Max!
