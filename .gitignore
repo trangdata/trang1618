@@ -3,6 +3,12 @@
 .RData
 .Ruserdata
 blogdown
-.DS_Store # if a windows user, Thumbs.db instead
-public/ # if using Netlify
-action.R # serve site locally
+# if a windows user, Thumbs.db instead:
+.DS_Store
+# if using Netlify:
+public/
+# serve site locally:
+action.R
+content/blog/.DS_Store
+content/.DS_Store
+layouts/.DS_Store
