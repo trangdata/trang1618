@@ -109,7 +109,8 @@ Yes, please see [TPOT API](https://epistasislab.github.io/tpot/api/).
 
 
 #### How do I know which features are important in my optimal pipeline?
-I would use [Eli](https://eli5.readthedocs.io/en/latest/blackbox/permutation_importance.html) accompanied with the exported pipeline to compute the permutation importance score. Here are a few lines of example code:
+I would use [Eli](https://eli5.readthedocs.io/en/latest/blackbox/permutation_importance.html) accompanied with the exported pipeline to compute the permutation importance score.
+Here are a few lines of example code:
  
 ```{python, eval = FALSE}
 from eli5.sklearn import PermutationImportance
@@ -141,3 +142,19 @@ However, there are a few ways you can try to speed up the training of TPOT:
 - reduce your dataset dimension, *i.e.* keep only relevant features/attributes/variables
 - set `n_jobs = -1` in your `TPOTClassifier()` function to use as many cores as available on your machine
 - TPOT supports [Dask](https://docs.dask.org/en/latest/) for parallel training. Follow this [example](https://examples.dask.org/machine-learning/tpot.html) to see how they integrate.
+
+#### Can I obtain the probability predictions from the exported pipeline?
+
+While this is slightly outside of the scope of TPOT, I'll go ahead and answer it here.
+This is straightforward if your final model supports probability prediction.
+Otherwise, we can use [probability calibration](https://scikit-learn.org/stable/modules/calibration.html#calibration) (which can easily be done with scikit-learn's `CalibratedClassifierCV`) to obtain the probabilities on the test set.
+Here are a few lines of example code:
+
+```{python, eval = FALSE}
+if hasattr(exported_pipeline, 'predict_proba'):
+  pred_prob = exported_pipeline.predict_proba(testing_features)
+else:
+  clf = CalibratedClassifierCV(exported_pipeline) 
+  clf.fit(training_features, training_target)
+  pred_prob = clf.predict_proba(testing_features)
+```

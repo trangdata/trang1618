@@ -160,7 +160,8 @@ Note that you can also define your own scoring function!</p>
 </div>
 <div id="how-do-i-know-which-features-are-important-in-my-optimal-pipeline" class="section level4">
 <h4>How do I know which features are important in my optimal pipeline?</h4>
-<p>I would use <a href="https://eli5.readthedocs.io/en/latest/blackbox/permutation_importance.html">Eli</a> accompanied with the exported pipeline to compute the permutation importance score. Here are a few lines of example code:</p>
+<p>I would use <a href="https://eli5.readthedocs.io/en/latest/blackbox/permutation_importance.html">Eli</a> accompanied with the exported pipeline to compute the permutation importance score.
+Here are a few lines of example code:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="im">from</span> eli5.sklearn <span class="im">import</span> PermutationImportance</a>
 <a class="sourceLine" id="cb3-2" data-line-number="2"></a>
 <a class="sourceLine" id="cb3-3" data-line-number="3">model <span class="op">=</span> exported_pipeline.fit(training_features, training_target)</a>
@@ -188,4 +189,17 @@ However, there are a few ways you can try to speed up the training of TPOT:</p>
 <li>set <code>n_jobs = -1</code> in your <code>TPOTClassifier()</code> function to use as many cores as available on your machine</li>
 <li>TPOT supports <a href="https://docs.dask.org/en/latest/">Dask</a> for parallel training. Follow this <a href="https://examples.dask.org/machine-learning/tpot.html">example</a> to see how they integrate.</li>
 </ul>
+</div>
+<div id="can-i-obtain-the-probability-predictions-from-the-exported-pipeline" class="section level4">
+<h4>Can I obtain the probability predictions from the exported pipeline?</h4>
+<p>While this is slightly outside of the scope of TPOT, I’ll go ahead and answer it here.
+This is straightforward if your final model supports probability prediction.
+Otherwise, we can use <a href="https://scikit-learn.org/stable/modules/calibration.html#calibration">probability calibration</a> (which can easily be done with scikit-learn’s <code>CalibratedClassifierCV</code>) to obtain the probabilities on the test set.
+Here are a few lines of example code:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="cf">if</span> <span class="bu">hasattr</span>(exported_pipeline, <span class="st">&#39;predict_proba&#39;</span>):</a>
+<a class="sourceLine" id="cb4-2" data-line-number="2">  pred_prob <span class="op">=</span> exported_pipeline.predict_proba(testing_features)</a>
+<a class="sourceLine" id="cb4-3" data-line-number="3"><span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb4-4" data-line-number="4">  clf <span class="op">=</span> CalibratedClassifierCV(exported_pipeline) </a>
+<a class="sourceLine" id="cb4-5" data-line-number="5">  clf.fit(training_features, training_target)</a>
+<a class="sourceLine" id="cb4-6" data-line-number="6">  pred_prob <span class="op">=</span> clf.predict_proba(testing_features)</a></code></pre></div>
 </div>
