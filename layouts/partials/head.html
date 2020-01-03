@@ -43,7 +43,12 @@
   {{ end }}
 
   <!-- Social -->
-  <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Summary | plainify }}{{ end }}
+  <meta name="description" content="{{ if .Truncated }}
+{{ $.Scratch.Set &quot;summary&quot; ((delimit (findRE &quot;(&lt;p(.|\n)*?&gt;.*?&lt;/p&gt;\\s*)+&quot; .Content) &quot;[&hellip;] &quot;) | plainify | truncate (default 400 .Site.Params.summary_length) (default &quot; &hellip;&quot; .Site.Params.text.truncated ) | replaceRE &quot;&amp;&quot; &quot;&&quot; | safeHTML)  }}
+{{ $.Scratch.Get &quot;summary&quot; }}
+&lt;p class=&quot;is-text-right is-text-center-mobile&quot;&gt;&lt;a href=&quot;{{ .RelPermalink }}&quot;&gt;Read More…&lt;/a&gt;&lt;/p&gt;
+  {{ else }}
+{{ .Content }}
 " />
 
   <meta name="twitter:card" content="{{ if .Params.largeimage }}summary_large_image{{ else }}summary{{ end }}">
