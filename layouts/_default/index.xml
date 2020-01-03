@@ -20,7 +20,15 @@
       <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
       <author>{{ with $.Site.Author.name }} {{.}}{{end}}</author>
       <guid>{{ .Permalink }}</guid>
-      <description>{{ .Summary | html }}</description>
+      <description>
+        {{ if .Truncated }}
+          {{ $.Scratch.Set "summary" ((delimit (findRE "(<p(.|\n)*?>.*?</p>\\s*)+" .Content) "[&hellip;] ") | plainify | truncate (default 400 .Site.Params.summary_length) (default " &hellip;" .Site.Params.text.truncated ) | replaceRE "&amp;" "&" | safeHTML)  }}
+        {{ $.Scratch.Get "summary" }}
+        <p class="is-text-right is-text-center-mobile"><a href="{{ .RelPermalink }}">Read More…</a></p>
+        {{ else }}
+        {{ .Content }}
+        {{ end }}
+      </description>
     </item>
     {{ end }}
   </channel>
