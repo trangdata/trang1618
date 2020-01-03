@@ -43,13 +43,23 @@
   {{ end }}
 
   <!-- Social -->
-  <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Summary }}{{ end }}
+  <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ if .Truncated }}{{ $.Scratch.Set "summary" ((delimit (findRE "(<p(.|\n)*?>.*?</p>\\s*)+" .Content) "[&hellip;] ") | plainify | truncate (default 400 .Site.Params.summary_length) (default " &hellip;" .Site.Params.text.truncated ) | replaceRE "&amp;" "&" | safeHTML)  }}{{ $.Scratch.Get "summary" }}
+        <p class="is-text-right is-text-center-mobile"><a href="{{ .RelPermalink }}">Read More…</a></p>
+        {{ else }}
+        {{ .Content }}
+        {{ end }}{{ end }}
 " />
 
   <meta name="twitter:card" content="{{ if .Params.largeimage }}summary_large_image{{ else }}summary{{ end }}">
   <meta name="twitter:url" content="{{ .Permalink }}">
   <meta name="twitter:title" content="{{ .Title }}">
-  <meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Summary }}{{ end }}">
+  <meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ if .Truncated }}
+          {{ $.Scratch.Set "summary" ((delimit (findRE "(<p(.|\n)*?>.*?</p>\\s*)+" .Content) "[&hellip;] ") | plainify | truncate (default 400 .Site.Params.summary_length) (default " &hellip;" .Site.Params.text.truncated ) | replaceRE "&amp;" "&" | safeHTML)  }}
+        {{ $.Scratch.Get "summary" }}
+        <p class="is-text-right is-text-center-mobile"><a href="{{ .RelPermalink }}">Read More…</a></p>
+        {{ else }}
+        {{ .Content }}
+        {{ end }}{{ end }}">
   <meta name="twitter:image" content="{{ $asset_base }}assets/{{ if .Params.largeimage }}{{ .Params.largeimage }}}{{ else if .Params.image }}{{.Params.image }}{{ else }}img/nr.png{{ end }}">
   <meta name="twitter:site" content="trang1618.github.io">
   <meta name="twitter:creator" content="@trang1618">
@@ -57,10 +67,22 @@
   <meta property="og:title" content="{{ .Title }}" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:site_name" content="trang1618.github.io" />
-  <meta property="og:description" content="  {{ if .Description }}{{ .Description }}{{ else }}{{ .Summary }}{{ end }}" />
+  <meta property="og:description" content="  {{ if .Description }}{{ .Description }}{{ else }}{{ if .Truncated }}
+          {{ $.Scratch.Set "summary" ((delimit (findRE "(<p(.|\n)*?>.*?</p>\\s*)+" .Content) "[&hellip;] ") | plainify | truncate (default 400 .Site.Params.summary_length) (default " &hellip;" .Site.Params.text.truncated ) | replaceRE "&amp;" "&" | safeHTML)  }}
+        {{ $.Scratch.Get "summary" }}
+        <p class="is-text-right is-text-center-mobile"><a href="{{ .RelPermalink }}">Read More…</a></p>
+        {{ else }}
+        {{ .Content }}
+        {{ end }}{{ end }}" />
   <meta property="og:url" content="{{ .Permalink }}" />
   <script type="application/ld+json">
-    {"@type":"WebSite","url":"{{ .Permalink }}","headline":"{{ .Title }}", "name":"trang1618.github.io","description":"{{ if .Description }}{{ .Description }}{{ else }}{{ .Summary }}{{ end }}","@context":"http://schema.org"}
+    {"@type":"WebSite","url":"{{ .Permalink }}","headline":"{{ .Title }}", "name":"trang1618.github.io","description":"{{ if .Description }}{{ .Description }}{{ else }}{{ if .Truncated }}
+          {{ $.Scratch.Set "summary" ((delimit (findRE "(<p(.|\n)*?>.*?</p>\\s*)+" .Content) "[&hellip;] ") | plainify | truncate (default 400 .Site.Params.summary_length) (default " &hellip;" .Site.Params.text.truncated ) | replaceRE "&amp;" "&" | safeHTML)  }}
+        {{ $.Scratch.Get "summary" }}
+        <p class="is-text-right is-text-center-mobile"><a href="{{ .RelPermalink }}">Read More…</a></p>
+        {{ else }}
+        {{ .Content }}
+        {{ end }}{{ end }}","@context":"http://schema.org"}
   </script>
 
   <!-- Indexing -->
