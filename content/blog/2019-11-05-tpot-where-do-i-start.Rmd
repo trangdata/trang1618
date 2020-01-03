@@ -112,6 +112,8 @@ Yes, please see [TPOT API](https://epistasislab.github.io/tpot/api/).
 I would use [Eli](https://eli5.readthedocs.io/en/latest/blackbox/permutation_importance.html) accompanied with the exported pipeline to compute the permutation importance score. Here are a few lines of example code:
  
 ```{python, eval = FALSE}
+from eli5.sklearn import PermutationImportance
+
 model = exported_pipeline.fit(training_features, training_target)
 perm = PermutationImportance(model, n_iter=100).fit(training_features, training_target)
 feat_imp = perm.feature_importances_
