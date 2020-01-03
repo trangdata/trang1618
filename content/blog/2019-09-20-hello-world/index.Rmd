@@ -34,7 +34,7 @@ which means Hugo `.Summary` is now filled with nonsense such as
 
 > a.sourceLine { display: inline-block; line-height: 1.25; }.
 
-I try to strip out this *style* chunk with `replaceRE` and `plainify`, [but that didn't work](https://github.com/gohugoio/hugo/issues/3235).
+I try to strip out this *style* chunk with `replaceRE` and `plainify` in my `layouts/section/blog.html`, [but that didn't work](https://github.com/gohugoio/hugo/issues/3235).
 Finally, Yihui Xie's [post](https://yihui.name/en/2017/08/hugo-post-summary/#fn:Why-Scratch-Beca) on how to generate a Hugo summary came to the rescue.{{%mn%}}Why didn't I look for Yihui's advice in the first place?!{{%/mn%}}
 Following Yihui's guide gets me very close but still not quite what is expected.
 Finally, 林志扬's incredible insight saves the day.

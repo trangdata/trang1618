@@ -7,9 +7,9 @@ tags: ['writing']
 ---
 
 <style type="text/css">
-code.sourceCode > span { display: inline-block; line-height: 1.25; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-code.sourceCode > span:empty { height: 1.2em; }
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
 div.sourceCode { margin: 1em 0; }
@@ -19,16 +19,14 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 code.sourceCode { white-space: pre-wrap; }
-code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
 }
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
+    border: none; pointer-events: all; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -37,9 +35,9 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {  background-color: #f8f8f8; }
+  { background-color: #f8f8f8; }
 @media screen {
-code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+a.sourceLine::before { text-decoration: underline; }
 }
 code span.al { color: #ef2929; } /* Alert */
 code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
@@ -81,18 +79,18 @@ However, I feared that I needed to read a lot more before I write, and the lack 
 The fonts, theme, basic Kube setups, Tufte design… everything I have ever wanted!
 Well, almost everything.
 The only thing I didn’t love is Noam’s choice of syntax highlighting, and his <a href="https://github.com/noamross/noamross.net/blob/5196414a79b7b1d64914a0a627c9fb5104656253/scripts/syntax-highlight-hugo.lua">lua filter</a> also didn’t quite work for me, so I removed this file and changed <code>_output.yml</code> to</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1"></a><span class="at">blogdown:</span><span class="fu">:html_page</span><span class="kw">:</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="at">  </span><span class="fu">highlight</span><span class="kw">:</span><span class="at"> tango</span></span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode yaml"><code class="sourceCode yaml"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="fu">blogdown:</span><span class="at">:html_page:</span></a>
+<a class="sourceLine" id="cb1-2" data-line-number="2">  <span class="fu">highlight:</span><span class="at"> tango</span></a></code></pre></div>
 <p>Now, this action creates another issue.
 You see, this code adds to the generated .html <em>style</em> tags and everything in between</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1"></a><span class="kw">&lt;style</span><span class="ot"> type=</span><span class="st">&quot;text/css&quot;</span><span class="kw">&gt;</span></span>
-<span id="cb2-2"><a href="#cb2-2"></a><span class="ex">[...]</span></span>
-<span id="cb2-3"><a href="#cb2-3"></a><span class="kw">&lt;/style&gt;</span></span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw">&lt;style</span><span class="ot"> type=</span><span class="st">&quot;text/css&quot;</span><span class="kw">&gt;</span></a>
+<a class="sourceLine" id="cb2-2" data-line-number="2"><span class="ex">[...]</span></a>
+<a class="sourceLine" id="cb2-3" data-line-number="3"><span class="kw">&lt;/style&gt;</span></a></code></pre></div>
 <p>which means Hugo <code>.Summary</code> is now filled with nonsense such as</p>
 <blockquote>
 <p>a.sourceLine { display: inline-block; line-height: 1.25; }.</p>
 </blockquote>
-<p>I try to strip out this <em>style</em> chunk with <code>replaceRE</code> and <code>plainify</code>, <a href="https://github.com/gohugoio/hugo/issues/3235">but that didn’t work</a>.
+<p>I try to strip out this <em>style</em> chunk with <code>replaceRE</code> and <code>plainify</code> in my <code>layouts/section/blog.html</code>, <a href="https://github.com/gohugoio/hugo/issues/3235">but that didn’t work</a>.
 Finally, Yihui Xie’s <a href="https://yihui.name/en/2017/08/hugo-post-summary/#fn:Why-Scratch-Beca">post</a> on how to generate a Hugo summary came to the rescue.{{%mn%}}Why didn’t I look for Yihui’s advice in the first place?!{{%/mn%}}
 Following Yihui’s guide gets me very close but still not quite what is expected.
 Finally, 林志扬’s incredible insight saves the day.</p>
@@ -105,6 +103,6 @@ And yes, I do need a crash course on regular expression.</p>
 With or without scientific content, I hope to keep the blog updated with my musings.
 And who knows, I may be able use some material I write here for my scientific outputs (given the journal permits citations of blogposts).</p>
 <div class="figure">
-<img src="bike-crew.jpg" alt="" />
+<img src="bike-crew.jpg" alt="The bike crew before heading back to Philly from Bear Creek (we did 120+ miles in total!). *Photoshop in our last biker Bill La Cava here*." />
 <p class="caption">The bike crew before heading back to Philly from Bear Creek (we did 120+ miles in total!). *Photoshop in our last biker <a href="http://williamlacava.com/">Bill La Cava</a> here*.</p>
 </div>
