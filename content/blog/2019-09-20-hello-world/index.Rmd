@@ -4,6 +4,7 @@ author: Trang Le
 date: 2019-09-20
 slug: hello-world
 tags: ['writing']
+twitterImg: 2019/09/20/hello-world/bike-crew.jpg
 ---
 
 [Penn Genetics](https://www.med.upenn.edu/genetics/) recently held a wonderful retreat at [Bear Creek Moutain resort](https://www.bcmountainresort.com/).
