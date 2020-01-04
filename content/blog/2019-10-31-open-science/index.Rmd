@@ -10,6 +10,8 @@ tags:
 categories:
 - research
 - science
+description:
+  A summary of the discussion on open science at the Van Pelt-Dietrich library, University of Pennsylvania + important links vis à vis licensing, preprints and more.
 ---
 
 Last week, I got to attend [a series of presentations](https://libcal.library.upenn.edu/calendar/wicshops/openscience) followed by a panel discussion on *open science* at Penn Van Pelt-Dietrich library during the Open Access week. The panel featured (from left to right) [Ted Satterthwaite](https://www.satterthwaitelab.com/), [Jennifer Sisto](http://www.jenniferstiso.com/), [Daniel Himmelstein](https://dhimmel.com/) – all initiated enlightening discussions around different aspects of *open science*.

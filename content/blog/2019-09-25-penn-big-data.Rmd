@@ -10,6 +10,8 @@ tags:
   - informatics
   - statistics
   - health
+description:
+  Notes on the Penn Big Data conference, September 2019.
 ---
 
 Earlier this week, I attended the [first Penn conference on big data in

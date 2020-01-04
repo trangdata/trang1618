@@ -9,6 +9,8 @@ categories:
 tags:
   - dataviz
   - data
+description:
+  Visualization of the Penn Quaker Strong challenge results, Fall 2019.
 ---
 
 

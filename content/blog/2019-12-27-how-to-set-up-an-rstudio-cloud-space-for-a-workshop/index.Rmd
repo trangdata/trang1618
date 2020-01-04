@@ -11,6 +11,8 @@ tags:
   - modeling
   - rstudio
   - cloud
+description:
+  How do we facilitate a one-day workshop with RStudio Cloud? What are the limitations? How do we change them? How do we link the project to a Github repository? This post will answer questions you may have when first starting using the cloud.
 ---
 
 Earlier this month, I had a blast leading a [machine learning workshop](https://www.meetup.com/rladies-philly/events/266229730/) at an R Ladies Philly meetup.
