@@ -9,6 +9,8 @@ tags:
   - machine learning
   - informatics
   - autoML
+description:
+  What is automated machine learning? What do I need to know to start? While TPOT already has greatly extensive documentation and actively maintained, I figured a list of common tips and tricks may be helpful to new users.
 ---
 
 Tree-based Pipeline Optimization Tool (TPOT) is an automated machine learning tool that helps the data scientist find the optimal model pipeline for their prediction problem. Using genetic programming (GP), TPOT explores different pipelines (sequences of feature selectors, model classifiers, *etc.*) and recommends one with optimal cross-validated score after a specified number of generations. 
@@ -147,7 +149,7 @@ However, there are a few ways you can try to speed up the training of TPOT:
 
 While this is slightly outside of the scope of TPOT, I'll go ahead and answer it here.
 This is straightforward if your final model supports probability prediction.
-Otherwise, we can use [probability calibration](https://scikit-learn.org/stable/modules/calibration.html#calibration) (which can easily be done with scikit-learn's `CalibratedClassifierCV`) to obtain the probabilities on the test set.
+Otherwise, we can use [probability calibration](https://scikit-learn.org/stable/modules/calibration.html#calibration), which can easily be done with scikit-learn's `CalibratedClassifierCV`, to obtain the probabilities on the test set.
 Here are a few lines of example code:
 
 ```{python, eval = FALSE}
