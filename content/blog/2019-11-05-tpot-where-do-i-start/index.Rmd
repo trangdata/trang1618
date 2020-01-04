@@ -11,6 +11,7 @@ tags:
   - autoML
 description:
   What is automated machine learning? What do I need to know to start? While TPOT already has greatly extensive documentation and actively maintained, I figured a list of common tips and tricks may be helpful to new users.
+twitterImg: 2019/11/05/tpot-where-do-i-start/tpot-slide.png
 ---
 
 Tree-based Pipeline Optimization Tool (TPOT) is an automated machine learning tool that helps the data scientist find the optimal model pipeline for their prediction problem. Using genetic programming (GP), TPOT explores different pipelines (sequences of feature selectors, model classifiers, *etc.*) and recommends one with optimal cross-validated score after a specified number of generations. 
@@ -160,3 +161,11 @@ else:
   clf.fit(training_features, training_target)
   pred_prob = clf.predict_proba(testing_features)
 ```
+
+#### Any other resources?
+
+I have given a few TPOT introduction talks.
+You may find the [overview slides](https://slides.com/trang1618/tpot-cic#/0/1) helpful.
+Cheers!
+
+![](tpot-slide.png)

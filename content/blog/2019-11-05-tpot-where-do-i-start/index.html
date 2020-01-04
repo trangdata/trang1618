@@ -11,6 +11,7 @@ tags:
   - autoML
 description:
   What is automated machine learning? What do I need to know to start? While TPOT already has greatly extensive documentation and actively maintained, I figured a list of common tips and tricks may be helpful to new users.
+twitterImg: 2019/11/05/tpot-where-do-i-start/tpot-slide.png
 ---
 
 <style type="text/css">
@@ -206,4 +207,11 @@ Here are a few lines of example code:</p>
 <span id="cb4-4"><a href="#cb4-4"></a>  clf <span class="op">=</span> CalibratedClassifierCV(exported_pipeline) </span>
 <span id="cb4-5"><a href="#cb4-5"></a>  clf.fit(training_features, training_target)</span>
 <span id="cb4-6"><a href="#cb4-6"></a>  pred_prob <span class="op">=</span> clf.predict_proba(testing_features)</span></code></pre></div>
+</div>
+<div id="any-other-resources" class="section level4">
+<h4>Any other resources?</h4>
+<p>I have given a few TPOT introduction talks.
+You may find the <a href="https://slides.com/trang1618/tpot-cic#/0/1">overview slides</a> helpful.
+Cheers!</p>
+<p><img src="tpot-slide.png" /></p>
 </div>
