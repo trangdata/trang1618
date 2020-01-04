@@ -43,13 +43,13 @@
   {{ end }}
 
   <!-- Social -->
-  <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Summary | plainify }}{{ end }}
+  <meta name="description" content="{{ if $.Site.Params.description }}{{ $.Site.Params.description }}{{ else }}{{ .Summary | plainify }}{{ end }}
 " />
 
   <meta name="twitter:card" content="{{ if .Params.largeimage }}summary_large_image{{ else }}summary{{ end }}">
   <meta name="twitter:url" content="{{ .Permalink }}">
   <meta name="twitter:title" content="{{ .Title }}">
-  <meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Summary | plainify }}{{ end }}">
+  <meta name="twitter:description" content="{{ if $.Site.Params.description }}{{ $.Site.Params.description }}{{ else }}{{ .Summary | plainify }}{{ end }}">
   <meta name="twitter:image" content="{{ $asset_base }}assets/{{ if .Params.largeimage }}{{ .Params.largeimage }}}{{ else if .Params.image }}{{.Params.image }}{{ else }}img/nr.png{{ end }}">
   <meta name="twitter:site" content="trang.page">
   <meta name="twitter:creator" content="@trang1618">
@@ -57,10 +57,10 @@
   <meta property="og:title" content="{{ .Title }}" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:site_name" content="trang.page" />
-  <meta property="og:description" content="  {{ if .Description }}{{ .Description }}{{ else }}{{ .Summary | plainify }}{{ end }}" />
+  <meta property="og:description" content="  {{ if $.Site.Params.description }}{{ $.Site.Params.description }}{{ else }}{{ .Summary | plainify }}{{ end }}" />
   <meta property="og:url" content="{{ .Permalink }}" />
   <script type="application/ld+json">
-    {"@type":"WebSite","url":"{{ .Permalink }}","headline":"{{ .Title }}", "name":"trang.page","description":"{{ if .Description }}{{ .Description }}{{ else }}{{ .Summary | plainify }}{{ end }}","@context":"http://schema.org"}
+    {"@type":"WebSite","url":"{{ .Permalink }}","headline":"{{ .Title }}", "name":"trang.page","description":"{{ if $.Site.Params.description }}{{ $.Site.Params.description }}{{ else }}{{ .Summary | plainify }}{{ end }}","@context":"http://schema.org"}
   </script>
 
   <!-- Indexing -->
