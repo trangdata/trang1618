@@ -1,3 +1,58 @@
+mrs3_2020:
+  type: presentation
+  venue: 'Multilocus risk scores: rethinking genetic risk scores to account for epistasis'
+  subtype: Oral Presentation
+  who: '**Le T. T.**, Gong H., Manduchi E., Orzechowski P., Moore J. H.'
+  description: Multilocus risk scores
+  short_name: mrs3
+  slides: https://slides.com/trang1618/mrs#/
+  year: 2020
+  invited: yes
+  manual: yes
+  start: 1.582623e+09
+  end: 1.5826248e+09
+  abstract: ''
+  date: '2020-02-25'
+  long_description: ''
+  exurl: ''
+  full_name: mrs3_2020
+mrs2_2019:
+  type: presentation
+  venue: Rocky Mountain Bioinformatics Conference
+  subtype: Poster
+  who: '**Le T. T.**'
+  description: Multilocus risk scores
+  short_name: mrs2
+  slides: doi.org/c9zg
+  year: 2019
+  invited: yes
+  manual: yes
+  start: 1.575657e+09
+  end: 1.5756606e+09
+  abstract: ''
+  date: '2019-12-06'
+  long_description: ''
+  exurl: ''
+  full_name: mrs2_2019
+npdr_2019:
+  type: presentation
+  venue: Rocky Mountain Bioinformatics Conference
+  subtype: Oral Presentation
+  who: '**Le T. T.**'
+  description: Detect network interactions and control for confounders and multiple
+    testing
+  short_name: npdr
+  slides: https://slides.com/trang1618/npdr-rocky
+  year: 2019
+  invited: yes
+  manual: yes
+  start: 1.5756327e+09
+  end: 1.5756333e+09
+  abstract: ''
+  date: '2019-12-06'
+  long_description: ''
+  exurl: ''
+  full_name: npdr_2019
 mrs_2019:
   type: presentation
   venue: Penn Genetics Retreat
@@ -23,7 +78,7 @@ tpot_overview_2019:
   who: '**Le T. T.**'
   description: 'TPOT: Overview and live demonstration'
   short_name: tpot_overview
-  slides: ''
+  slides: https://slides.com/trang1618/tpot-cic#/
   year: 2019
   invited: yes
   manual: yes
@@ -59,7 +114,7 @@ tpot_thera_ai_2018:
   who: '**Le T. T.**'
   description: Scalable automated machine learning
   short_name: tpot_thera_ai
-  slides: ''
+  slides: https://slides.com/trang1618/tpot-ai-theras#/
   year: 2018
   invited: yes
   manual: yes
@@ -184,7 +239,7 @@ identifiability_aims_2016:
   full_name: identifiability_aims_2016
 identifiability_jmm_2016:
   type: presentation
-  venue: Joint Mathematics Meeting
+  venue: Joint Mathematics Meetings
   subtype: Oral Presentation
   who: '**Le T. T.**, Tuncer N.'
   description: Structural identifiability issues of epidemic models
