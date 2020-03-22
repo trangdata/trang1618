@@ -14,11 +14,8 @@ description:
 twitterImg: 2020/03/22/so-you-think-you-can-run/running.jpg
 ---
 
-
-
 A few days after nonessential business closing due to the COVID-19 pandemic, the streets and trails of Philadelphia are filled with runners.
-{{%sn%}}Welcome to the club!{{%/sn%}}
-While it's nice that a lot of people have reverted to this basic form of exercise, it pains us regular runners physically when we see you run in jeans and cotton t-shirts.
+While it's nice that a lot of people have reverted to this basic form of exercise,{{%sn%}}Welcome to the club!{{%/sn%}} it pains us regular runners physically when we see you run in jeans and cotton t-shirts.
 If running for you is a outdoor family activity and the goal is just to have fun, by all means, carry on!
 But if you're new and want to avoid injuries and look more like a pro (or less like a noob), **you're in luck**.
 This post is written for you!
