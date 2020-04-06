@@ -1,9 +1,10 @@
 mrs3_2020:
   type: presentation
-  venue: 'Multilocus risk scores: rethinking genetic risk scores to account for epistasis'
+  venue: International Joint Conference on Biomedical Engineering Systems and Technologies
   subtype: Oral Presentation
   who: '**Le T. T.**, Gong H., Manduchi E., Orzechowski P., Moore J. H.'
-  description: Multilocus risk scores
+  description: 'Multilocus risk scores: rethinking genetic risk scores to account
+    for epistasis'
   short_name: mrs3
   slides: https://slides.com/trang1618/mrs#/
   year: 2020
