@@ -111,6 +111,24 @@ Note that you can also define your own scoring function!
 Yes, please see [TPOT API](https://epistasislab.github.io/tpot/api/).
 
 
+#### How do I know which features were selected in the exported pipeline?
+If you allow your `config_dict` parameter to contain `Selector` or `FeatureSetSelector`, the exported pipeline may look something like this:
+ 
+```{python, eval = FALSE}
+exported_pipeline = make_pipeline(
+    SelectPercentile(score_func=f_classif, percentile=58),
+    OneHotEncoder(minimum_fraction=0.2, sparse=False, threshold=10),
+    GradientBoostingClassifier(learning_rate=0.01, max_depth=9, max_features=0.1, min_samples_leaf=2, min_samples_split=19, n_estimators=100, subsample=0.8)
+)
+```
+
+Then, to get the selected features, you can utilize the `get_support()` function:
+
+```{python, eval = FALSE}
+exported_pipeline.steps[0][1].get_support()
+```
+
+
 #### How do I know which features are important in my optimal pipeline?
 I would use [Eli](https://eli5.readthedocs.io/en/latest/blackbox/permutation_importance.html) accompanied with the exported pipeline to compute the permutation importance score.
 Here are a few lines of example code:
