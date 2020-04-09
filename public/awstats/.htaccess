@@ -1,6 +1,0 @@
-AuthUserFile /fs3c/noamross/protected/awstats-htpasswd
-AuthName "Sooo Top Secret"
-AuthType Basic
-
-require valid-user
-
