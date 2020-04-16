@@ -5,7 +5,7 @@ foundations-ai:
   venue: University of Pennsylvania
   date: 2020-03-30
   slides: https://slides.com/trang1618/information-theory#/
-  slides: https://slides.com/trang1618/stochastic-processes#/
+  exurl: https://slides.com/trang1618/stochastic-processes#/
   long_description: >
     I give two 80-minute guest lectures on Information Theory and Stochastic Processes and their roles in artificial intelligence and biomedical applications.
 rladies-ml:
