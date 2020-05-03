@@ -1,0 +1,77 @@
+---
+title: All fonts must be embedded
+author: Trang Le
+date: '2020-05-03'
+slug: all-fonts-must-be-embedded
+categories:
+  - technology
+tags:
+  - technology
+  - tools
+  - pdf
+  - writing
+twitterImg: gecco.png
+---
+
+It took me 30 minutes to figure this out.
+I hope it takes you less.
+
+Earlier today, I submitted a manuscript to GECCO Hot-Off-the-Press track.
+The submission process was pretty straightforward, until I hit `Submit` and encountered this error:
+
+> All fonts must be embedded in the PDF.
+
+Googling this error led me to fiddle around with Acrobat Reader, try different TeX engines and apply different fonts in the manuscript.
+All was to no avail.
+
+I circled back to the [GECCO page](https://gecco-2020.sigevo.org/index.html/Papers+Submission+Instructions) for papers submission instructions to find this note on fonts:
+
+> Python's matplotlib uses Type 3 fonts by default. You need to configure matplotlib to use TrueType fonts.
+
+It probably has to do with the figures, I thought to myself.
+At that point, I had been including my `R` figures with the `.pdf` extension, and the system probably couldn't load Helvetica from the figure.
+**So I used an [online converter](https://convertio.co/pdf-eps/) to quickly convert my figures to `.eps`**.
+That's it! 
+Now the only thing left to do is make minor changes in your `.tex` file to read in the `.eps` instead of `.pdf` figures.
+Everything worked out!
+
+I hope your GECCO submission is smoother than mine!
+Good luck!
+
+*P.S.* As a side note, in case you need to convert a lot of `.pdf` files to `.eps`, here's a little bash script that makes a subdirectory, copy the pdfs there and convert all those pdfs for you:
+
+```{bash, eval=FALSE}
+#!/bin/bash
+
+mkdir outputEPS
+cp *.pdf outputEPS/
+cd outputEPS
+
+# convert all pdf to ps
+for filename in *.pdf; do
+    pdf2ps "$filename"
+done
+
+# convert all ps to eps
+for filename in *.ps; do
+    ps2eps "$filename"
+done
+
+# clean up
+rm *.pdf
+rm *.ps
+```
+
+If you name this file `convert.sh` and put it in the same directory as all the `.pdf` files you want to convert, all you need to do now is to make it executable:
+
+```{bash, eval=FALSE}
+chmod +x convert.sh
+```
+
+then run it:
+
+```{bash, eval=FALSE}
+./convert.sh
+```
+
+Enjoy!
