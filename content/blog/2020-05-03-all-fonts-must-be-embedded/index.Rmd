@@ -41,6 +41,12 @@ Everything worked out!
 I hope your GECCO submission is smoother than mine!
 Good luck!
 
+#### Updates:
+A couple hours after I published this post, [Alex de Sá](https://twitter.com/alexgcsa) kindly pointed me to a few [ways to resolve this issue](https://www.overleaf.com/learn/latex/Questions/My_submission_was_rejected_by_the_journal_because_%22Font_XYZ_is_not_embedded%22._What_can_I_do%3F) suggested by overleaf.
+Thank you Alex!
+
+##
+
 *P.S.* As a side note, in case you need to convert a lot of `.pdf` files to `.eps`, here's a little bash script that makes a subdirectory, copy the pdfs there and convert all those pdfs for you:
 
 ```{bash, eval=FALSE}
@@ -72,3 +78,4 @@ bash convert.sh
 ```
 
 Enjoy!
+
