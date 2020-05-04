@@ -11,8 +11,9 @@ tags:
   - pdf
   - writing
 description:
-  How I solved the "All fonts must be embedded in the PDF error".
-twitterImg: 2020/05/03/gecco.png
+  How I solved the "All fonts must be embedded in the PDF" error
+  in a GECCO submission.
+twitterImg: 2020/05/03/all-fonts-must-be-embedded/gecco.png
 ---
 
 It took me 30 minutes to figure this out.
