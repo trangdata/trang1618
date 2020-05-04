@@ -91,15 +91,16 @@ The submission process was pretty straightforward, until I hit <code>Submit</cod
 </blockquote>
 <p>Googling this error led me to fiddle around with Acrobat Reader, try different TeX engines and apply different fonts in the manuscript.
 All was to no avail.</p>
-<p>I circled back to the <a href="https://gecco-2020.sigevo.org/index.html/Papers+Submission+Instructions">GECCO page</a> for papers submission instructions to find this note on fonts:</p>
+<p>After a while, I circled back to the <a href="https://gecco-2020.sigevo.org/index.html/Papers+Submission+Instructions">GECCO page</a> for papers submission instructions to find this note on fonts:</p>
 <blockquote>
 <p>Python’s matplotlib uses Type 3 fonts by default. You need to configure matplotlib to use TrueType fonts.</p>
 </blockquote>
-<p>It probably has to do with the figures, I thought to myself.
-At that point, I had been including my <code>R</code> figures with the <code>.pdf</code> extension, and the system probably couldn’t load Helvetica from the figure.
-<strong>So I used an <a href="https://convertio.co/pdf-eps/">online converter</a> to quickly convert my figures to <code>.eps</code></strong>.
+<p>“It probably has to do with the figures”, I thought to myself.</p>
+<p>You see, at that point, I had been including my R figures with the <code>.pdf</code> extension, and the system probably couldn’t load Helvetica from the figure.
+Now, I could have gone back to R and tried re-generating these figures to export the characters as graphics, but I decided to try a faster approach.
+<strong>I used an <a href="https://convertio.co/pdf-eps/">online converter</a> to quickly convert my figures to <code>.eps</code></strong>.
 That’s it!
-Now the only thing left to do is make minor changes in your <code>.tex</code> file to read in the <code>.eps</code> instead of <code>.pdf</code> figures.
+Now the only thing left to do is make sure the <code>.eps</code> files look okay and edit your <code>.tex</code> file to read in the <code>.eps</code> instead of <code>.pdf</code> figures.
 Everything worked out!</p>
 <p>I hope your GECCO submission is smoother than mine!
 Good luck!</p>
