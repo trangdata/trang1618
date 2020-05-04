@@ -65,16 +65,10 @@ rm *.pdf
 rm *.ps
 ```
 
-If you name this file `convert.sh` and put it in the same directory as all the `.pdf` files you want to convert, all you need to do now is to make it executable:
+If you name this file `convert.sh` and put it in the same directory as all the `.pdf` files you want to convert, all you need to do now is to run it:
 
 ```{bash, eval=FALSE}
-chmod +x convert.sh
-```
-
-then run it:
-
-```{bash, eval=FALSE}
-./convert.sh
+bash convert.sh
 ```
 
 Enjoy!
