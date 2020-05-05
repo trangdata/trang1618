@@ -1,3 +1,14 @@
+treeheatr:
+  name: treeheatr
+  type: software
+  github: https://github.com/trang1618/treeheatr
+  description: Heatmap-integrated decision tree visualizations
+  long_description: >
+    treeheatr displays a more interpretable decision tree visualization 
+    by integrating a heatmap at its terminal nodes. 
+  date: 2020-05-05
+  version: 0.1.0
+  exurl: https://trang1618.github.io/treeheatr/index.html
 npdr:
   name: npdr
   type: software
