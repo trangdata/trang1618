@@ -4,6 +4,7 @@ author: Trang Le
 date: '2020-06-20'
 slug: phan-biet-chung-toc
 categories:
+  - institutional racism
   - research
 tags:
   - racism
