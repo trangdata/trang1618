@@ -152,6 +152,59 @@ scaling_2019:
   - Jason H Moore
   date: '2019-06-02'
   exurl: https://dx.doi.org/10.1093/bioinformatics/btz470
+theoretical_2019:
+  name: theoretical_2019
+  doi: 10.1101/857821
+  preprint: yes
+  type: paper
+  title: Theoretical properties of nearest-neighbor distance distributions and novel
+    metrics for high dimensional bioinformatics data
+  authors:
+  - Bryan A. Dawkins
+  - Trang T. Le
+  - Brett A. McKinney
+  date: '2019-12-02'
+  exurl: https://dx.doi.org/10.1101/857821
+nearest_2019:
+  name: nearest_2019
+  doi: 10.1101/861492
+  preprint: yes
+  type: paper
+  title: Nearest-neighbor Projected-Distance Regression (NPDR) for detecting network
+    interactions with adjustments for multiple tests and confounding
+  authors:
+  - Trang T. Le
+  - Bryan A. Dawkins
+  - Brett A. McKinney
+  date: '2019-12-03'
+  exurl: https://dx.doi.org/10.1101/861492
+nearest_2020:
+  name: nearest_2020
+  doi: 10.1093/bioinformatics/btaa024
+  preprint: []
+  type: paper
+  title: Nearest-neighbor Projected-Distance Regression (NPDR) for detecting network
+    interactions with adjustments for multiple tests and confounding
+  authors:
+  - Trang T Le
+  - Bryan A Dawkins
+  - Brett A McKinney
+  date: '2020-01-09'
+  exurl: https://dx.doi.org/10.1093/bioinformatics/btaa024
+analysis_2020:
+  name: analysis_2020
+  doi: 10.1101/2020.04.14.927251
+  preprint: yes
+  type: paper
+  title: Analysis of ISCB honorees and keynotes reveals disparities
+  authors:
+  - Trang T. Le
+  - Daniel S. Himmelstein
+  - Ariel A. Hippen Anderson
+  - Matthew R. Gazzara
+  - Casey S. Greene
+  date: '2020-04-14'
+  exurl: https://dx.doi.org/10.1101/2020.04.14.927251
 Hartman_2014:
   preprint: yes
 Albery_2019:

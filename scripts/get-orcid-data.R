@@ -58,7 +58,7 @@ publist <-
   })
 names(publist) <- map_chr(publist, "name")
 write_yaml(publist, here("data", "papers_orcid.yaml"))
-# publist_manual <- yaml::read_yaml(here("data", "papers_manual.yaml"))
+publist_manual <- yaml::read_yaml(here("data", "papers_manual.yaml"))
 publist <-
   c(publist, publist_manual[!(names(publist_manual) %in% names(publist))])
 for (pubname in names(publist_manual)) {
@@ -120,3 +120,4 @@ write_yaml(edulist,
              Date = function(x)
                as.character (x)
            ))
+

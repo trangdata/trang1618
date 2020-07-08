@@ -12,3 +12,4 @@ action.R
 content/blog/.DS_Store
 content/.DS_Store
 layouts/.DS_Store
+.httr-oauth
