@@ -76,5 +76,6 @@ Doing open science takes time, but that does not mean we shouldn't do it.
   - [NIH example for open licensing in your resource sharing plan](https://github.com/lab-carpentry/blueprint-resourcesharing/blob/master/examples/NIH-example.md)
   - Himmelstein's [blog post on the licensing of bioRxiv preprints](https://blog.dhimmel.com/biorxiv-licenses/)
   - [Code and Data for the Social Sciences: A Practitioner's Guide](http://web.stanford.edu/~gentzkow/research/CodeAndData.pdf)
+  - [The Turing Way](https://the-turing-way.netlify.app/welcome): community-sourced guide to reproducible data science
 
 
