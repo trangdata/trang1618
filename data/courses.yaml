@@ -1,3 +1,15 @@
+rladies-viz:
+  name: rladies
+  type: course
+  description: "On visualization: Take a sad chart and make it better"
+  venue: R Ladies Philly
+  slides: https://slides.com/trang1618/take-a-sad-chart-and-make-it-better
+  exurl: https://slides.com/trang1618/take-a-sad-chart-and-make-it-better
+  date: 2020-12-08
+  long_description: >
+    Every good chart started out as a bad one. 
+    In this workshop, we discuss 1) basic visualization principles, and 2) resources, tools, tips, and tricks that help improve our charts and refine our data stories. 
+    Some familiarity with R and ggplot will be useful but not required - novice R users are encouraged to attend.
 foundations-ai:
   name: foundations-ai
   type: course

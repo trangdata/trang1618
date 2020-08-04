@@ -1,3 +1,57 @@
+treeheatr_2020:
+  type: presentation
+  venue: R/Medicine Virtual Conference
+  subtype: Oral Presentation
+  who: '**Le T. T.**, Moore J.H.'
+  description: 'treeheatr: an R package for interpretable decision tree visualizations'
+  short_name: treeheatr
+  slides: http://slides.com/trang1618/treeheatr/
+  year: 2020.0
+  invited: 1.0
+  manual: 1.0
+  start: 2020-08-28T09:00:00
+  end: 2020-08-28T09:10:00
+  abstract: ''
+  date: '2020-08-28'
+  long_description: ''
+  exurl: ''
+  full_name: treeheatr_2020
+iscb_diversity_2020:
+  type: presentation
+  venue: Conference on Intelligent Systems for Molecular Biology
+  subtype: Oral Presentation
+  who: '**Le T. T.**, Himmelstein D.S., Anderson A.A.H, GazzaraM.R., Greene C.S.'
+  description: Analysis of ISCB honorees and keynotes reveals disparities
+  short_name: iscb_diversity
+  slides: https://slides.com/trang1618/iscb-diversity
+  year: 2020.0
+  invited: 1.0
+  manual: 1.0
+  start: 2020-06-30T16:10:00
+  end: 2020-06-30T16:20:00
+  abstract: ''
+  date: '2020-06-30'
+  long_description: https://youtu.be/x13G3gF5xAM
+  exurl: ''
+  full_name: iscb_diversity_2020
+tpot_fss_2020:
+  type: presentation
+  venue: Genetic and evolutionary computation conference
+  subtype: Oral Presentation
+  who: '**Le T. T.**, Fu W., Moore J.H.'
+  description: ''
+  short_name: tpot_fss
+  slides: https://slides.com/trang1618/tpot-fsss
+  year: 2020.0
+  invited: 1.0
+  manual: 1.0
+  start: 2020-06-10T15:55:00
+  end: 2020-06-10T16:20:00
+  abstract: ''
+  date: '2020-06-10'
+  long_description: https://youtu.be/h4onrAKizc0
+  exurl: ''
+  full_name: tpot_fss_2020
 mrs3_2020:
   type: presentation
   venue: International Joint Conference on Biomedical Engineering Systems and Technologies
@@ -7,11 +61,11 @@ mrs3_2020:
     for epistasis'
   short_name: mrs3
   slides: https://slides.com/trang1618/mrs#/
-  year: 2020
-  invited: yes
-  manual: yes
-  start: 1.582623e+09
-  end: 1.5826248e+09
+  year: 2020.0
+  invited: 1.0
+  manual: 1.0
+  start: 2020-02-25T09:30:00
+  end: 2020-02-25T10:00:00
   abstract: ''
   date: '2020-02-25'
   long_description: ''
@@ -25,11 +79,11 @@ mrs2_2019:
   description: Multilocus risk scores
   short_name: mrs2
   slides: doi.org/c9zg
-  year: 2019
-  invited: yes
-  manual: yes
-  start: 1.575657e+09
-  end: 1.5756606e+09
+  year: 2019.0
+  invited: 1.0
+  manual: 1.0
+  start: 2019-12-06T18:30:00
+  end: 2019-12-06T19:30:00
   abstract: ''
   date: '2019-12-06'
   long_description: ''
@@ -44,11 +98,11 @@ npdr_2019:
     testing
   short_name: npdr
   slides: https://slides.com/trang1618/npdr-rocky
-  year: 2019
-  invited: yes
-  manual: yes
-  start: 1.5756327e+09
-  end: 1.5756333e+09
+  year: 2019.0
+  invited: 1.0
+  manual: 1.0
+  start: 2019-12-06T11:45:00
+  end: 2019-12-06T11:55:00
   abstract: ''
   date: '2019-12-06'
   long_description: ''
@@ -62,11 +116,11 @@ mrs_2019:
   description: Multilocus risk scores
   short_name: mrs
   slides: doi.org/c9zg
-  year: 2019
-  invited: yes
-  manual: yes
-  start: 1.5676272e+09
-  end: 1.5676326e+09
+  year: 2019.0
+  invited: 1.0
+  manual: 1.0
+  start: 2019-09-04T20:00:00
+  end: 2019-09-04T21:30:00
   abstract: ''
   date: '2019-09-04'
   long_description: ''
@@ -80,11 +134,11 @@ tpot_overview_2019:
   description: 'TPOT: Overview and live demonstration'
   short_name: tpot_overview
   slides: https://slides.com/trang1618/tpot-cic#/
-  year: 2019
-  invited: yes
-  manual: yes
-  start: 1.5524748e+09
-  end: 1.5524784e+09
+  year: 2019.0
+  invited: 1.0
+  manual: 1.0
+  start: 2019-03-13T11:00:00
+  end: 2019-03-13T12:00:00
   abstract: ''
   date: '2019-03-13'
   long_description: ''
@@ -98,11 +152,11 @@ stir_psb_2019:
   description: STIR feature selection
   short_name: stir_psb
   slides: doi.org/cv5g
-  year: 2019
-  invited: yes
-  manual: yes
-  start: 1.546695e+09
-  end: 1.5466986e+09
+  year: 2019.0
+  invited: 1.0
+  manual: 1.0
+  start: 2019-01-05T13:30:00
+  end: 2019-01-05T14:30:00
   abstract: ''
   date: '2019-01-05'
   long_description: ''
@@ -116,11 +170,11 @@ tpot_thera_ai_2018:
   description: Scalable automated machine learning
   short_name: tpot_thera_ai
   slides: https://slides.com/trang1618/tpot-ai-theras#/
-  year: 2018
-  invited: yes
-  manual: yes
-  start: 1.5454008e+09
-  end: 1.5454038e+09
+  year: 2018.0
+  invited: 1.0
+  manual: 1.0
+  start: 2018-12-21T14:00:00
+  end: 2018-12-21T14:50:00
   abstract: ''
   date: '2018-12-21'
   long_description: ''
@@ -134,11 +188,11 @@ stir_mabc_2018:
   description: Statistical Inference Relief (STIR) feature selection
   short_name: stir_mabc
   slides: doi.org/cv5g
-  year: 2018
-  invited: yes
-  manual: yes
-  start: 1.5408108e+09
-  end: 1.5408198e+09
+  year: 2018.0
+  invited: 1.0
+  manual: 1.0
+  start: 2018-10-29T11:00:00
+  end: 2018-10-29T13:30:00
   abstract: ''
   date: '2018-10-29'
   long_description: ''
@@ -152,11 +206,11 @@ brainage_sobp_2018:
   description: Transcriptomics of Brain Age Gap Estimate
   short_name: brainage_sobp
   slides: ''
-  year: 2018
-  invited: yes
-  manual: yes
-  start: 1.526058e+09
-  end: 1.5260652e+09
+  year: 2018.0
+  invited: 1.0
+  manual: 1.0
+  start: 2018-05-11T17:00:00
+  end: 2018-05-11T19:00:00
   abstract: ''
   date: '2018-05-11'
   long_description: 'Transcriptomics of Brain Age Gap Estimate (BrainAGE): association
@@ -171,11 +225,11 @@ lupus_research_day_2018:
   description: Deciphering interdependent immunologic biomarkers of lupus
   short_name: lupus_research_day
   slides: ''
-  year: 2018
-  invited: yes
-  manual: yes
-  start: 1.523358e+09
-  end: 1.5233607e+09
+  year: 2018.0
+  invited: 1.0
+  manual: 1.0
+  start: 2018-04-10T11:00:00
+  end: 2018-04-10T11:45:00
   abstract: ''
   date: '2018-04-10'
   long_description: ''
@@ -190,11 +244,11 @@ privateec_ohbm_2017:
   description: Integrative network analysis for major depressive disorder
   short_name: privateec_ohbm
   slides: ''
-  year: 2017
-  invited: yes
-  manual: yes
-  start: 1.4986476e+09
-  end: 1.4986548e+09
+  year: 2017.0
+  invited: 1.0
+  manual: 1.0
+  start: 2017-06-28T11:00:00
+  end: 2017-06-28T13:00:00
   abstract: ''
   date: '2017-06-28'
   long_description: Integrative network analysis of resting-state fMRI and RNA-Seq
@@ -209,11 +263,11 @@ privateec_imse_2016:
   description: Optimized random forest classification accuracy
   short_name: privateec_imse
   slides: ''
-  year: 2016
-  invited: yes
-  manual: yes
-  start: 1.4694597e+09
-  end: 1.4694615e+09
+  year: 2016.0
+  invited: 1.0
+  manual: 1.0
+  start: 2016-07-25T15:15:00
+  end: 2016-07-25T15:45:00
   abstract: ''
   date: '2016-07-25'
   long_description: Optimized random forest classification accuracy by privacy-preserving
@@ -228,9 +282,9 @@ identifiability_aims_2016:
   description: Structural and practical identifiability issues of epidemic models
   short_name: identifiability_aims
   slides: ''
-  year: 2016
-  invited: yes
-  manual: yes
+  year: 2016.0
+  invited: 1.0
+  manual: 1.0
   start: ''
   end: ''
   abstract: ''
@@ -246,9 +300,9 @@ identifiability_jmm_2016:
   description: Structural identifiability issues of epidemic models
   short_name: identifiability_jmm
   slides: ''
-  year: 2016
-  invited: yes
-  manual: yes
+  year: 2016.0
+  invited: 1.0
+  manual: 1.0
   start: ''
   end: ''
   abstract: ''
@@ -265,9 +319,9 @@ identifiability_imse_2015:
   description: Structural identifiability issues of epidemiological models
   short_name: identifiability_imse
   slides: ''
-  year: 2015
-  invited: yes
-  manual: yes
+  year: 2015.0
+  invited: 1.0
+  manual: 1.0
   start: ''
   end: ''
   abstract: ''
@@ -284,9 +338,9 @@ rsfmri_2015:
     networks
   short_name: rsfmri
   slides: ''
-  year: 2015
-  invited: yes
-  manual: yes
+  year: 2015.0
+  invited: 1.0
+  manual: 1.0
   start: ''
   end: ''
   abstract: ''
@@ -302,9 +356,9 @@ avian_ams_2013:
   description: Spread of Avian influenza pandemic to USA via air travel
   short_name: avian_ams
   slides: ''
-  year: 2013
-  invited: yes
-  manual: yes
+  year: 2013.0
+  invited: 1.0
+  manual: 1.0
   start: ''
   end: ''
   abstract: ''
@@ -320,9 +374,9 @@ avian_siam_2013:
   description: Spread of Avian influenza pandemic to USA via air travel
   short_name: avian_siam
   slides: ''
-  year: 2013
-  invited: yes
-  manual: yes
+  year: 2013.0
+  invited: 1.0
+  manual: 1.0
   start: ''
   end: ''
   abstract: ''
@@ -338,9 +392,9 @@ seait_2013:
   description: Mathematical analysis of the spread of HIV/AIDS using SEAIT model
   short_name: seait
   slides: ''
-  year: 2013
-  invited: yes
-  manual: yes
+  year: 2013.0
+  invited: 1.0
+  manual: 1.0
   start: ''
   end: ''
   abstract: ''
