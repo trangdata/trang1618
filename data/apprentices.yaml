@@ -1,0 +1,60 @@
+jeremy_rubin:
+  name: Jeremy Rubin
+  edu: PhD student
+  date: '2020-01-01'
+  type: apprentice
+  collab: yes
+
+natasha_ray:
+  name: Natasha Ray
+  edu: highschool student
+  date: '2020-09-01'
+  type: apprentice
+  collab: no
+  summer: 2
+
+hoyt_gong:
+  name: Hoyt Gong
+  edu: undgraduate student
+  date: '2020-05-01'
+  type: apprentice
+  collab: yes
+
+daniel_goldberg:
+  name: Daniel Goldberg
+  edu: undgraduate student
+  date: '2020-06-30'
+  type: apprentice
+  collab: yes
+  summer: 1
+  
+monica_ionescu:
+  name: Monica Ionescu
+  edu: Master student
+  date: '2019-10-24'
+  type: apprentice
+  collab: no
+
+wara_laura:
+  name: Wara Laura
+  edu: undgraduate student
+  date: '2020-10-30'
+  type: apprentice
+  collab: yes
+  summer: 1
+
+praneel_chakraborty:
+  name: Praneel Chakraborty
+  edu: undgraduate student
+  date: '2020-09-01'
+  type: apprentice
+  collab: no
+  summer: 1
+
+beverly_chang:
+  name: Beverly Chang
+  edu: undgraduate student
+  date: '2020-10-30'
+  type: apprentice
+  collab: no
+  summer: 1

@@ -10,7 +10,7 @@ doi:<a href="https://dx.doi.org/{{.doi}}">{{ .doi }}</a>
   {{if isset . "exurl" }}&nbsp;<a href="{{ .exurl }}" class="is-smaller"><i class="fas fa-link fa-fw"></i></a>{{ end }}
 {{ else if eq .type "presentation" }}
   <i class="fa-li fas fa-chalkboard-teacher fa-fw"></i>
-   <strong>{{ .description}}</strong>, <em>{{ .venue }}</em>, {{ if .date }}{{ dateFormat "Jan 2, 2006" .date }}{{ else }}{{ .year }}{{ end }}
+   <strong>{{ .description}}</strong>. <em>{{ .venue }}</em>, {{ if .date }}{{ dateFormat "Jan 2, 2006" .date }}{{ else }}{{ .year }}{{ end }}
    {{if isset . "slides" }}&nbsp;<a href="{{ .slides }}" class="is-smaller"><i class="fas fa-object-ungroup fa-fw"></i></a>{{ end }}
    {{if isset . "video" }}&nbsp;<a href="{{ .video }}" class="is-smaller"><i class="fas fa-video fa-fw"></i></a>{{ end }}
    {{if isset . "exurl" }}&nbsp;<a href="{{ .exurl }}" class="is-smaller"><i class="fas fa-link fa-fw"></i></a>{{ end }}
@@ -20,6 +20,9 @@ doi:<a href="https://dx.doi.org/{{.doi}}">{{ .doi }}</a>
    {{if isset . "github" }}&nbsp;<a href="{{ .github }}" class="is-smaller"><i class="fab fa-github fa-fw"></i></a>{{ end }}
    {{if isset . "cran" }}&nbsp;<a href="{{ .github }}" class="is-smaller"><i class="fab fa-r-project fa-fw"></i></a>{{ end }}
    {{if isset . "exurl" }}&nbsp;<a href="{{ .github }}" class="is-smaller"><i class="fas fa-link fa-fw"></i></a>{{ end }}
+{{ else if eq .type "apprentice" }}
+  <i class="fa-li fas fa-user fa-fw"></i>
+  <strong>{{ .name}}</strong>, {{ .edu }} ({{ dateFormat "2006" .date }})
 {{ end }}
 {{if isset . "long_description" }}
   &nbsp;<a data-kube="toggle" data-target="#desc-{{ .name }}" class="is-hidden-print"><i class="fas fa-angle-down fa-fw"></i></a>

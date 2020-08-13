@@ -39,7 +39,8 @@ tpot_fss_2020:
   venue: Genetic and evolutionary computation conference
   subtype: Oral Presentation
   who: '**Le T. T.**, Fu W., Moore J.H.'
-  description: ''
+  description: Scaling tree-based automated machine learning to biomedical big data
+    with a feature set selector
   short_name: tpot_fss
   slides: https://slides.com/trang1618/tpot-fsss
   year: 2020.0

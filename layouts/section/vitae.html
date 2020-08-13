@@ -63,6 +63,21 @@
       </div>
 
       <div class="is-col is-40">
+        <h2>Apprentices</h2>
+        <ul class="fa-ul">
+          {{ range sort .Site.Data.apprentices "date" "desc"}}
+            {{if (not (isset . "summer"))}}
+              {{ partial "work.html" .}}
+            {{ end }}
+          {{ end }}
+        <h3>Summer</h3>
+          {{ range sort .Site.Data.apprentices "date" "desc"}}
+            {{if isset . "summer"}}
+              {{ partial "work.html" .}}
+            {{ end }}
+          {{ end }}
+        </ul>
+        
         <h2>Publications</h2>
         <ul class="fa-ul">
           {{ range sort .Site.Data.papers "date" "desc" }}
