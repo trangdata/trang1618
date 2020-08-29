@@ -23,6 +23,7 @@ doi:<a href="https://dx.doi.org/{{.doi}}">{{ .doi }}</a>
 {{ else if eq .type "apprentice" }}
   <i class="fa-li fas fa-user fa-fw"></i>
   <strong>{{ .name}}</strong>, {{ .edu }} ({{ dateFormat "2006" .date }})
+  {{if isset . "exurl" }}&nbsp;<a href="{{ .exurl }}" class="is-smaller"><i class="fas fa-link fa-fw"></i></a>{{ end }}
 {{ end }}
 {{if isset . "long_description" }}
   &nbsp;<a data-kube="toggle" data-target="#desc-{{ .name }}" class="is-hidden-print"><i class="fas fa-angle-down fa-fw"></i></a>

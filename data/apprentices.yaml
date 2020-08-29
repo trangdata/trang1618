@@ -4,6 +4,7 @@ jeremy_rubin:
   date: '2020-01-01'
   type: apprentice
   collab: yes
+  exurl: https://sites.google.com/umbc.edu/jeremyrubin
 
 natasha_ray:
   name: Natasha Ray
@@ -19,6 +20,7 @@ hoyt_gong:
   date: '2020-05-01'
   type: apprentice
   collab: yes
+  exurl: http://hoytgong.com
 
 daniel_goldberg:
   name: Daniel Goldberg
