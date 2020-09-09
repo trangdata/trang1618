@@ -1,3 +1,29 @@
+pmlb:
+  name: pmlb
+  type: software
+  github: https://github.com/EpistasisLab/penn-ml-benchmarks/
+  description: Penn Machine Learning Benchmarks (PMLB)
+  long_description: >
+    This repository contains the code and data for a large, 
+    curated set of benchmark datasets for evaluating and 
+    comparing supervised machine learning algorithms.
+    These data sets cover a broad range of applications including 
+    binary/multi-class classification problems and regression problems.
+  date: 2020-05-07
+  version: 1.0.0
+  exurl: https://epistasislab.github.io/penn-ml-benchmarks/
+pmlb-r:
+  name: pmlb-r
+  type: software
+  github: https://github.com/EpistasisLab/pmlb
+  description: an R interface to PMLB
+  long_description: >
+    pmlb is an R interface to the [Penn Machine Learning Benchmarks](https://epistasislab.github.io/penn-ml-benchmarks/)
+    data repository, a large collection of curated benchmark datasets for evaluating and 
+    comparing supervised machine learning algorithms.
+  date: 2020-09-08
+  version: 0.1.0
+  exurl: https://epistasislab.github.io/penn-ml-benchmarks/
 treeheatr:
   name: treeheatr
   type: software
