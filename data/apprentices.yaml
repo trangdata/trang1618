@@ -1,9 +1,16 @@
+john_gregg:
+  name: John Gregg
+  edu: PhD candidate
+  date: '2020-12-01'
+  type: apprentice
+  collab: yes
+
 jeremy_rubin:
   name: Jeremy Rubin
   edu: PhD student
   date: '2020-01-01'
   type: apprentice
-  collab: yes
+  collab: no
   exurl: https://sites.google.com/umbc.edu/jeremyrubin
 
 natasha_ray:
@@ -11,7 +18,7 @@ natasha_ray:
   edu: highschool student
   date: '2020-09-01'
   type: apprentice
-  collab: no
+  collab: yes
   summer: 2
 
 hoyt_gong:
@@ -35,7 +42,7 @@ monica_ionescu:
   edu: Master student
   date: '2019-10-24'
   type: apprentice
-  collab: no
+  collab: yes
 
 wara_laura:
   name: Wara Laura
@@ -50,13 +57,5 @@ praneel_chakraborty:
   edu: undgraduate student
   date: '2020-09-01'
   type: apprentice
-  collab: no
-  summer: 1
-
-beverly_chang:
-  name: Beverly Chang
-  edu: undgraduate student
-  date: '2020-10-30'
-  type: apprentice
-  collab: no
+  collab: yes
   summer: 1

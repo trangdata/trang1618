@@ -12,10 +12,10 @@ pmlb:
   date: 2020-05-07
   version: 1.0.0
   exurl: https://epistasislab.github.io/penn-ml-benchmarks/
-pmlb-r:
-  name: pmlb-r
+pmlbr:
+  name: pmlbr
   type: software
-  github: https://github.com/EpistasisLab/pmlb
+  github: https://github.com/EpistasisLab/pmlbr
   description: an R interface to PMLB
   long_description: >
     an R interface to the [Penn Machine Learning Benchmarks](https://epistasislab.github.io/penn-ml-benchmarks/)
