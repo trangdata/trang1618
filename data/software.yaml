@@ -1,3 +1,26 @@
+tdapseudotime:
+  name: tdapseudotime
+  type: software
+  github: https://github.com/trang1618/tdapseudotime
+  description: Implements the temporal phenotyping via topological data analysis.
+  date: 2020-10-05
+  version: 0.1.0
+  exurl: https://trang1618.github.io/tdapseudotime
+regens:
+  name: regens
+  type: software
+  github: https://github.com/EpistasisLab/regens/
+  description: REGENS (REcombinatory Genome ENumeration of Subpopulations)
+  long_description: >
+    An open source Python package 📦 that simulates whole genomes 
+    from real genomic segments. REGENS recombines these segments 
+    in a way that simulates completely new individuals while simultaneously 
+    preserving the input genomes' linkage disequilibrium (LD) 
+    pattern with extremely high fedility. REGENS can also simulate 
+    mono-allelic and epistatic single nucleotide variant (SNV) effects on a 
+    continuous or binary phenotype without perturbing the simulated LD pattern.
+  date: 2020-09-30
+  version: 0.1.0
 pmlb:
   name: pmlb
   type: software
