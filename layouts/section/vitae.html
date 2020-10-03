@@ -42,7 +42,7 @@
 
        <h2>Select Software Packages</h2>
        <ul class="fa-ul">
-         {{ range .Site.Data.software "date" "desc" }}
+         {{ range .Site.Data.software }}
            {{ partial "work.html" .}}
          {{ end }}
        </ul>
