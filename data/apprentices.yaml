@@ -23,7 +23,7 @@ natasha_ray:
 
 hoyt_gong:
   name: Hoyt Gong
-  edu: undgraduate student
+  edu: undergraduate student
   date: '2020-05-01'
   type: apprentice
   collab: yes
@@ -31,7 +31,7 @@ hoyt_gong:
 
 daniel_goldberg:
   name: Daniel Goldberg
-  edu: undgraduate student
+  edu: undergraduate student
   date: '2020-06-30'
   type: apprentice
   collab: yes
@@ -46,7 +46,7 @@ monica_ionescu:
 
 wara_laura:
   name: Wara Laura
-  edu: undgraduate student
+  edu: undergraduate student
   date: '2020-10-30'
   type: apprentice
   collab: yes
@@ -54,7 +54,7 @@ wara_laura:
 
 praneel_chakraborty:
   name: Praneel Chakraborty
-  edu: undgraduate student
+  edu: undergraduate student
   date: '2020-09-01'
   type: apprentice
   collab: yes
