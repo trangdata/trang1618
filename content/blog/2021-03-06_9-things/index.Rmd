@@ -1,0 +1,114 @@
+---
+title: "9 things I can't tech without"
+author: "Trang Le"
+date: '2021-03-06'
+tags:
+- grad school
+- computational
+- research
+- computer
+slug: 9-things
+description:
+  9 things people use but don't tell you about
+twitterImg: 2021/03/06/9-tools/index_files/figure-html/computer.jpg
+---
+
+As I work closely with graduate students (whom I dearly call my apprentices),
+I share with them some tools I picked up along the way that are really helpful to boost my productivity and just make my life easier in general.
+Often, they come back with "WOW!!! XYZ has been really helpful! I wish I knew about it 5 years ago."
+So do I.
+Well, some of these tools might have been at their very early stage or not even existed then, but here they are, and I'm excited to share with the world what I have been obsessing over.
+
+Before I start, a big thank you to John Gregg who trusted my recommendations, tried them out, and inspired me to write this post.
+
+## Shortcuts and extended functionality
+
+I have always strived to get more out of all the tools I use.
+I mean, if you have a vacuum with max level 10, would you always vacuum your house at level 3?
+Anyhow, described below are some of the tools I love, but I would encourage you to spend some time to learn more about the extended functionality of your own favorite tools.
+For example, do you know that in Chrome and Edge, you can group and collapse tabs (extremely useful for tab hoarders like me with multiple topics going on at once)?
+Or if you type [doc.new](https://doc.new) into your browser, it will create a new Google Doc?{{%sn%}}similarly for gist.new and [{others}.new](https://whats.new/shortcuts/){{%/sn%}}
+Or if you Spotlight Search in macOS, you can `Cmd+Enter` to open the directory containing the object instead of the object itself? 
+Or, in most applications, you can do `Cmd/Ctrl+Shift+V` to paste plain text?
+
+So, I encourage you to do the same.
+Find cheat sheets.
+Really _use_ the tools.
+Watch the experts do live screencasts and learn.{{%sn%}}I learned that the RStudio icon brings me to the project root directory 🤯 from watching Jenny Bryan's live demo one time.{{%/sn%}}
+
+## RStudio, Visual Studio Code, and the command line
+
+Unfortunately, editors are another thing no one tells you and everyone has really strong opinions about.
+
+![](strong-opinions.gif){width=100%}
+
+Whichever editor you use, **know** your shortcuts and, at the minimum, please work on separate projects separately.
+In other words, utilize RStudio's Project and VSCode's Workspace.
+I use RStudio for many of my R work and git integration and even Terminal interaction (the tab next to Console).
+For everything else, I use VSCode.
+Extensions in VSCode such as GitLens and Docker have been game-changing for me when working collaboratively in larger groups.
+
+[The missing semester of your CS education](https://missing.csail.mit.edu/) is a wonderful course that is freely available to anyone. Several undergraduate and graduate students to whom I have suggested this course found it extremely helpful for getting comfortable with the command line and Git.
+One thing I'll say about the command line is: you don't need much. 
+Knowing only a few commands would be sufficient to get into your school's clusters and submit jobs.{{%sn%}}These [5 uses](https://www.nature.com/articles/d41586-021-00263-0) of the command lines are pretty niche, but I'm pretty sure you'll find your own favorite command sooner or later.{{%/sn%}}
+
+
+## Password manager
+
+I recently migrated from [LastPass](https://www.lastpass.com/) to the multi-platform open-source [Bitwarden](https://bitwarden.com/). 
+I enjoy several of its really nice features, _e.g._ random password generator with constraints, and smooth phone app integration (I use the browser extension and the phone app).
+It's free, but I pay $10/year extra for 2FA support for 2nd-tier websites like Penn to avoid phone messages or third-party app push notifications.
+A general good practice is to use password manager for 2nd-tier sites and large mnemonic passwords for 1st-tier sites. 
+Lowercase letters of multiple phrases comprise long passwords that are cryptographically hard to break. No number or capitalized letters or special characters needed.{{%sn%}}Ref: [A great 3 minute listen](https://www.npr.org/sections/alltechconsidered/2017/08/14/543434808/forget-tough-passwords-new-guidelines-make-it-simple){{%/sn%}}
+
+But most importantly, I don't care which password manager you use, just please use one.
+Setting these up takes less than 5 minutes, and if my 60-year-old mother uses a password manager, you have no excuse not to!
+
+## uBlock Origin
+
+Just install the browser extension.
+No explanation needed.
+
+
+## slides.com
+
+I love making presentations on [slides.com](https://slides.com/) because of its simplicity, amazing support of iFrames along with many cool and easy-to-use things like code highlighting and inline equations.
+For example, [here](https://slides.com/trang1618/take-a-sad-chart-and-make-it-better#/9), I embedded a [xaringan](https://slides.yihui.org/xaringan/) deck inside one single slide, how cool is that?
+One singularity failure it has, though, is that the server can be down and you may not be able to open your nicely prepared deck.
+As far as I'm concerned, this has happened only once last summer when we all started working from home, so maybe (hopefully) they have fixed that for good now.
+Also, once, I had a wifi issue at a conference which was sorted out quickly thankfully, but it would be wise to export your slides as pdf as a backup ahead of time.
+
+![](xaringan.png){width=100%}
+
+## Git and GitHub
+
+This is a little bit more on the computational side, but Daniel Himmelstein laid out why version control is important for scientific rigor & reproducibility in this [workshop](https://youtu.be/F_ghnwG5ejA?t=2242).
+In brief, Git allows you to track your project's history, and making your work public on GitHub forces you to have good practices such as clear code and detailed documentation.
+Finally, knowing how to make pull requests opens infinite opportunities to contribute to open-source software, making you more visible, and all these skills would really benefit you in large, collaborative projects later.
+
+For the longest time, I use GitHub to mostly deposit my MATLAB code - those were the days!
+It was not until my postdoc that I started to incorporate git more in my day-to-day work.
+To me, the easiest way to learn a new tool is to force yourself to work with it for one specific project.{{%sn%}}Write your first paper with [Manubot](http://manubot.org/), for example.{{%/sn%}}
+For beginners, interact with Git via the command line interface can be a little intimidating, but there are great IDEs out there with so many good tutorials. {{%sn%}}A few: 
+[Git and GitHub crash course](https://youtu.be/SWYqp7iY_Tc)
+[GitHub Desktop quick intro](https://www.youtube.com/watch?v=77W2JSL7-r8&t=696s)
+[git-tips](https://github.com/git-tips/tips),
+[git - the simple guide](https://rogerdudler.github.io/git-guide/),
+[cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)
+and more R focused: https://happygitwithr.com/, 
+[what they forgot to teach you about R](https://rstudio-conf-2020.github.io/what-they-forgot/day1_4),
+[git for solo users](https://alex.arcus.chop.edu/git-for-solo-users/){{%/sn%}}
+I have heard [GitHub Desktop](https://desktop.github.com/) has a really intuitive interface that helps even the steep learning curve of Git.
+Personally, I use RStudio for most of my interaction with git for R package development/analysis code update.
+
+## Zotero
+
+Even though its primary purpose is for citation management, I use Zotero's desktop app and browser extension to mostly organize papers into folders.
+No more downloading the same paper 5 times and clutter your Downloads folder!
+
+### That's it! 
+
+These are all my favorite tools.
+What are yours? Do you have better alternatives? 
+Have you had a good experience with a citation manager when integrating both google doc and word? 
+@ me and I'll include your suggestions in the next post! 
