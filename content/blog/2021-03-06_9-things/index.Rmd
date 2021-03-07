@@ -14,7 +14,7 @@ twitterImg: 2021/03/06/9-things/computer.jpg
 ---
 
 As I work closely with graduate students (whom I dearly call my apprentices),
-I share with them some tools I picked up along the way that are really helpful to boost my productivity and just make my life easier in general.
+I share with them some tools I picked up along the way that help boost my productivity and just make my life easier in general.
 Often, they come back with "WOW!!! XYZ has been really helpful! I wish I knew about it 5 years ago."
 So do I.
 Well, some of these tools might have been at their early stage or not even existed then, but here they are, and I'm excited to share with the world what I have been obsessing over.
