@@ -1,3 +1,51 @@
+johans_pmlbr_2021:
+  type: presentation
+  venue: R-Ladies Johannesburg
+  subtype: Oral Presentation
+  who: '**Le T. T.**'
+  description: 'treeheatr and pmlbr: visualizing decision trees on benchmark datasets'
+  short_name: johans_pmlbr
+  slides: ''
+  year: 2021.0
+  invited: 1.0
+  manual: 1.0
+  start: 2021-09-14T09:45:00
+  end: 2021-09-14T11:00:00
+  abstract: ''
+  date: '2021-09-14'
+  long_description: The presentation of the decision tree with data represented as
+    a heatmap is a new visualization that uncovers the tree's performance, the data's
+    correlation structure, and the importance of each feature in predicting the outcome.
+    Implemented in an easily installed package with a detailed vignette, treeheatr
+    can be a useful teaching tool to enhance students’ understanding of a simple decision
+    tree model before diving into more complex tree-based machine learning methods.
+    We will apply decision tree models and visualize them on multiple benchmark machine
+    learning datasets in pmlbr.
+  exurl: ''
+  full_name: johans_pmlbr_2021
+ims_viz_2021:
+  type: presentation
+  venue: IMS
+  subtype: Oral Presentation
+  who: '**Le T. T.**'
+  description: Take a bad chart and make it better
+  short_name: ims_viz
+  slides: https://slides.com/trang1618/ims-viz/
+  year: 2021.0
+  invited: 1.0
+  manual: 1.0
+  start: 2021-08-30T14:00:00
+  end: 2021-08-30T14:30:00
+  abstract: Every good chart started out as a bad one. In this talk, we will discuss
+    a few basic visualization principles and some ggplot tips and tricks that help
+    improve our charts and refine our data stories. Some familiarity with R and ggplot
+    will be useful but not required - novice R users are encouraged to attend.
+  date: '2021-08-30'
+  long_description: Every good chart started out as a bad one. In this talk, we will
+    discuss a few basic visualization principles that help improve our charts and
+    refine our data stories.
+  exurl: ''
+  full_name: ims_viz_2021
 cleveland_dataviz_2021:
   type: presentation
   venue: Cleveland R User Group
@@ -9,15 +57,13 @@ cleveland_dataviz_2021:
   year: 2021.0
   invited: 1.0
   manual: 1.0
-  start:
-  - 2020-12-08T18:00:01
-  end:
-  - 2020-12-08T20:00:01
+  start: 2021-08-25T18:00:00
+  end: 2021-08-25T19:30:00
   abstract: Every good chart started out as a bad one. In this talk, we will discuss
     a few basic visualization principles and some ggplot tips and tricks that help
     improve our charts and refine our data stories. Some familiarity with R and ggplot
     will be useful but not required - novice R users are encouraged to attend.
-  date: '2020-12-08'
+  date: '2021-08-25'
   long_description: |-
     Every good chart started out as a bad one. In this talk, we will discuss a few basic visualization principles and some ggplot tips and tricks that help improve our charts and refine our data stories. Some familiarity with R and ggplot will be useful but not required - novice R users are encouraged to attend.
     Trang Le is a postdoctoral fellow with Jason Moore at the Computational Genetics Lab, University of Pennsylvania. She enjoys developing machine learning methods for rigorous analyses of a wide array of biomedical data. Most recently, her work focuses on investigating the long-term effect of neurological conditions in COVID-19 patients. She’s the author and maintainer of multiple R packages.
@@ -25,7 +71,7 @@ cleveland_dataviz_2021:
   full_name: cleveland_dataviz_2021
 ralph_dataviz_2020:
   type: presentation
-  venue: R Ladies Philly Meetup
+  venue: R Ladies Philly
   subtype: Oral Presentation
   who: '**Le T. T.**'
   description: Take a bad chart and make it better
@@ -34,10 +80,8 @@ ralph_dataviz_2020:
   year: 2020.0
   invited: 1.0
   manual: 1.0
-  start:
-  - 1.5983784e+09
-  end:
-  - 1.5983838e+09
+  start: 2020-08-25T18:00:00
+  end: 2020-08-25T19:30:00
   abstract: Every good chart started out as a bad one. In this workshop, we will discuss
     1) basic visualization principles, and 2) resources, tools, tips, and tricks that
     help improve our charts and refine our data stories. Some familiarity with R and
@@ -48,7 +92,7 @@ ralph_dataviz_2020:
   full_name: ralph_dataviz_2020
 treeheatr_pmlbr_2020:
   type: presentation
-  venue: R Ladies Miami Meetup
+  venue: R Ladies Miami
   subtype: Oral Presentation
   who: '**Le T. T.**'
   description: Visualizing decision trees on benchmark datasets
@@ -57,10 +101,8 @@ treeheatr_pmlbr_2020:
   year: 2020.0
   invited: 1.0
   manual: 1.0
-  start:
-  - 2020-11-19T18:00:00
-  end:
-  - 2020-11-19T19:30:00
+  start: 2020-11-19T18:00:00
+  end: 2020-11-19T19:30:00
   abstract: The presentation of the decision tree with data represented as a heatmap
     is a new visualization that uncovers the tree's performance, the data's correlation
     structure, and the importance of each feature in predicting the outcome. Implemented
@@ -82,10 +124,8 @@ treeheatr_2020:
   year: 2020.0
   invited: 1.0
   manual: 1.0
-  start:
-  - 2020-08-28T18:00:00
-  end:
-  - 2020-08-28T18:10:00
+  start: 2020-08-28T18:00:00
+  end: 2020-08-28T18:10:00
   abstract: ''
   date: '2020-08-28'
   long_description: ''
@@ -102,10 +142,8 @@ iscb_diversity_2020:
   year: 2020.0
   invited: 1.0
   manual: 1.0
-  start:
-  - 2020-06-30T16:10:00
-  end:
-  - 2020-06-30T16:20:00
+  start: 2020-06-30T16:10:00
+  end: 2020-06-30T16:20:00
   abstract: ''
   date: '2020-06-30'
   long_description: ''
@@ -123,10 +161,8 @@ tpot_fss_2020:
   year: 2020.0
   invited: 1.0
   manual: 1.0
-  start:
-  - 2020-06-10T15:55:00
-  end:
-  - 2020-06-10T16:20:00
+  start: 2020-06-10T15:55:00
+  end: 2020-06-10T16:20:00
   abstract: ''
   date: '2020-06-10'
   long_description: ''
@@ -144,10 +180,8 @@ mrs3_2020:
   year: 2020.0
   invited: 1.0
   manual: 1.0
-  start:
-  - 2020-02-25T09:30:00
-  end:
-  - 2020-02-25T10:00:00
+  start: 2020-02-25T09:30:00
+  end: 2020-02-25T10:00:00
   abstract: ''
   date: '2020-02-25'
   long_description: ''
@@ -164,10 +198,8 @@ mrs2_2019:
   year: 2019.0
   invited: 1.0
   manual: 1.0
-  start:
-  - 2019-12-06T18:30:00
-  end:
-  - 2019-12-06T19:30:00
+  start: 2019-12-06T18:30:00
+  end: 2019-12-06T19:30:00
   abstract: ''
   date: '2019-12-06'
   long_description: ''
@@ -185,10 +217,8 @@ npdr_2019:
   year: 2019.0
   invited: 1.0
   manual: 1.0
-  start:
-  - 2019-12-06T11:45:00
-  end:
-  - 2019-12-06T11:55:00
+  start: 2019-12-06T11:45:00
+  end: 2019-12-06T11:55:00
   abstract: ''
   date: '2019-12-06'
   long_description: ''
@@ -205,10 +235,8 @@ mrs_2019:
   year: 2019.0
   invited: 1.0
   manual: 1.0
-  start:
-  - 2019-09-04T20:00:00
-  end:
-  - 2019-09-04T21:30:00
+  start: 2019-09-04T20:00:00
+  end: 2019-09-04T21:30:00
   abstract: ''
   date: '2019-09-04'
   long_description: ''
@@ -225,10 +253,8 @@ tpot_overview_2019:
   year: 2019.0
   invited: 1.0
   manual: 1.0
-  start:
-  - 2019-03-13T11:00:00
-  end:
-  - 2019-03-13T12:00:00
+  start: 2019-03-13T11:00:00
+  end: 2019-03-13T12:00:00
   abstract: ''
   date: '2019-03-13'
   long_description: ''
@@ -245,10 +271,8 @@ stir_psb_2019:
   year: 2019.0
   invited: 1.0
   manual: 1.0
-  start:
-  - 2019-01-05T13:30:00
-  end:
-  - 2019-01-05T14:30:00
+  start: 2019-01-05T13:30:00
+  end: 2019-01-05T14:30:00
   abstract: ''
   date: '2019-01-05'
   long_description: ''
@@ -265,10 +289,8 @@ tpot_thera_ai_2018:
   year: 2018.0
   invited: 1.0
   manual: 1.0
-  start:
-  - 2018-12-21T14:00:00
-  end:
-  - 2018-12-21T14:50:00
+  start: 2018-12-21T14:00:00
+  end: 2018-12-21T14:50:00
   abstract: ''
   date: '2018-12-21'
   long_description: ''
@@ -285,10 +307,8 @@ stir_mabc_2018:
   year: 2018.0
   invited: 1.0
   manual: 1.0
-  start:
-  - 2018-10-29T11:00:00
-  end:
-  - 2018-10-29T13:30:00
+  start: 2018-10-29T11:00:00
+  end: 2018-10-29T13:30:00
   abstract: ''
   date: '2018-10-29'
   long_description: ''
@@ -305,10 +325,8 @@ brainage_sobp_2018:
   year: 2018.0
   invited: 1.0
   manual: 1.0
-  start:
-  - 2018-05-11T17:00:00
-  end:
-  - 2018-05-11T19:00:00
+  start: 2018-05-11T17:00:00
+  end: 2018-05-11T19:00:00
   abstract: ''
   date: '2018-05-11'
   long_description: 'Transcriptomics of Brain Age Gap Estimate (BrainAGE): association
@@ -326,10 +344,8 @@ lupus_research_day_2018:
   year: 2018.0
   invited: 1.0
   manual: 1.0
-  start:
-  - 2018-04-10T11:00:00
-  end:
-  - 2018-04-10T11:45:00
+  start: 2018-04-10T11:00:00
+  end: 2018-04-10T11:45:00
   abstract: ''
   date: '2018-04-10'
   long_description: ''
@@ -347,10 +363,8 @@ privateec_ohbm_2017:
   year: 2017.0
   invited: 1.0
   manual: 1.0
-  start:
-  - 2017-06-28T11:00:00
-  end:
-  - 2017-06-28T13:00:00
+  start: 2017-06-28T11:00:00
+  end: 2017-06-28T13:00:00
   abstract: ''
   date: '2017-06-28'
   long_description: Integrative network analysis of resting-state fMRI and RNA-Seq
@@ -368,10 +382,8 @@ privateec_imse_2016:
   year: 2016.0
   invited: 1.0
   manual: 1.0
-  start:
-  - 2016-07-25T15:15:00
-  end:
-  - 2016-07-25T15:45:00
+  start: 2016-07-25T15:15:00
+  end: 2016-07-25T15:45:00
   abstract: ''
   date: '2016-07-25'
   long_description: Optimized random forest classification accuracy by privacy-preserving
@@ -389,10 +401,8 @@ identifiability_aims_2016:
   year: 2016.0
   invited: 1.0
   manual: 1.0
-  start:
-  - ~
-  end:
-  - ~
+  start: ''
+  end: ''
   abstract: ''
   date: ''
   long_description: ''
@@ -409,10 +419,8 @@ identifiability_jmm_2016:
   year: 2016.0
   invited: 1.0
   manual: 1.0
-  start:
-  - ~
-  end:
-  - ~
+  start: ''
+  end: ''
   abstract: ''
   date: ''
   long_description: ''
@@ -430,10 +438,8 @@ identifiability_imse_2015:
   year: 2015.0
   invited: 1.0
   manual: 1.0
-  start:
-  - ~
-  end:
-  - ~
+  start: ''
+  end: ''
   abstract: ''
   date: ''
   long_description: ''
@@ -451,10 +457,8 @@ rsfmri_2015:
   year: 2015.0
   invited: 1.0
   manual: 1.0
-  start:
-  - ~
-  end:
-  - ~
+  start: ''
+  end: ''
   abstract: ''
   date: ''
   long_description: ''
@@ -471,10 +475,8 @@ avian_ams_2013:
   year: 2013.0
   invited: 1.0
   manual: 1.0
-  start:
-  - ~
-  end:
-  - ~
+  start: ''
+  end: ''
   abstract: ''
   date: ''
   long_description: ''
@@ -491,10 +493,8 @@ avian_siam_2013:
   year: 2013.0
   invited: 1.0
   manual: 1.0
-  start:
-  - ~
-  end:
-  - ~
+  start: ''
+  end: ''
   abstract: ''
   date: ''
   long_description: ''
@@ -511,10 +511,8 @@ seait_2013:
   year: 2013.0
   invited: 1.0
   manual: 1.0
-  start:
-  - ~
-  end:
-  - ~
+  start: ''
+  end: ''
   abstract: ''
   date: ''
   long_description: ''
