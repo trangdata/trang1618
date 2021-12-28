@@ -1,0 +1,279 @@
+---
+title: 10 things I love about Julia
+author: Trang Le
+date: '2021-12-28'
+slug: 10-things-i-love-about-julia
+categories:
+  - science
+tags:
+  - julia
+  - advent-of-code
+  - data science
+  - algorithm
+description:
+  Things I learned and love about Julia through this year's Advent of Code puzzles.
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Those who know me know that my love for the [Julia language](https://julialang.org/) has grown quite a bit in the past couple years.
+Still, I had trouble finding a project that would allow me to work more in this nifty language
+until I saw [Jasmine Hughes](https://twitter.com/Jas_Hughes) solve all of last year [Advent of Code](https://adventofcode.com/) (AOC) puzzles in Julia.
+{{%mn%}}I know of Jasmine through the AOC RLadies leaderboard! See Jasmine's valuable advice on "how to get the most out of it" [here](https://youtu.be/336gAu7PAlI).{{%/mn%}}
+
+So that's what I did this year.
+Locating in the west coast this time, I have the advantage of not having to stay up until midnight 
+or to set the alarm at [4:38 am](https://twitter.com/ClareHorscroft/status/1475469403537952774) 
+to be ready when the puzzles come out, which allowed me to end up in the top 3 of the leaderboards I joined. :star: :star: 
+So I thought I'd share with you 10 things I love/learned about Julia through AOC.
+{{%sn%}}And also some things I find not entirely straightforward.{{%/sn%}}
+
+
+I hope this post will inspire you to learn Julia.
+I won't go in depth into why Julia is awesome
+{{%sn%}}For details strong typing, multiple dispatch, environment management and other clever design decisions, please check out this [terrific talk](https://youtu.be/bI9jN40JMQU) by Tamas Nagy instead.{{%/sn%}}
+but instead will make some connections to R and thus hopefully eliminate some of the pain points for you if you're learning the language with an R background.
+ 
+_Disclaimers_: I am still very much a novice in Julia and never really had formal programming training.
+I did my best to use the right terminology, 
+but please let me know if there is a better explanation/description for something.
+{{%mn%}} _e.g._, I used _"array"_ and _"collection"_ somewhat interchangibly.{{%/mn%}}
+Any new tips/tricks/intuition are most welcomed!
+I'd love to update the post with your suggestions!
+
+_Acknowledgements_: 
+This post was written in an _.Rmd_ notebook using the wonderful [JuliaCall](https://non-contradiction.github.io/JuliaCall/index.html) package.
+
+## 1. Great packages
+
+Julia has a number of great packages despite being a relatively young language,
+much of which can largely be attributed to the [big overlap](https://youtu.be/bI9jN40JMQU) between its package users and developers.
+([No two-language problem!](https://juliadatascience.io/julia_accomplish#sec:two_language))
+
+Here are some packages that I frequently call for AOC puzzles:
+
+```{julia, eval=FALSE}
+using Chain
+using Combinatorics: permutations, combinations
+using LinearAlgebra: dot, transpose
+using Primes: factor
+using StatsBase: countmap, rle
+using Statistics
+using DataFrames, DataFramesMeta
+```
+
+Julia native pipe `|>` supports simple "chaining" operations of one argument,
+but I like using the **Chain** package for more comprehensive support with broadcasting and splatting.
+For example, for day 15 part 2, I built the larger matrix by
+
+```{julia, eval=FALSE}
+append_input(x) = mod1.(input .+ x, 9)
+input2 = @chain append_input begin
+    map.([i:i+4 for i = 0:4])
+    vcat.(_...)
+    hcat(_...)
+end
+```
+
+Among the other functions, I used `countmap()` (≈ R's `table()`) in at least seven of these puzzles.
+
+I leave **DataFrames** and **DataFramesMeta** here in case you're comfortable with wrangling dataframes.
+My experience with their syntax so far has not been as fluid as I'd like, so I actually did not use them for any of this year puzzles.
+{{%mn%}}This reminded me that `dplyr` is so magical!{{%/mn%}}
+
+## 2. Broadcasting
+
+While R performs "element-wise" operations automatically
+{{%sn%}}such as adding a number to a numeric vector, or even adding numeric vectors of different sizes{{%/sn%}}
+, in Julia, we have to specify that we want to broadcast by adding a `.` after a function name or before a symbol, such as `.+` or `.==`.
+
+This leads to some cool notations.
+For example, if _x_ is a 2-D array and we want to add 1 to all element of _x_:
+
+```{julia, eval=FALSE}
+x .+= 1
+```
+
+If we have two arrays as arguments for a function, we may need to use `Ref` to ["treat the referenced values as a scalar"](https://discourse.julialang.org/t/how-to-broadcast-over-only-certain-function-arguments/19274/2).
+For example:
+
+```{julia, eval=TRUE}
+getindex.(Ref([0, 4, 3, 5]), [2, 1, 2])
+```
+
+Alternatively, with a wonkier syntax:
+
+```{julia, eval=TRUE}
+getindex.(([0, 4, 3, 5],), [2, 1, 2])
+```
+
+If you're curious about nested broadcasting, last time I searched, the best way to do it would be 
+to define a separate function that perform the inner broadcasting, then broadcast it onto the outer iterable, 
+or simply use list comprehension.
+
+## 3. Splat operator
+
+Same as R’s ellipses, Julia's "splat" operator `...` can be used in a function definition to indicate that the function accepts an arbitrary number of arguments.
+The Splat operator is also equivalent to using Julia's `reduce()` function (≈ R's `do.call()`).
+{{%mn%}}While we're here, Julia's `map()` ≈ R's `apply()`.{{%/mn%}}
+For example, here, `max()` returns the maximum of the arguments,
+so if we want to find the maximum of an array, we'll need to add `...` after the array in the function argument,
+or, for this particular case, use the built-in `maximum()` function.
+
+```{julia, eval=FALSE}
+max(4, 5, 3)
+max([4, 5, 3]...)
+reduce(max, [4, 5, 3])
+maximum([4, 5, 3])
+```
+
+_Quick note_: `maximum()` can also take a function as its first argument.
+
+Similarly, the following commands are equivalent:
+```{julia, eval=FALSE}
+*("hello", " ", "world")
+*(["hello", " ", "world"]...)
+join(["hello", " ", "world"])
+```
+
+## 4. Unicode support 
+
+I love that Julia let me use subscript and superscripts in my variable names (with `\_` and `\^`), and Unicode math symbols (with, say, `\alpha<tab>`) even as operations:
+
+```{julia} 
+4 ∉ [4, 5, 3]
+```
+or 
+```{julia} 
+8 ÷ 3
+``` 
+
+A few people on [Zulip](https://julialang.zulipchat.com/) used the octopus emoji 🐙 for AOC 2021 day 11 💥, which made me smile.
+
+## 5. Macros
+
+Some of the macros I frequently used are `@show`, `@time`, `@assert`, and for AOC especially, **BenchmarkTools**'s `@btime`.
+
+If you want, you can even [define your own macros](https://docs.julialang.org/en/v1/manual/metaprogramming/)!
+
+## 6. Scope 
+
+Some developers may not like how Julia deals with variable scope, 
+but I actually enjoy being explicit about where I want my variables defined.
+In general, it’s best practice to indicate whether a variable name is global or local within your loops. For example:
+
+```{julia, eval=FALSE}
+s = 0
+for i = 1:10 
+    global s += 1
+end
+```
+
+As of Julia 1.5, if we don’t have `global` here, our code would still run in REPL, 
+but if we try to include a _.jl_ script with these lines, Julia will give a warning and also error out.
+
+See more about scoping [here](https://docs.julialang.org/en/v1/manual/variables-and-scoping/).
+
+## 7. Find & filter
+
+When I first learned Julia, I was really frustrated when facing this subsetting problem.
+Julia's `findall()` is essentially R's `which()` with a slightly longer syntax.
+And if you want the _elements_ instead of _positions_, you can use `filter()`.
+
+```{r, eval=FALSE}
+# In R
+x <- c(2, 4, 5) 
+which(x > 2) ## 2 3
+x[x > 2] ## 4 5
+```
+
+
+```{julia, eval=FALSE}
+# In Julia
+x = [2, 4, 5]
+
+findall(xᵢ -> xᵢ > 2, [2, 4, 5]) ## 2 3
+findall(>(2), x) ## 2 3
+
+filter(xᵢ -> xᵢ > 2, [2, 4, 5]) ## 4 5
+filter(>(2), x) ## 4 5
+x[x .> 2] ## 4 5 (the "R" way)
+# x[begin:end .∈ Ref(findall(>(2), x))]
+# not what I would do unless I have a list of indices I want to include/exclude
+```
+
+One potential gotcha to keep in mind is that, if the condition is not satisfied with any element of the collection,
+`findfirst()` returns **nothing** while `findall()` returns an **empty collection**.
+
+A related and useful function here is `indexin()`.
+
+`findall()` can also be used on strings with the argument **overlap** crucial for some AOC puzzles.
+
+## 8. Simultaneous assignments
+
+```{julia, eval=FALSE}
+ni, nj = size(input)
+```
+or 
+```{julia, eval=FALSE}
+[f(x, y) for (x, y) in my_tuples]
+```
+
+
+## 9. Memoization is easy!
+```{julia, eval=FALSE}
+using Memoize
+@memoize function my_recursive_func
+...
+end
+```
+
+
+## 10. Other neat things
+
+These are some of the short functions in `utils.jl` in my `julia-aoc` repo:
+
+```{julia, eval=FALSE}
+chr2hex(x) = string(parse(Int, x, base = 16), base = 2, pad = 4)
+make_mat(input) = make_int(hcat(collect.(input)...))
+make_int(s) = parse.(Int, s)
+bin2dec(x) = parse(Int, x, base = 2)
+sort_vals(counts) = sort(collect(counts), by = x -> x[2])
+```
+
+Additional, useful functions/notes for AOC
+
+- `mod1()` FTW!
+- `pop!()`, `push!()`, `popfirst!()`, `pushfirst!()`, `filter!()`, `delete!()`, `deleteat!()`
+- `collect()` turns object into a collection, ≈ Python's `list()`.
+- `Base.product()` ≈ R's `expand_grid()`
+- `zip()` ≈ Python's `zip()`
+- Multiple dispatch (≈ R's S3 and S4 methods)
+- `try ... catch; ... end` can be slow. Check with if else if known
+- `end` can be used to index into an array, e.g. `x[1:end-1]` (≈ R's `head(x, -1)`)
+- `fill(a (x, y, z))` fills an array of dimension _x_, _y_, _z_ with _a_
+- `merge()` to merge dictionaries
+- `vcat(x, y)` or `[x; y]` ≈ R's `c(x, y)`
+- `findmin(skipmissing(x))` to find minimum while ignoring missing values
+- Integer array is faster than character array is faster than string arrays
+- While most objects in R are immutable, this is not the case in Julia.
+Be sure to use `copy()` or `deepcopy()` when you need to create a copy of, say, an array.
+- Know your recursion
+- There will always be a Dijkstra problem. 
+Brush up on your implementation of the algorithm or learn to use one of the packages that do.
+In R, **igraph** is a great package for this.
+I still need to try out Julia's **Graphs** package that seems to have an extensive list of [shortest path algorithms](https://juliagraphs.org/Graphs.jl/dev/pathing/#Shortest-Path-Algorithms).
+
+## What's next
+I'd like to keep learning Julia, of course.
+Most immediately, I'd like to learn about
+- how to create and use `struct`
+- `CartesianIndices`
+- when I should use `convert()`, `Int()`, `string()`, etc.
+- `SparseArrays` 
+
+Maybe I'll see you at Advent of Code next year! 🌻
+
+
