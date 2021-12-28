@@ -70,7 +70,5 @@
   <script type="application/ld+json">
     {"@type":"WebSite","url":"{{ .Permalink }}","headline":"{{ .Title }}", "name":"trang.page","description":"{{ if .Description }}{{ .Description }}{{ else }}{{ .Summary | plainify }}{{ end }}","@context":"http://schema.org"}
   </script>
-
-  <!-- Indexing -->
-  {{ if and (ne (getenv "CIRCLE_BRANCH") "master") (ne (getenv "CIRCLE_BRANCH") "") }}<meta name="robots" content="noindex" />{{ end }}
+  
 </head>
