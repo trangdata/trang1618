@@ -26,7 +26,7 @@ until I saw [Jasmine Hughes](https://twitter.com/Jas_Hughes) solve all of last y
 So that's what I did this year.
 Locating in the west coast this time, I have the advantage of not having to stay up until midnight 
 or to set the alarm at [4:38 am](https://twitter.com/ClareHorscroft/status/1475469403537952774) 
-to be ready when the puzzles come out, which allowed me to end up in the top 3 of the leaderboards I joined. :star: :star: 
+to be ready when the puzzles come out, which allowed me to end up in the top 3 of the leaderboards I joined :star: :star:. 
 So I thought I'd share with you 10 things I love/learned about Julia through AOC.
 {{%sn%}}And also some things I find not entirely straightforward.{{%/sn%}}
 
@@ -36,10 +36,10 @@ I won't go in depth into why Julia is awesome
 {{%sn%}}For details strong typing, multiple dispatch, environment management and other clever design decisions, please check out this [terrific talk](https://youtu.be/bI9jN40JMQU) by Tamas Nagy instead.{{%/sn%}}
 but instead will make some connections to R and thus hopefully eliminate some of the pain points for you if you're learning the language with an R background.
  
-_Disclaimers_: I am still very much a novice in Julia and never really had formal programming training.
+_Disclaimers_: I am still very much a novice in Julia and never really had any formal programming training.
 I did my best to use the right terminology, 
 but please let me know if there is a better explanation/description for something.
-{{%mn%}} _e.g._, I used _"array"_ and _"collection"_ somewhat interchangibly.{{%/mn%}}
+{{%sn%}}_e.g._, I used _"array"_ and _"collection"_ somewhat interchangibly.{{%/sn%}}
 Any new tips/tricks/intuition are most welcomed!
 I'd love to update the post with your suggestions!
 
@@ -61,6 +61,7 @@ using LinearAlgebra: dot, transpose
 using Primes: factor
 using StatsBase: countmap, rle
 using Statistics
+using Graphs
 using DataFrames, DataFramesMeta
 ```
 
@@ -85,9 +86,9 @@ My experience with their syntax so far has not been as fluid as I'd like, so I a
 
 ## 2. Broadcasting
 
-While R performs "element-wise" operations automatically
+While R performs "element-wise" operations automatically,
 {{%sn%}}such as adding a number to a numeric vector, or even adding numeric vectors of different sizes{{%/sn%}}
-, in Julia, we have to specify that we want to broadcast by adding a `.` after a function name or before a symbol, such as `.+` or `.==`.
+in Julia, we have to specify that we want to broadcast by adding a `.` after a function name or before a symbol, such as `.+` or `.==`.
 
 This leads to some cool notations.
 For example, if _x_ is a 2-D array and we want to add 1 to all element of _x_:
@@ -140,7 +141,7 @@ join(["hello", " ", "world"])
 
 ## 4. Unicode support 
 
-I love that Julia let me use subscript and superscripts in my variable names (with `\_` and `\^`), and Unicode math symbols (with, say, `\alpha<tab>`) even as operations:
+I love that Julia let me use subscripts and superscripts in my variable names (with `\_` and `\^`), and Unicode math symbols (with, say, `\alpha<tab>`) even as operations:
 
 ```{julia} 
 4 ∉ [4, 5, 3]
@@ -150,11 +151,11 @@ or
 8 ÷ 3
 ``` 
 
-A few people on [Zulip](https://julialang.zulipchat.com/) used the octopus emoji 🐙 for AOC 2021 day 11 💥, which made me smile.
+A few people on [Zulip](https://julialang.zulipchat.com/) used the octopus emoji  🐙  for AOC 2021 day 11 💥, which made me happy.
 
 ## 5. Macros
 
-Some of the macros I frequently used are `@show`, `@time`, `@assert`, and for AOC especially, **BenchmarkTools**'s `@btime`.
+Some of the macros I frequently used are `@show`, `@chain`, `@time`, `@assert`, and for AOC especially, **BenchmarkTools**'s `@btime`.
 
 If you want, you can even [define your own macros](https://docs.julialang.org/en/v1/manual/metaprogramming/)!
 
@@ -243,7 +244,7 @@ bin2dec(x) = parse(Int, x, base = 2)
 sort_vals(counts) = sort(collect(counts), by = x -> x[2])
 ```
 
-Additional, useful functions/notes for AOC
+Additional, useful functions/notes for AOC:
 
 - `mod1()` FTW!
 - `pop!()`, `push!()`, `popfirst!()`, `pushfirst!()`, `filter!()`, `delete!()`, `deleteat!()`
@@ -259,7 +260,7 @@ Additional, useful functions/notes for AOC
 - `findmin(skipmissing(x))` to find minimum while ignoring missing values
 - Integer array is faster than character array is faster than string arrays
 - While most objects in R are immutable, this is not the case in Julia.
-Be sure to use `copy()` or `deepcopy()` when you need to create a copy of, say, an array.
+Be sure to use `copy()` or `deepcopy()` when you need to create a copy of, say, a mutable struct.
 - Know your recursion
 - There will always be a Dijkstra problem. 
 Brush up on your implementation of the algorithm or learn to use one of the packages that do.
@@ -269,10 +270,11 @@ I still need to try out Julia's **Graphs** package that seems to have an extensi
 ## What's next
 I'd like to keep learning Julia, of course.
 Most immediately, I'd like to learn about
+
 - how to create and use `struct`
 - `CartesianIndices`
-- when I should use `convert()`, `Int()`, `string()`, etc.
+- when exactly should I use `convert()`, `Int()`, `string()`, etc.
 - `SparseArrays` 
 
-Maybe I'll see you at Advent of Code next year! 🌻
+See you at Advent of Code next year! 🌻
 

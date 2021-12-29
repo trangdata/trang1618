@@ -72,21 +72,23 @@ pre  {
 }
 
 pre code {
-  line-height: 1.4em;
-  font-size: 85%;
-  font-family: "Hack", Menlo, Monaco, Consolas, "Courier New", monospace;
+  line-height: 1.2em;
+  font-size: 60%;
+  font-family: "Fira Code", "Hack", Menlo, Monaco, Consolas, "Courier New", monospace;
   background-color: #f0f3f3;
-  padding: 8px;
+  color: #111113;
+  padding: 4px;
   width: 100%;
   border-radius: 0;
 
 }
 
 p code {
-  font-family: "Hack", Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: "Fira Code", "Hack", Menlo, Monaco, Consolas, "Courier New", monospace;
   background-color: #f0f3f3;
-  font-size: 80%;
-  padding: 3px;
+  font-size: 70%;
+  color: #111113;
+  padding: 2px;
   border: none;
 }
 

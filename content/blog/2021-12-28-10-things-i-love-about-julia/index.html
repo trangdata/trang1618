@@ -88,17 +88,17 @@ until I saw <a href="https://twitter.com/Jas_Hughes">Jasmine Hughes</a> solve al
 <p>So that’s what I did this year.
 Locating in the west coast this time, I have the advantage of not having to stay up until midnight
 or to set the alarm at <a href="https://twitter.com/ClareHorscroft/status/1475469403537952774">4:38 am</a>
-to be ready when the puzzles come out, which allowed me to end up in the top 3 of the leaderboards I joined. :star: :star:
+to be ready when the puzzles come out, which allowed me to end up in the top 3 of the leaderboards I joined :star: :star:.
 So I thought I’d share with you 10 things I love/learned about Julia through AOC.
 {{%sn%}}And also some things I find not entirely straightforward.{{%/sn%}}</p>
 <p>I hope this post will inspire you to learn Julia.
 I won’t go in depth into why Julia is awesome
 {{%sn%}}For details strong typing, multiple dispatch, environment management and other clever design decisions, please check out this <a href="https://youtu.be/bI9jN40JMQU">terrific talk</a> by Tamas Nagy instead.{{%/sn%}}
 but instead will make some connections to R and thus hopefully eliminate some of the pain points for you if you’re learning the language with an R background.</p>
-<p><em>Disclaimers</em>: I am still very much a novice in Julia and never really had formal programming training.
+<p><em>Disclaimers</em>: I am still very much a novice in Julia and never really had any formal programming training.
 I did my best to use the right terminology,
 but please let me know if there is a better explanation/description for something.
-{{%mn%}} <em>e.g.</em>, I used <em>“array”</em> and <em>“collection”</em> somewhat interchangibly.{{%/mn%}}
+{{%sn%}}<em>e.g.</em>, I used <em>“array”</em> and <em>“collection”</em> somewhat interchangibly.{{%/sn%}}
 Any new tips/tricks/intuition are most welcomed!
 I’d love to update the post with your suggestions!</p>
 <p><em>Acknowledgements</em>:
@@ -115,7 +115,8 @@ much of which can largely be attributed to the <a href="https://youtu.be/bI9jN40
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> Primes<span class="op">:</span> factor</span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> StatsBase<span class="op">:</span> countmap<span class="op">,</span> rle</span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> Statistics</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> DataFrames<span class="op">,</span> DataFramesMeta</span></code></pre></div>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> Graphs</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> DataFrames<span class="op">,</span> DataFramesMeta</span></code></pre></div>
 <p>Julia native pipe <code>|&gt;</code> supports simple “chaining” operations of one argument,
 but I like using the <strong>Chain</strong> package for more comprehensive support with broadcasting and splatting.
 For example, for day 15 part 2, I built the larger matrix by</p>
@@ -132,9 +133,9 @@ My experience with their syntax so far has not been as fluid as I’d like, so I
 </div>
 <div id="broadcasting" class="section level2">
 <h2>2. Broadcasting</h2>
-<p>While R performs “element-wise” operations automatically
+<p>While R performs “element-wise” operations automatically,
 {{%sn%}}such as adding a number to a numeric vector, or even adding numeric vectors of different sizes{{%/sn%}}
-, in Julia, we have to specify that we want to broadcast by adding a <code>.</code> after a function name or before a symbol, such as <code>.+</code> or <code>.==</code>.</p>
+in Julia, we have to specify that we want to broadcast by adding a <code>.</code> after a function name or before a symbol, such as <code>.+</code> or <code>.==</code>.</p>
 <p>This leads to some cool notations.
 For example, if <em>x</em> is a 2-D array and we want to add 1 to all element of <em>x</em>:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>x .<span class="op">+=</span> <span class="fl">1</span></span></code></pre></div>
@@ -175,17 +176,17 @@ or, for this particular case, use the built-in <code>maximum()</code> function.<
 </div>
 <div id="unicode-support" class="section level2">
 <h2>4. Unicode support</h2>
-<p>I love that Julia let me use subscript and superscripts in my variable names (with <code>\_</code> and <code>\^</code>), and Unicode math symbols (with, say, <code>\alpha&lt;tab&gt;</code>) even as operations:</p>
+<p>I love that Julia let me use subscripts and superscripts in my variable names (with <code>\_</code> and <code>\^</code>), and Unicode math symbols (with, say, <code>\alpha&lt;tab&gt;</code>) even as operations:</p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fl">4</span> ∉ [<span class="fl">4</span><span class="op">,</span> <span class="fl">5</span><span class="op">,</span> <span class="fl">3</span>]</span></code></pre></div>
 <pre><code>## false</code></pre>
 <p>or</p>
 <div class="sourceCode" id="cb12"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fl">8</span> ÷ <span class="fl">3</span></span></code></pre></div>
 <pre><code>## 2</code></pre>
-<p>A few people on <a href="https://julialang.zulipchat.com/">Zulip</a> used the octopus emoji 🐙 for AOC 2021 day 11 💥, which made me smile.</p>
+<p>A few people on <a href="https://julialang.zulipchat.com/">Zulip</a> used the octopus emoji 🐙 for AOC 2021 day 11 💥, which made me happy.</p>
 </div>
 <div id="macros" class="section level2">
 <h2>5. Macros</h2>
-<p>Some of the macros I frequently used are <code>@show</code>, <code>@time</code>, <code>@assert</code>, and for AOC especially, <strong>BenchmarkTools</strong>’s <code>@btime</code>.</p>
+<p>Some of the macros I frequently used are <code>@show</code>, <code>@chain</code>, <code>@time</code>, <code>@assert</code>, and for AOC especially, <strong>BenchmarkTools</strong>’s <code>@btime</code>.</p>
 <p>If you want, you can even <a href="https://docs.julialang.org/en/v1/manual/metaprogramming/">define your own macros</a>!</p>
 </div>
 <div id="scope" class="section level2">
@@ -247,7 +248,7 @@ And if you want the <em>elements</em> instead of <em>positions</em>, you can use
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>make_int(s) <span class="op">=</span> parse.(<span class="dt">Int</span><span class="op">,</span> s)</span>
 <span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>bin2dec(x) <span class="op">=</span> parse(<span class="dt">Int</span><span class="op">,</span> x<span class="op">,</span> base <span class="op">=</span> <span class="fl">2</span>)</span>
 <span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>sort_vals(counts) <span class="op">=</span> sort(collect(counts)<span class="op">,</span> by <span class="op">=</span> x <span class="op">-&gt;</span> x[<span class="fl">2</span>])</span></code></pre></div>
-<p>Additional, useful functions/notes for AOC</p>
+<p>Additional, useful functions/notes for AOC:</p>
 <ul>
 <li><code>mod1()</code> FTW!</li>
 <li><code>pop!()</code>, <code>push!()</code>, <code>popfirst!()</code>, <code>pushfirst!()</code>, <code>filter!()</code>, <code>delete!()</code>, <code>deleteat!()</code></li>
@@ -263,7 +264,7 @@ And if you want the <em>elements</em> instead of <em>positions</em>, you can use
 <li><code>findmin(skipmissing(x))</code> to find minimum while ignoring missing values</li>
 <li>Integer array is faster than character array is faster than string arrays</li>
 <li>While most objects in R are immutable, this is not the case in Julia.
-Be sure to use <code>copy()</code> or <code>deepcopy()</code> when you need to create a copy of, say, an array.</li>
+Be sure to use <code>copy()</code> or <code>deepcopy()</code> when you need to create a copy of, say, a mutable struct.</li>
 <li>Know your recursion</li>
 <li>There will always be a Dijkstra problem.
 Brush up on your implementation of the algorithm or learn to use one of the packages that do.
@@ -274,10 +275,12 @@ I still need to try out Julia’s <strong>Graphs</strong> package that seems to 
 <div id="whats-next" class="section level2">
 <h2>What’s next</h2>
 <p>I’d like to keep learning Julia, of course.
-Most immediately, I’d like to learn about
-- how to create and use <code>struct</code>
-- <code>CartesianIndices</code>
-- when I should use <code>convert()</code>, <code>Int()</code>, <code>string()</code>, etc.
-- <code>SparseArrays</code></p>
-<p>Maybe I’ll see you at Advent of Code next year! 🌻</p>
+Most immediately, I’d like to learn about</p>
+<ul>
+<li>how to create and use <code>struct</code></li>
+<li><code>CartesianIndices</code></li>
+<li>when exactly should I use <code>convert()</code>, <code>Int()</code>, <code>string()</code>, etc.</li>
+<li><code>SparseArrays</code></li>
+</ul>
+<p>See you at Advent of Code next year! 🌻</p>
 </div>
