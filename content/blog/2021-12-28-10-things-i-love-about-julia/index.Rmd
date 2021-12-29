@@ -12,6 +12,7 @@ tags:
   - algorithm
 description:
   Things I learned and love about Julia through this year's Advent of Code puzzles.
+twitterImg: 2021/12/28/10-things-i-love-about-julia/fractal.jpg
 ---
 
 ```{r setup, include=FALSE}
@@ -32,14 +33,14 @@ So I thought I'd share with you 10 things I love/learned about Julia through AOC
 
 I hope this post will inspire you to learn Julia.
 I won't go in depth into why Julia is awesome
-{{%sn%}}For details strong typing, multiple dispatch, environment management and other clever design decisions, please check out this [terrific talk](https://youtu.be/bI9jN40JMQU) by Tamas Nagy instead.{{%/sn%}}
+{{%sn%}}For details strong typing, multiple dispatch, environment management and other clever design decisions, please check out this [terrific talk](https://youtu.be/bI9jN40JMQU) by Tamas Nagy.{{%/sn%}}
 but instead will make some connections to R and thus hopefully eliminate some of the pain points for you if you're learning the language with an R background.
  
 _Disclaimers_: I am still very much a novice in Julia and never really had any formal programming training.
 I did my best to use the right terminology, 
 but please let me know if there is a better explanation/description for something.
 {{%sn%}}_e.g._, I used _"array"_ and _"collection"_ somewhat interchangibly.{{%/sn%}}
-Any new tips/tricks/intuition are most welcomed!
+New tips/tricks/intuition are most welcomed!
 I'd love to update the post with your suggestions!
 
 _Acknowledgements_: 
@@ -140,7 +141,8 @@ join(["hello", " ", "world"])
 
 ## 4. Unicode support 
 
-I love that Julia let me use subscripts and superscripts in my variable names (with `\_` and `\^`), and Unicode math symbols (with, say, `\alpha<tab>`) even as operations:
+I love that Julia let me use subscripts and superscripts in my variable names (with `\_` and `\^`), and Unicode math symbols (with, say, `\notin<tab>`) even as operations:
+{{%mn%}}A few folks on [Zulip](https://julialang.zulipchat.com/) used the octopus emoji  🐙  for AOC 2021 day 11 💥, which made me happy.{{%/mn%}}
 
 ```{julia} 
 4 ∉ [4, 5, 3]
@@ -150,7 +152,6 @@ or
 8 ÷ 3
 ``` 
 
-A few people on [Zulip](https://julialang.zulipchat.com/) used the octopus emoji  🐙  for AOC 2021 day 11 💥, which made me happy.
 
 ## 5. Macros
 
@@ -206,8 +207,7 @@ x[x .> 2] ## 4 5 (the "R" way)
 
 One potential gotcha to keep in mind is that, if the condition is not satisfied with any element of the collection,
 `findfirst()` returns **nothing** while `findall()` returns an **empty collection**.
-
-A related and useful function here is `indexin()`.
+{{%mn%}}A related and useful function here is `indexin()`.{{%/mn%}}
 
 `findall()` can also be used on strings with the argument **overlap** crucial for some AOC puzzles.
 
@@ -268,7 +268,7 @@ Julia's **Graphs** package has an extensive list of [shortest path algorithms](h
 
 ## What's next
 I'd like to keep learning Julia, of course.
-Most immediately, I'd like to learn about
+Most immediately, I'd like to know
 
 - how to create and use `struct`
 - `CartesianIndices`
@@ -276,6 +276,11 @@ Most immediately, I'd like to learn about
 - `SparseArrays` 
 
 
+What about you?
+What's your favorite macro?
+What do you love about Julia?
+What else do you want to learn?
+Let me know!
 
-See you at Advent of Code next year! 🌻
+I hope to see you at Advent of Code next year! 🌻
 

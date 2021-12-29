@@ -12,6 +12,7 @@ tags:
   - algorithm
 description:
   Things I learned and love about Julia through this year's Advent of Code puzzles.
+twitterImg: 2021/12/28/10-things-i-love-about-julia/fractal.jpg
 ---
 
 <script src="{{< blogdown/postref >}}index_files/header-attrs/header-attrs.js"></script>
@@ -93,13 +94,13 @@ So I thought I’d share with you 10 things I love/learned about Julia through A
 {{%sn%}}And also some things I find not entirely straightforward.{{%/sn%}}</p>
 <p>I hope this post will inspire you to learn Julia.
 I won’t go in depth into why Julia is awesome
-{{%sn%}}For details strong typing, multiple dispatch, environment management and other clever design decisions, please check out this <a href="https://youtu.be/bI9jN40JMQU">terrific talk</a> by Tamas Nagy instead.{{%/sn%}}
+{{%sn%}}For details strong typing, multiple dispatch, environment management and other clever design decisions, please check out this <a href="https://youtu.be/bI9jN40JMQU">terrific talk</a> by Tamas Nagy.{{%/sn%}}
 but instead will make some connections to R and thus hopefully eliminate some of the pain points for you if you’re learning the language with an R background.</p>
 <p><em>Disclaimers</em>: I am still very much a novice in Julia and never really had any formal programming training.
 I did my best to use the right terminology,
 but please let me know if there is a better explanation/description for something.
 {{%sn%}}<em>e.g.</em>, I used <em>“array”</em> and <em>“collection”</em> somewhat interchangibly.{{%/sn%}}
-Any new tips/tricks/intuition are most welcomed!
+New tips/tricks/intuition are most welcomed!
 I’d love to update the post with your suggestions!</p>
 <p><em>Acknowledgements</em>:
 This post was written in an <em>.Rmd</em> notebook using the wonderful <a href="https://non-contradiction.github.io/JuliaCall/index.html">JuliaCall</a> package.</p>
@@ -176,13 +177,13 @@ or, for this particular case, use the built-in <code>maximum()</code> function.<
 </div>
 <div id="unicode-support" class="section level2">
 <h2>4. Unicode support</h2>
-<p>I love that Julia let me use subscripts and superscripts in my variable names (with <code>\_</code> and <code>\^</code>), and Unicode math symbols (with, say, <code>\alpha&lt;tab&gt;</code>) even as operations:</p>
+<p>I love that Julia let me use subscripts and superscripts in my variable names (with <code>\_</code> and <code>\^</code>), and Unicode math symbols (with, say, <code>\notin&lt;tab&gt;</code>) even as operations:
+{{%mn%}}A few folks on <a href="https://julialang.zulipchat.com/">Zulip</a> used the octopus emoji 🐙 for AOC 2021 day 11 💥, which made me happy.{{%/mn%}}</p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fl">4</span> ∉ [<span class="fl">4</span><span class="op">,</span> <span class="fl">5</span><span class="op">,</span> <span class="fl">3</span>]</span></code></pre></div>
 <pre><code>## false</code></pre>
 <p>or</p>
 <div class="sourceCode" id="cb12"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fl">8</span> ÷ <span class="fl">3</span></span></code></pre></div>
 <pre><code>## 2</code></pre>
-<p>A few people on <a href="https://julialang.zulipchat.com/">Zulip</a> used the octopus emoji 🐙 for AOC 2021 day 11 💥, which made me happy.</p>
 </div>
 <div id="macros" class="section level2">
 <h2>5. Macros</h2>
@@ -223,8 +224,8 @@ And if you want the <em>elements</em> instead of <em>positions</em>, you can use
 <span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a><span class="co"># x[begin:end .∈ Ref(findall(&gt;(2), x))]</span></span>
 <span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a><span class="co"># not what I would do unless I have a list of indices I want to include/exclude</span></span></code></pre></div>
 <p>One potential gotcha to keep in mind is that, if the condition is not satisfied with any element of the collection,
-<code>findfirst()</code> returns <strong>nothing</strong> while <code>findall()</code> returns an <strong>empty collection</strong>.</p>
-<p>A related and useful function here is <code>indexin()</code>.</p>
+<code>findfirst()</code> returns <strong>nothing</strong> while <code>findall()</code> returns an <strong>empty collection</strong>.
+{{%mn%}}A related and useful function here is <code>indexin()</code>.{{%/mn%}}</p>
 <p><code>findall()</code> can also be used on strings with the argument <strong>overlap</strong> crucial for some AOC puzzles.</p>
 </div>
 <div id="simultaneous-assignments" class="section level2">
@@ -275,12 +276,17 @@ Julia’s <strong>Graphs</strong> package has an extensive list of <a href="http
 <div id="whats-next" class="section level2">
 <h2>What’s next</h2>
 <p>I’d like to keep learning Julia, of course.
-Most immediately, I’d like to learn about</p>
+Most immediately, I’d like to know</p>
 <ul>
 <li>how to create and use <code>struct</code></li>
 <li><code>CartesianIndices</code></li>
 <li>when exactly should I use <code>convert()</code>, <code>Int()</code>, <code>string()</code>, etc.</li>
 <li><code>SparseArrays</code></li>
 </ul>
-<p>See you at Advent of Code next year! 🌻</p>
+<p>What about you?
+What’s your favorite macro?
+What do you love about Julia?
+What else do you want to learn?
+Let me know!</p>
+<p>I hope to see you at Advent of Code next year! 🌻</p>
 </div>
