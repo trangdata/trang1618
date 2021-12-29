@@ -72,12 +72,12 @@ pre  {
 }
 
 pre code {
-  line-height: 1.2em;
-  font-size: 60%;
+  line-height: 1.4em;
+  font-size: 85%;
   font-family: "Fira Code", "Hack", Menlo, Monaco, Consolas, "Courier New", monospace;
   background-color: #f0f3f3;
   color: #111113;
-  padding: 4px;
+  padding: 8px;
   width: 100%;
   border-radius: 0;
 
@@ -86,9 +86,9 @@ pre code {
 p code {
   font-family: "Fira Code", "Hack", Menlo, Monaco, Consolas, "Courier New", monospace;
   background-color: #f0f3f3;
-  font-size: 70%;
+  font-size: 74%;
   color: #111113;
-  padding: 2px;
+  padding: 3px;
   border: none;
 }
 

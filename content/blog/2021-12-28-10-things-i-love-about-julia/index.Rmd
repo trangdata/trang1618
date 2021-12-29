@@ -30,7 +30,6 @@ to be ready when the puzzles come out, which allowed me to end up in the top 3 o
 So I thought I'd share with you 10 things I love/learned about Julia through AOC.
 {{%sn%}}And also some things I find not entirely straightforward.{{%/sn%}}
 
-
 I hope this post will inspire you to learn Julia.
 I won't go in depth into why Julia is awesome
 {{%sn%}}For details strong typing, multiple dispatch, environment management and other clever design decisions, please check out this [terrific talk](https://youtu.be/bI9jN40JMQU) by Tamas Nagy instead.{{%/sn%}}
@@ -265,7 +264,7 @@ Be sure to use `copy()` or `deepcopy()` when you need to create a copy of, say, 
 - There will always be a Dijkstra problem. 
 Brush up on your implementation of the algorithm or learn to use one of the packages that do.
 In R, **igraph** is a great package for this.
-I still need to try out Julia's **Graphs** package that seems to have an extensive list of [shortest path algorithms](https://juliagraphs.org/Graphs.jl/dev/pathing/#Shortest-Path-Algorithms).
+Julia's **Graphs** package has an extensive list of [shortest path algorithms](https://juliagraphs.org/Graphs.jl/dev/pathing/#Shortest-Path-Algorithms).
 
 ## What's next
 I'd like to keep learning Julia, of course.
@@ -275,6 +274,8 @@ Most immediately, I'd like to learn about
 - `CartesianIndices`
 - when exactly should I use `convert()`, `Int()`, `string()`, etc.
 - `SparseArrays` 
+
+
 
 See you at Advent of Code next year! 🌻
 

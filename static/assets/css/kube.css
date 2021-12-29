@@ -365,10 +365,13 @@ time, small {
 
 figcaption, code, var, kbd {
   display: inline-block;
-  font-family: monospace, monospace;
-  font-size: 87.5%;
-  line-height: 1;
-  color: rgba(17, 17, 19, 0.85); }
+  font-family: "Fira Code", "Hack", Menlo, Monaco, Consolas, "Courier New", monospace;
+  background-color: #f0f3f3;
+  font-size: 74%;
+  color: #111113;
+  padding: 3px;
+  border: none;
+  line-height: 1; }
 
 figcaption {
   font-size: 80%;
@@ -426,7 +429,12 @@ sub {
   line-height: 1; }
 
 pre {
-  font-family: monospace, monospace;
+  font-family: "Fira Code", "Hack", Menlo, Monaco, Consolas, "Courier New", monospace;
+  background-color: #f0f3f3;
+  font-size: 74%;
+  color: #111113;
+  padding: 3px;
+  border: none;
   font-size: 0.875em; }
 
 pre,
