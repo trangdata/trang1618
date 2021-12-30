@@ -211,18 +211,19 @@ And if you want the <em>elements</em> instead of <em>positions</em>, you can use
 <div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># In R</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">5</span>) </span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="fu">which</span>(x <span class="sc">&gt;</span> <span class="dv">2</span>) <span class="do">## 2 3</span></span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>x[x <span class="sc">&gt;</span> <span class="dv">2</span>] <span class="do">## 4 5</span></span></code></pre></div>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>x[x <span class="sc">&gt;</span> <span class="dv">2</span>]     <span class="do">## 4 5</span></span></code></pre></div>
 <div class="sourceCode" id="cb16"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># In Julia</span></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> [<span class="fl">2</span><span class="op">,</span> <span class="fl">4</span><span class="op">,</span> <span class="fl">5</span>]</span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>findall(xᵢ <span class="op">-&gt;</span> xᵢ <span class="op">&gt;</span> <span class="fl">2</span><span class="op">,</span> [<span class="fl">2</span><span class="op">,</span> <span class="fl">4</span><span class="op">,</span> <span class="fl">5</span>]) <span class="co">## 2 3</span></span>
-<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>findall(<span class="op">&gt;</span>(<span class="fl">2</span>)<span class="op">,</span> x) <span class="co">## 2 3</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>findall(xᵢ <span class="op">-&gt;</span> xᵢ <span class="op">&gt;</span> <span class="fl">2</span><span class="op">,</span> x) <span class="co">## 2 3</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>findall(<span class="op">&gt;</span>(<span class="fl">2</span>)<span class="op">,</span> x)         <span class="co">## 2 3</span></span>
 <span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>filter(xᵢ <span class="op">-&gt;</span> xᵢ <span class="op">&gt;</span> <span class="fl">2</span><span class="op">,</span> [<span class="fl">2</span><span class="op">,</span> <span class="fl">4</span><span class="op">,</span> <span class="fl">5</span>]) <span class="co">## 4 5</span></span>
-<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>filter(<span class="op">&gt;</span>(<span class="fl">2</span>)<span class="op">,</span> x) <span class="co">## 4 5</span></span>
-<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>x[x .<span class="op">&gt;</span> <span class="fl">2</span>] <span class="co">## 4 5 (the &quot;R&quot; way)</span></span>
-<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a><span class="co"># x[begin:end .∈ Ref(findall(&gt;(2), x))]</span></span>
-<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a><span class="co"># not what I would do unless I have a list of indices I want to include/exclude</span></span></code></pre></div>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>filter(xᵢ <span class="op">-&gt;</span> xᵢ <span class="op">&gt;</span> <span class="fl">2</span><span class="op">,</span> x)  <span class="co">## 4 5</span></span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>filter(<span class="op">&gt;</span>(<span class="fl">2</span>)<span class="op">,</span> x)          <span class="co">## 4 5</span></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>x[x .<span class="op">&gt;</span> <span class="fl">2</span>]                <span class="co">## 4 5 (the R way)</span></span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a><span class="co"># x[begin:end .∈ Ref(findall(&gt;(2), x))]</span></span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a><span class="co"># not what I would do unless I have a list of indices I want to include/exclude</span></span></code></pre></div>
 <p>One potential gotcha to keep in mind is that, if the condition is not satisfied with any element of the collection,
 <code>findfirst()</code> returns <strong>nothing</strong> while <code>findall()</code> returns an <strong>empty collection</strong>.
 {{%mn%}}A related and useful function here is <code>indexin()</code>.{{%/mn%}}</p>

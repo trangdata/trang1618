@@ -187,7 +187,7 @@ And if you want the _elements_ instead of _positions_, you can use `filter()`.
 # In R
 x <- c(2, 4, 5) 
 which(x > 2) ## 2 3
-x[x > 2] ## 4 5
+x[x > 2]     ## 4 5
 ```
 
 
@@ -195,12 +195,13 @@ x[x > 2] ## 4 5
 # In Julia
 x = [2, 4, 5]
 
-findall(xᵢ -> xᵢ > 2, [2, 4, 5]) ## 2 3
-findall(>(2), x) ## 2 3
+findall(xᵢ -> xᵢ > 2, x) ## 2 3
+findall(>(2), x)         ## 2 3
 
-filter(xᵢ -> xᵢ > 2, [2, 4, 5]) ## 4 5
-filter(>(2), x) ## 4 5
-x[x .> 2] ## 4 5 (the "R" way)
+filter(xᵢ -> xᵢ > 2, x)  ## 4 5
+filter(>(2), x)          ## 4 5
+x[x .> 2]                ## 4 5 (the R way)
+
 # x[begin:end .∈ Ref(findall(>(2), x))]
 # not what I would do unless I have a list of indices I want to include/exclude
 ```
@@ -210,6 +211,7 @@ One potential gotcha to keep in mind is that, if the condition is not satisfied 
 {{%mn%}}A related and useful function here is `indexin()`.{{%/mn%}}
 
 `findall()` can also be used on strings with the argument **overlap** crucial for some AOC puzzles.
+
 
 ## 8. Simultaneous assignments
 
