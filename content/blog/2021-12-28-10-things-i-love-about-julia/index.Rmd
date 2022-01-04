@@ -113,6 +113,13 @@ getindex.(([0, 4, 3, 5],), [2, 1, 2])
 If you're curious about nested broadcasting, last time I searched, the best way to do it would be 
 to define a separate function that perform the inner broadcasting, then broadcast it onto the outer iterable, 
 or simply use list comprehension.
+For example:
+
+```{julia}
+a = [[1, 2, 3], [4, 5]]
+sq_vec(x) = x.^2
+sq_vec.(a)
+```
 
 ## 3. Splat operator
 
@@ -179,7 +186,6 @@ See more about scoping [here](https://docs.julialang.org/en/v1/manual/variables-
 
 ## 7. Find & filter
 
-When I first learned Julia, I was really frustrated when facing this subsetting problem.
 Julia's `findall()` is essentially R's `which()` with a slightly longer syntax.
 And if you want the _elements_ instead of _positions_, you can use `filter()`.
 
@@ -216,7 +222,7 @@ One potential gotcha to keep in mind is that, if the condition is not satisfied 
 ## 8. Simultaneous assignments
 
 ```{julia, eval=FALSE}
-ni, nj = size(input)
+nᵢ, nⱼ = size(input)
 ```
 or 
 ```{julia, eval=FALSE}
@@ -235,7 +241,7 @@ end
 
 ## 10. Other neat things
 
-These are some of the short functions in `utils.jl` in my `julia-aoc` repo:
+These are some of the short functions in `utils.jl` in my [`julia-aoc-2021`](https://github.com/trang1618/julia-aoc-2021) repo:
 
 ```{julia, eval=FALSE}
 chr2hex(x) = string(parse(Int, x, base = 16), base = 2, pad = 4)
